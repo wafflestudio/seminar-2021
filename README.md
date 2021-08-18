@@ -1,5 +1,7 @@
 # 와플스튜디오 19.5기 Rookies Repository
 
+- [rookies OT](https://docs.google.com/presentation/d/1BbIe3rkbvT41k4PHq22_ZTsqmFeIU_mACuUjdqtwMlA/edit?usp=sharing)
+
 <br><br><br><br>![wafflestudio_logo](wafflestudio_logo.png)<br><br><br><br><br>
 18.5 기 세미나는 다음 학기 개발 프로젝트 참여 가능한 Programmers 양성을 목표로 합니다.
 
@@ -25,13 +27,13 @@
 <details>
 <summary>세미나 시간</summary>
 
-| 세미나          |                  시간 |
-| :-------------- | --------------------: |
-| 백엔드 (장고)   |      토요일 오전 10시 |
-| 안드로이드      | 토요일 오전 11시 30분 |
-| 백엔드 (스프링) |       토요일 오후 3시 |
-| 프론트          |  토요일 오후 4시 30분 |
-| iOS             |       일요일 오후 1시 |
+| 세미나          | 요일   | 시간           |
+| :-------------- | ------ | :------------- |
+| 백엔드 (장고)   | 토요일 | 오전 10시      |
+| 안드로이드      | 토요일 | 오전 11시 30분 |
+| 백엔드 (스프링) | 토요일 | 오후 3시       |
+| 프론트          | 토요일 | 오후 4시 30분  |
+| iOS             | 일요일 | 오후 1시       |
 
 </details>
 
