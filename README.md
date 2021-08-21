@@ -1,6 +1,7 @@
 # 와플스튜디오 19.5기 Rookies Repository
 
 - [rookies OT](https://docs.google.com/presentation/d/1BbIe3rkbvT41k4PHq22_ZTsqmFeIU_mACuUjdqtwMlA/edit?usp=sharing)
+- [세미나 수강 목록](./seminar-list.md)
 
 <br><br><br><br>![wafflestudio_logo](wafflestudio_logo.png)<br><br><br><br><br>
 18.5 기 세미나는 다음 학기 개발 프로젝트 참여 가능한 Programmers 양성을 목표로 합니다.
