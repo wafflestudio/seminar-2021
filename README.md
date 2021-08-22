@@ -1,7 +1,5 @@
 # 와플스튜디오 19.5기 Rookies Repository
 
-- [rookies OT 자료 (ppt 링크)](https://docs.google.com/presentation/d/1BbIe3rkbvT41k4PHq22_ZTsqmFeIU_mACuUjdqtwMlA/edit?usp=sharing)
-- [rookies OT 자료 (pdf 파일)](./wafflestudio%2019.5%20rookies%20OT.pdf)
 - [세미나 수강 목록](./seminar-list.md)
 
 <br><br><br><br>![wafflestudio_logo](wafflestudio_logo.png)<br><br><br><br><br>
