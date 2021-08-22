@@ -271,7 +271,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 홍용기        | redcourage                 |              |                     |
 |               |                            |              |                     |
-| 홍정현        | JYPSloth                   |              |                     |
+| 홍정현        | JYPSloth                   |android       |react, backend       |
 |               |                            |              |                     |
 | 황승준        | jakehsj                    |              |                     |
 
