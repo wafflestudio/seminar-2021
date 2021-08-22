@@ -11,7 +11,7 @@
 
 | 세미나 | 주제 | 날짜 | 장소 |
 | --- | --- | --- | --- |
-| [seminar0](seminar-0) | `HTML` `CSS` `JS` | 2020.08.28, 16:30 ~ 17:45 | [zoom](https://snu-ac-kr.zoom.us/j/82516517509) |
+| [seminar0](seminar-0) | `HTML` `CSS` `JS` | 2021.08.28, 16:30 ~ 17:45 | [zoom](https://snu-ac-kr.zoom.us/j/82516517509) |
 
 
 ## 필수 사항
@@ -51,3 +51,6 @@
 - ***IE를 제외한*** 어떤 브라우저를 사용하셔도 상관없습니다만 환경 통일을 위해 Chrome 을 권장합니다.
   
 ~~개발동아린데 IE를 쓰시진 않겠죠?~~
+
+---
+special thanks to @ars-ki-00
