@@ -1,4 +1,4 @@
-10.5-rookies Seminar 0 Assignment
+19.5-rookies Seminar 0 Assignment
 ================================
 
 ### **due: 2021.09.05(일) 23:59**
