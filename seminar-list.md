@@ -115,7 +115,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 박진영        | ishlove7                   |              |                     |
 |               |                            |              |                     |
-| 박현수        | nemga123                   |              |                     |
+| 박현수        | nemga123                   |  backend    |  android , react   |
 |               |                            |              |                     |
 | 박형철        | Alpha-car                  |              |                     |
 |               |                            |              |                     |
