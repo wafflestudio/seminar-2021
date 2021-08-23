@@ -107,7 +107,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 박정훈        | PJH6029                    |              |                     |
 |               |                            |              |                     |
-| 박준영        | designDefined              |              |                     |
+| 박준영        | designDefined              | react        | backend             |
 |               |                            |              |                     |
 | 박준영        | engineerA314               |              |                     |
 |               |                            |              |                     |
