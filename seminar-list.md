@@ -93,7 +93,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 민준기        | joon0822                   |              |                     |
 |               |                            |              |                     |
-| 박기현        | ggumnet                    |              |                     |
+| 박기현        | ggumnet                    |              |   backend      |   frontend
 |               |                            |              |                     |
 | 박민우        | MinnieMinwoo               |              |                     |
 |               |                            |              |                     |
