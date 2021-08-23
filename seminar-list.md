@@ -209,7 +209,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 이채민        | chaemin2001                |              |                     |
 |               |                            |              |                     |
-| 이철민        | jakdurider                 | backend      | react               |
+| 이철민        | jakdurider                 |              |                     |
 |               |                            |              |                     |
 | 이하동        | ChrisLee02                 |              |                     |
 |               |                            |              |                     |
