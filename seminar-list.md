@@ -225,7 +225,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 전형민        | jhm1313                    |              |                     |
 |               |                            |              |                     |
-| 정다은        | daeun1234                  |              |                     |
+| 정다은        | daeun1234                  |android |backend, react |
 |               |                            |              |                     |
 | 정성태        | footprinthere              |              |                     |
 |               |                            |              |                     |
