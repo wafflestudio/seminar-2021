@@ -129,7 +129,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 손융방        | d3pshot17                  |              |                     |
 |               |                            |              |                     |
-| 신동섭        | prodigy-sub                |              |                     |
+| 신동섭        | prodigy-sub                |   backend    |     react           |
 |               |                            |              |                     |
 | 신우철        | swc0620                    |              |                     |
 |               |                            |              |                     |
