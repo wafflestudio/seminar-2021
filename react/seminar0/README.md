@@ -1,0 +1,42 @@
+19.5 rookies react seminar 0
+================================
+
+> Instructor 우현민([woohm402](https://github.com/woohm402))
+> 2021.08.28.(토) 16:30
+
+## 배울 내용
+
+------------------
+1. 프론트엔드란
+2. HTML
+    - HTML 기본 문법
+    - HTML 문서의 기본 구조
+    - HTML 태그 예시
+3. CSS
+    - CSS 기본 문법
+    - margin/padding/position
+4. JS
+    - 자바스크립트란
+    - JS 주요 문법
+    
+## 준비 사항
+
+------------------
+- 없음
+
+## 세미나 자료
+
+------------------
+[제작 중]()
+
+## 세미나 중 질문
+
+------------------
+
+## 과제
+- [assignment.md](assignment.md)
+- due: 2021.09.05 (일) 23:59
+
+---
+special thanks to @ars-ki-00
+
