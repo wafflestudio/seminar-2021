@@ -85,7 +85,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 김혜민        | hmlinnie                   |              |                     |
 |               |                            |              |                     |
-| 류영상        | sjhbread                   |              |                     |
+| 류영상        | sjhbread                   |    react     |                     |
 |               |                            |              |                     |
 | 문보현        | moonpiderman               |              |                     |
 |               |                            |              |                     |
