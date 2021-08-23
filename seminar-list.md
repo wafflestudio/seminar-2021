@@ -69,7 +69,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 김정훈        | jafacode                   |              |                     |
 |               |                            |              |                     |
-| 김준희        | junhee-k                   |              |                     |
+| 김준희        | junhee-k                   | android      | backend             |
 |               |                            |              |                     |
 | 김지완        | ptkjw1997                  |              |                     |
 |               |                            |              |                     |
