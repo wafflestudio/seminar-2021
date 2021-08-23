@@ -149,7 +149,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 오인규        | NQ-OO                      |              |                     |
 |               |                            |              |                     |
-| 오태양        | OTY-Math                   |   backend        | android               |
+| 오태양        | OTY-Math                   |   backend     | android             |
 |               |                            |              |                     |
 | 오형택        | HyeongtaekOh               |              |                     |
 |               |                            |              |                     |
