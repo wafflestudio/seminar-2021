@@ -43,7 +43,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 김동현        | numnum97                   |              |                     |
 |               |                            |              |                     |
-| 김민서        | kmsgm                      |              |                     |
+| 김민서        | kmsgm                      |    react     |    backend, iOS     |
 |               |                            |              |                     |
 | 김민석        | Arsture                    |              |                     |
 |               |                            |              |                     |
