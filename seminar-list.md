@@ -59,7 +59,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 김연정        | yjeong-k                   |              |                     |
 |               |                            |              |                     |
-| 김영범        | yangbooom                  |              |                     |
+| 김영범        | yangbooom                  | backEnd             |       iOS          |
 |               |                            |              |                     |
 | 김영인        | kk0in                      |              |                     |
 |               |                            |              |                     |
