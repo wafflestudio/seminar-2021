@@ -243,7 +243,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 조형근        | HyungGeun-Cho              |              |                     |
 |               |                            |              |                     |
-| 최민우        | calsdn                     |              |                     |
+| 최민우        | calsdn                     | android             | backend                    |
 |               |                            |              |                     |
 | 최병욱        | esc5221                    |              |                     |
 |               |                            |              |                     |
