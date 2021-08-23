@@ -4,7 +4,7 @@
 django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 작성 부탁드립니다.
 
 <details><summary>선택지</summary>react | backend | android | iOS</details>
-
+asdf
 ---
 
 <br><br><br>
