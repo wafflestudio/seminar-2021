@@ -21,7 +21,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 고계훈        | HunRotation                |              |                     |
 |               |                            |              |                     |
-| 고동현        | kohandy1902                |              |                     |
+| 고동현        | kohandy1902                |  backend      |  react              |
 |               |                            |              |                     |
 | 고수창        | ZALF0615                   |              |                     |
 |               |                            |              |                     |
