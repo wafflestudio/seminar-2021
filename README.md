@@ -1,7 +1,5 @@
 # 와플스튜디오 19.5기 Rookies Repository
 
-- [rookies OT 자료 (ppt 링크)](https://docs.google.com/presentation/d/1BbIe3rkbvT41k4PHq22_ZTsqmFeIU_mACuUjdqtwMlA/edit?usp=sharing)
-- [rookies OT 자료 (pdf 파일)](./wafflestudio%2019.5%20rookies%20OT.pdf)
 - [세미나 수강 목록](./seminar-list.md)
 
 <br><br><br><br>![wafflestudio_logo](wafflestudio_logo.png)<br><br><br><br><br>
@@ -43,12 +41,15 @@
 
 <br><br>
 
-| 회차     |                              시간 | 장소 | 자료 | 과제 | 참여 링크 |
-| -------- | --------------------------------: | ---- | ---- | ---- | ---- |
-| OT       | 2021.08.22 (일)                  | Zoom |  [pdf](./wafflestudio%2019.5%20rookies%20OT.pdf) <br> [ppt](https://docs.google.com/presentation/d/1BbIe3rkbvT41k4PHq22_ZTsqmFeIU_mACuUjdqtwMlA/edit?usp=sharing)   |  자료 하단 참조    | [OT](https://snu-ac-kr.zoom.us/j/83372089986?pwd=RzgxYkp3Y3RIMURYamxjZlEwOVR4UT09) |
-| seminar0 | 2021.08.28 (토) ~ 2021.08.29 (일) | Zoom |      |      |      |
-| seminar1 | 2021.09.04 (토) ~ 2021.09.05 (일) | Zoom |      |      |      |
-| seminar2 | 2021.09.11 (토) ~ 2021.09.12 (일) | Zoom |      |      |      |
-| seminar3 | 2021.09.25 (토) ~ 2021.09.26 (일) | Zoom |      |      |      |
-| seminar4 | 2021.10.09 (토) ~ 2021.10.10 (일) | Zoom |      |      |      |
-| seminar5 | 2021.11.06 (토) ~ 2021.11.07 (일) | Zoom |      |      |      |
+| 회차     |                              시간 | 장소 | 자료 | 과제 | 참여 링크 | 영상 |
+| -------- | --------------------------------: | ---- | ---- | ---- | ---- | ---- |
+| OT       | 2021.08.22 (일)                  | Zoom |  [pdf](./wafflestudio%2019.5%20rookies%20OT.pdf) <br> [ppt](https://docs.google.com/presentation/d/1BbIe3rkbvT41k4PHq22_ZTsqmFeIU_mACuUjdqtwMlA/edit?usp=sharing)   |  자료 하단 참조    | [OT](https://snu-ac-kr.zoom.us/j/83372089986?pwd=RzgxYkp3Y3RIMURYamxjZlEwOVR4UT09) | [Video](https://youtu.be/mDjuOgC-HSM) | 
+| seminar0 | 2021.08.28 (토) ~ 2021.08.29 (일) | Zoom |      |      |      | |
+| seminar1 | 2021.09.04 (토) ~ 2021.09.05 (일) | Zoom |      |      |      | |
+| seminar2 | 2021.09.11 (토) ~ 2021.09.12 (일) | Zoom |      |      |      | |
+| seminar3 | 2021.09.25 (토) ~ 2021.09.26 (일) | Zoom |      |      |      | |
+| seminar4 | 2021.10.09 (토) ~ 2021.10.10 (일) | Zoom |      |      |      | |
+| seminar5 | 2021.11.06 (토) ~ 2021.11.07 (일) | Zoom |      |      |      | |
+
+* 녹화 영상은 필요할 시 각 세미나장께 요청주시기 바랍니다.
+* backend seminar 0 은 8월 28일 오전 10시입니다.
