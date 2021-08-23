@@ -55,7 +55,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 김수영        | Swiminn                    |              |                     |
 |               |                            |              |                     |
-| 김시연        | ksiyeon27                  |              |                     |
+| 김시연        | ksiyeon27                  |    backend     |       react          |
 |               |                            |              |                     |
 | 김연정        | yjeong-k                   |              |                     |
 |               |                            |              |                     |
