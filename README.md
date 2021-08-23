@@ -43,7 +43,7 @@
 
 | 회차     |                              시간 | 장소 | 자료 | 과제 | 참여 링크 | 영상 |
 | -------- | --------------------------------: | ---- | ---- | ---- | ---- | ---- |
-| OT       | 2021.08.22 (일)                  | Zoom |  [pdf](./wafflestudio%2019.5%20rookies%20OT.pdf) <br> [ppt](https://docs.google.com/presentation/d/1BbIe3rkbvT41k4PHq22_ZTsqmFeIU_mACuUjdqtwMlA/edit?usp=sharing)   |  자료 하단 참조    | [OT](https://snu-ac-kr.zoom.us/j/83372089986?pwd=RzgxYkp3Y3RIMURYamxjZlEwOVR4UT09) | [Video](https://youtu.be/aa91IV7EuhE) | 
+| OT       | 2021.08.22 (일)                  | Zoom |  [pdf](./wafflestudio%2019.5%20rookies%20OT.pdf) <br> [ppt](https://docs.google.com/presentation/d/1BbIe3rkbvT41k4PHq22_ZTsqmFeIU_mACuUjdqtwMlA/edit?usp=sharing)   |  자료 하단 참조    | [OT](https://snu-ac-kr.zoom.us/j/83372089986?pwd=RzgxYkp3Y3RIMURYamxjZlEwOVR4UT09) | [Video](https://youtu.be/mDjuOgC-HSM) | 
 | seminar0 | 2021.08.28 (토) ~ 2021.08.29 (일) | Zoom |      |      |      | |
 | seminar1 | 2021.09.04 (토) ~ 2021.09.05 (일) | Zoom |      |      |      | |
 | seminar2 | 2021.09.11 (토) ~ 2021.09.12 (일) | Zoom |      |      |      | |
