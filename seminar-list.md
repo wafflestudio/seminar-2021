@@ -33,7 +33,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 권민정        | kwonlauren                 |              |                     |
 |               |                            |              |                     |
-| 권신영        | Victini00                  |              |                     |
+| 권신영        | Victini00                  | backend      | react               |
 |               |                            |              |                     |
 | 권재영        | jaylions                   |              |                     |
 |               |                            |              |                     |
