@@ -255,7 +255,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 최유진        | kc626                      |              |                     |
 |               |                            |              |                     |
-| 최주빈        | jubilant-choi              |              |                     |
+| 최주빈        | jubilant-choi              | iOS |  react, backend   |
 |               |                            |              |                     |
 | 최준우        | askrid                     |              |                     |
 |               |                            |              |                     |
