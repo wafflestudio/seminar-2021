@@ -1,3 +1,4 @@
+Bㅇ
 # 와플스튜디오 19.5기 Rookies Repository
 
 - [세미나 수강 목록](./seminar-list.md)
