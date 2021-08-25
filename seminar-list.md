@@ -15,7 +15,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 | ------------- | -------------------------- | ------------ | ------------------- |
 | (예시) 우현민 | (예시) woohm402            | (예시) android  | (예시) backend, iOS, react |
 |               |                            |              |                     |
-| 강성복        | tjdqhrdkdl                 |              |                     |
+| 강성복        | tjdqhrdkdl                 |     backend   | react, android     |
 |               |                            |              |                     |
 | 강지호        | Kangji                     | backend      | android             |
 |               |                            |              |                     |
