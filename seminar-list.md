@@ -269,7 +269,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 홍순범        | tnsqjahong                 |              |                     |
 |               |                            |              |                     |
-| 홍용기        | redcourage                 |     react    |     adroid, iOS     |
+| 홍용기        | redcourage                 |     react    |     android, iOS    |
 |               |                            |              |                     |
 | 홍정현        | JYPSloth                   |              |                     |
 |               |                            |              |                     |
