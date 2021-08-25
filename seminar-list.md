@@ -119,7 +119,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 박형철        | Alpha-car                  |     iOS  |    android, react        |
 |               |                            |              |                     |
-| 배수민        | bsm2002                    |              |                     |
+| 배수민        | bsm2002                    |     backend  |     react           |
 |               |                            |              |                     |
 | 서민균        | minkyun12                  |    react     |                     |
 |               |                            |              |                     |
