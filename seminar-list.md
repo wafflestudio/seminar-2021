@@ -197,7 +197,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 이재현        | jaejae2374                 |   backend     |      react          |
 |               |                            |              |                     |
-| 이정민        | dgg1dbg                    |              |                     |
+| 이정민        | dgg1dbg                    |  backend            |  react, iOS                   |
 |               |                            |              |                     |
 | 이정후        | rightafter                 |   backend    |        react        |
 |               |                            |              |                     |
