@@ -287,3 +287,64 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 | ------------- | --------- | ----------- | ------------ |
 | (예시) 우현민 | woohm402  | react       | backend, iOS |
 |               |           |             |              |
+| 고영현    |    yeonghyeonKO    |    iOS    |    spring boot|
+| | | | |
+| 구경회    |    heka1024    |    spring boot    |    |
+| | | | |
+| 김기완    |    ars-ki-00    |    spring boot    |    |
+| | | | |
+| 김미승    |    mieseung    |    spring boot    |    react|
+| | | | |
+| 김유진    |    yuzzznk    |    django    |    react, iOS|
+| | | | |
+| 김홍균    |    keeprainy    |    spring boot    |    |
+| | | | |
+| 남우성    |    gitiss    |    django    |    spring boot, android|
+| | | | |
+| 문서윤    |    symoon9    |    react    |    |
+| | | | |
+| 박도현    |    dodo4114    |    android    |    react, spring boot, iOS|
+| | | | |
+| 박상준    |    promet99    |        |    android, iOS|
+| | | | |
+| 박선재    |    cs71107    |    spring boot    |    react, android|
+| | | | |
+| 박수빈    |    subeenpark-io    |    spring boot    |    react, iOS|
+| | | | |
+| 박윤수    |    Junetrbl    |    spring boot    |    |
+| | | | |
+| 박은천    |    pullup-dip-burpee    |    spring boot    |    react|
+| | | | |
+| 박종석    |    bluekatt    |    spring boot    |    |
+| | | | |
+| 변다빈    |    davin111    |    spring boot    |    iOS|
+| | | | |
+| 신현지    |    nyanji00    |    iOS    |    spring boot|
+| | | | |
+| 우현민    |    woohm402    |    iOS    |    |
+| | | | |
+| 유남규    |    noaarhk    |    spring boot    |    android|
+| | | | |
+| 이승민    |    veldic    |        |    spring boot, iOS|
+| | | | |
+| 이유빈    |    yblee2001    |    iOS    |    |
+| | | | |
+| 이진호    |    elzino    |    spring boot    |    django|
+| | | | |
+| 임유진    |    gina0605    |    spring boot    |    react|
+| | | | |
+| 정명구    |    guzus    |        |    react, iOS|
+| | | | |
+| 정지민    |    tictactoeid    |        |    spring boot, android|
+| | | | |
+| 정진우    |    bugoverdose    |    spring boot    |    android|
+| | | | |
+| 조성빈    |    goranmoomin    |    django    |    iOS|
+| | | | |
+| 최신혁    |    shchoi94    |        |    spring boot|
+| | | | |
+| 최종현    |    jonghyunchoe    |    spring boot    |    react, django|
+| | | | |
+| 최형욱    |    GoGiants1    |    spring boot    |    android, iOS|
+| | | | |
+| 한상현    |    Ethan-MoBeau    |        |    django, spring boot|
