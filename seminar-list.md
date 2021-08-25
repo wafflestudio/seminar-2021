@@ -101,7 +101,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 박영서        | Frog-Slayer                |    react          |     android                |
 |               |                            |              |                     |
-| 박윤아        | YoonahPark                 |              |                     |
+| 박윤아        | YoonahPark                 | backend |  react  |
 |               |                            |              |                     |
 | 박재완        | xxnpark                    |              |                     |
 |               |                            |              |                     |
