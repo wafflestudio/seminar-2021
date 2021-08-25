@@ -37,7 +37,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 권재영        | jaylions                   | backend    | react,android    |
 |               |                            |              |                     |
-| 김경민        | kkm20                      |              |                     |
+| 김경민        | kkm20                      |  react            |    backend                 |
 |               |                            |              |                     |
 | 김남태        | knt0613pow                 |  backend   |  android                    |
 |               |                            |              |                     |
