@@ -229,7 +229,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 정성태        | footprinthere              |              |                     |
 |               |                            |              |                     |
-| 정윤재        | darwinj07                  |Backend              |Android                   |
+| 정윤재        | darwinj07                  |backend              |android                   |
 |               |                            |              |                     |
 | 정재영        | whiteppanda                |              |                     |
 |               |                            |              |                     |
