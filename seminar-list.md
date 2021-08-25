@@ -153,7 +153,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 오형택        | HyeongtaekOh               |    react     |              |
 |               |                            |              |                     |
-| 유가현        | padme0421                  |              |                     |
+| 유가현        | padme0421                  | backend | react, android |
 |               |                            |              |                     |
 | 유하은        | hanE111                    | android             | backend                    |
 |               |                            |              |                     |
