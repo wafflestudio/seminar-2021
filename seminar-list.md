@@ -161,7 +161,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 윤창민        | WallabyG                   | backend      |                     |
 |               |                            |              |                     |
-| 이경현        | LiTi0416                   |              |                     |
+| 이경현        | LiTi0416                   | backend      | react                |
 |               |                            |              |                     |
 | 이나경        | linak0                     |    react  |   andriod, backend    |
 |               |                            |              |                     |
