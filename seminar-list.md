@@ -87,7 +87,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 류영상        | sjhbread                   |              |                     |
 |               |                            |              |                     |
-| 문보현        | moonpiderman               |              |                     |
+| 문보현        | moonpiderman               | backend      |                     |
 |               |                            |              |                     |
 | 문용균        | yg-moon                    |              |                     |
 |               |                            |              |                     |
