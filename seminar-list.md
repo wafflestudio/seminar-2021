@@ -25,7 +25,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 고수창        | ZALF0615                   | android      | react                |
 |               |                            |              |                     |
-| 고현수        | hsmail02                   |              |                     |
+| 고현수        | hsmail02                   |    backend    |        react        |
 |               |                            |              |                     |
 | 고현준        | sce08050                   |    android          |   backend                  |
 |               |                            |              |                     |
