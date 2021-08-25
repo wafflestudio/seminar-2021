@@ -193,7 +193,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 이유나        | youna1222                  | iOS             | react, backend                   |
 |               |                            |              |                     |
-| 이재민        | jm020827                   |              |                     |
+| 이재민        | jm020827                   | react             |                     |
 |               |                            |              |                     |
 | 이재현        | jaejae2374                 |   backend     |      react          |
 |               |                            |              |                     |
