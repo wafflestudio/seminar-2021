@@ -81,7 +81,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 김한곤        | Gorani9                    |       backend       |      react               |
 |               |                            |              |                     |
-| 김형윤        | graviol                    |              |                     |
+| 김형윤        | graviol                    |       backend       |                     |
 |               |                            |              |                     |
 | 김혜민        | hmlinnie                   |              |                     |
 |               |                            |              |                     |
