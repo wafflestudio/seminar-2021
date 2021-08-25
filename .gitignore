@@ -1,0 +1,14 @@
+# react
+/node_modules
+
+# django
+
+# spring boot
+
+# android
+
+# iOS
+
+# Common
+.DS_Store
+.idea
