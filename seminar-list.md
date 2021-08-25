@@ -169,7 +169,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 이두현        | DooHyun-Lee                |backend       |                     |
 |               |                            |              |                     |
-| 이민규        | minkyu97                   |              |                     |
+| 이민규        | minkyu97                   |   backend    |         iOS         |
 |               |                            |              |                     |
 | 이민규        | red1108                    |   backend    |    android          |
 |               |                            |              |                     |
