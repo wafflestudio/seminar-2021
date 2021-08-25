@@ -103,7 +103,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 박윤아        | YoonahPark                 |              |                     |
 |               |                            |              |                     |
-| 박재완        | xxnpark                    | backend      |                     |
+| 박재완        | xxnpark                    | backend      | react               |
 |               |                            |              |                     |
 | 박정훈        | PJH6029                    |              |                     |
 |               |                            |              |                     |
