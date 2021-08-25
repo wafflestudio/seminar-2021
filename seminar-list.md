@@ -63,7 +63,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 김영인        | kk0in                      |              |                     |
 |               |                            |              |                     |
-| 김우성        | KWSMooBang                 |              |                     |
+| 김우성        | KWSMooBang                 |  iOS   |   android, backend            |
 |               |                            |              |                     |
 | 김의기        | 0114kek                    |              |                     |
 |               |                            |              |                     |
