@@ -183,7 +183,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 이소현        | yegirna530                 |      react      |        iOS             |
 |               |                            |              |                     |
-| 이승엽        | tmootu76                   |              |                     |
+| 이승엽        | tmootu76                   |    react     |                     |
 |               |                            |              |                     |
 | 이승원        | andhl204                   |  react            |    iOS                 |
 |               |                            |              |                     |
