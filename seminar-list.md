@@ -249,7 +249,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 최성준        | snusj                      |  android  |  backend, react  |
 |               |                            |              |                     |
-| 최수완        | imsuwan                    |              |                     |
+| 최수완        | imsuwan                    | backend      | iOS                 |
 |               |                            |              |                     |
 | 최유림        | peng-u-0807                |              |                     |
 |               |                            |              |                     |
