@@ -29,7 +29,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 고현준        | sce08050                   |    android          |   backend                  |
 |               |                            |              |                     |
-| 권민규        | sgeunhi                    |   backend    |         ios         |
+| 권민규        | sgeunhi                    |   backend    |         iOS         |
 |               |                            |              |                     |
 | 권민정        | kwonlauren                 |  backend     |                     |
 |               |                            |              |                     |
