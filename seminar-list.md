@@ -187,7 +187,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 이승원        | andhl204                   |              |                     |
 |               |                            |              |                     |
-| 이승현        | subir-sh                   | React |                     |
+| 이승현        | subir-sh                   | react |                     |
 |               |                            |              |                     |
 | 이승호        | lxxseunghh                 |              |                     |
 |               |                            |              |                     |
