@@ -15,6 +15,11 @@
 
 
 ## 필수 사항
+- OS 준비
+  - Windows
+    - 그냥 윈도우에서도 개발이 가능은 합니다.
+    - 그래도 wsl 세팅은 하시는 걸 추천합니다.
+  - Mac OS 및 Linux 사용중이시라면 따로 준비할 건 없습니다.
 - NodeJS 및 React 설치
   - [windows](https://baengsu.tistory.com/12)
   - [MacOS](https://pliss.tistory.com/133)
