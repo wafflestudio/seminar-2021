@@ -157,7 +157,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 유하은        | hanE111                    | android             | backend                    |
 |               |                            |              |                     |
-| 윤상면        | s-yeoyul                   |              |                     |
+| 윤상면        | s-yeoyul                   | react             | backend                     |
 |               |                            |              |                     |
 | 윤창민        | WallabyG                   |              |                     |
 |               |                            |              |                     |
