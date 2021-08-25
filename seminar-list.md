@@ -245,7 +245,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 최민우        | calsdn                     | android             | backend                    |
 |               |                            |              |                     |
-| 최병욱        | esc5221                    |              |                     |
+| 최병욱        | esc5221                    | backend      |                     |
 |               |                            |              |                     |
 | 최성준        | snusj                      |  android  |  backend, react  |
 |               |                            |              |                     |
