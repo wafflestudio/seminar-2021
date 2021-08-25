@@ -239,7 +239,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 조성민        | choseongmin1997            |   react      |      iOS            |
 |               |                            |              |                     |
-| 조용찬        | mechanicjo                 |              |                     |
+| 조용찬        | mechanicjo                 |    react     |                     |
 |               |                            |              |                     |
 | 조형근        | HyungGeun-Cho              |              |                     |
 |               |                            |              |                     |
