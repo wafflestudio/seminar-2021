@@ -145,7 +145,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 오민혁        | qewrqwpppe                 |    react     |                     |
 |               |                            |              |                     |
-| 오이석        | isaac0622                  |              |                     |
+| 오이석        | isaac0622                  |  backend  |  react |
 |               |                            |              |                     |
 | 오인규        | NQ-OO                      |   backend    |     iOS, react      |
 |               |                            |              |                     |
