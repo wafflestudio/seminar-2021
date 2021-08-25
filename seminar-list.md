@@ -233,7 +233,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 정재영        | whiteppanda                |              |                     |
 |               |                            |              |                     |
-| 조강현        | KangHyeoni                 |              |                     |
+| 조강현        | KangHyeoni                 |    backend          |   react                  |
 |               |                            |              |                     |
 | 조성민        | jsm0424                    | android      | backend             |
 |               |                            |              |                     |
