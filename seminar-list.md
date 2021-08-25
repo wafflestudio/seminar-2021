@@ -49,7 +49,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 김범수        | beomso0                    |      iOS        |                     |
 |               |                            |              |                     |
-| 김소원        | kwish2                     |              |                     |
+| 김소원        | kwish2                     |     android         |     react, backend                |
 |               |                            |              |                     |
 | 김수연        | ksooyeon3                  |              |                     |
 |               |                            |              |                     |
