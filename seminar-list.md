@@ -19,7 +19,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 강지호        | Kangji                     | backend      | android             |
 |               |                            |              |                     |
-| 고계훈        | HunRotation                |              |                     |
+| 고계훈        | HunRotation                | backend             | android                    |
 |               |                            |              |                     |
 | 고동현        | kohandy1902                |  backend      |  react              |
 |               |                            |              |                     |
