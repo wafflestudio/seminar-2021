@@ -261,7 +261,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 최하늘        | caelum02                   | backend      |                     |
 |               |                            |              |                     |
-| 한동엽        | ongdyub                    |              |                     |
+| 한동엽        | ongdyub                    |   react           |     backend                |
 |               |                            |              |                     |
 | 한동호        | dongho-Han                 |              |                     |
 |               |                            |              |                     |
