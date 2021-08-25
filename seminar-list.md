@@ -217,7 +217,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 임채은        | ice1039                    | react        | android               |
 |               |                            |              |                     |
-| 전연재        | jyjsvceo                   |              |                     |
+| 전연재        | jyjsvceo                   | react           | android, backend                    |
 |               |                            |              |                     |
 | 전진용        | junjinyong                 |         backend     |          react           |
 |               |                            |              |                     |
