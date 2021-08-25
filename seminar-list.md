@@ -137,7 +137,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 안재우        | VioletXF                   |              |                     |
 |               |                            |              |                     |
-| 안중원        | joongwon                   |              |                     |
+| 안중원        | joongwon                   | react        | backend             |
 |               |                            |              |                     |
 | 양주현        | JuTaK97                    |              |                     |
 |               |                            |              |                     |
