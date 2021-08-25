@@ -241,7 +241,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 조용찬        | mechanicjo                 |    react     |                     |
 |               |                            |              |                     |
-| 조형근        | HyungGeun-Cho              |              |                     |
+| 조형근        | HyungGeun-Cho              | react        |             |
 |               |                            |              |                     |
 | 최민우        | calsdn                     | android             | backend                    |
 |               |                            |              |                     |
