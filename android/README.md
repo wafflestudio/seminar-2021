@@ -2,6 +2,13 @@
 
 > instructor 이승민 @veldic
 
-> content android with Kotlin
+> content Android with Kotlin
 
 ---
+
+## 세미나 일정
+
+
+| 세미나 | 주제 | 날짜 | 장소 |
+| --- | --- | --- | --- |
+| [seminar0](seminar_0) | `Kotlin` `Android OS` `Activity` | 2021.08.28, 16:30 ~ 17:45 | Zoom |
