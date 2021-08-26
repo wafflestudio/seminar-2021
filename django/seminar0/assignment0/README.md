@@ -1,6 +1,6 @@
 # 와플스튜디오 Backend Seminar[0] 과제
 
-### due: 2020.09.04.(금) 23:59
+### due: 2021.09.11 23:59
 
 ### 과제 목적
 - 기본적인 서버와 DB의 개념과 관계를 이해합니다.
@@ -10,7 +10,7 @@
 ### 주의할 점
 - 이 repository를 이미 로컬에 clone해두었다면, pull을 통해 과제 시작 전 최신화하는 것을 잊지마세요.
 - 이 repo를 clone하되 로컬에 생성된 [waffle_backend](waffle_backend)에서 바로 작업하지 마세요.
-아래 '제출 방식'을 통해 생성한 본인의 `waffle-rookies-18.5-backend-0` repo를 로컬에 clone하고, 그 directory 바로 하위에 [waffle_backend](waffle_backend)
+아래 '제출 방식'을 통해 생성한 본인의 `waffle-rookies-19.5-backend-0` repo를 로컬에 clone하고, 그 directory 바로 하위에 [waffle_backend](waffle_backend)
 를 복붙하여 작업을 시작하세요.
 
 ### 과제 내용
@@ -64,11 +64,11 @@ API call을 하고, 그 결과에 대한 스크린샷 역시 `/results`에 적�
     `GET /api/v1/results/?os=Windows` 라는 request를 날리는 경우 os가 윈도우라고 응답한 설문결과만을 반환해야 합니다. `os`에 들어갈 수 있는
     것은 'Windows', 'MacOS', 'Linux' 이며 다른 입력이 들어올 경우 response의 status code는 `400 Bad Request`를 반환해야 합니다.
 
-11. `waffle-rookies-18.5-backend-0`의 `README.md`에 과제 관련 하고 싶은 말, 어려웠던 점 등을 남겨주세요. 물론 적극적으로 해결되어야 할 피드백이나
+11. `waffle-rookies-19.5-backend-0`의 `README.md`에 과제 관련 하고 싶은 말, 어려웠던 점 등을 남겨주세요. 물론 적극적으로 해결되어야 할 피드백이나
 질문 사항은 [Issues](https://github.com/wafflestudio/rookies/issues) 등을 이용해주세요!
 
 ## 제출 방식
-1. 자신의 GitHub 개인 계정에 `waffle-rookies-18.5-backend-0`라는 이름으로 private repository를 개설합니다.
+1. 자신의 GitHub 개인 계정에 `waffle-rookies-19.5-backend-0`라는 이름으로 private repository를 개설합니다.
 
 ![스크린샷 2020-08-30 02 12 24](https://user-images.githubusercontent.com/35535636/91642533-097dec80-ea67-11ea-96e4-ab0dfa757187.png)
 
@@ -81,7 +81,7 @@ API call을 하고, 그 결과에 대한 스크린샷 역시 `/results`에 적�
 ![스크린샷 2020-08-30 02 14 59](https://user-images.githubusercontent.com/35535636/91642588-87da8e80-ea67-11ea-9d5a-60a3596463c9.png)
 
 - [@Hank-Choi](https://github.com/Hank-Choi)
-- [@jhvictor](https://github.com/jhvictor)
+- [@Jhvictor](https://github.com/Jhvictor4)
 
 ![스크린샷 2020-08-30 02 16 17](https://user-images.githubusercontent.com/35535636/91642619-cbcd9380-ea67-11ea-84ea-1a0729103755.png)
 
