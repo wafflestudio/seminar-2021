@@ -22,7 +22,8 @@
   - Mac OS 및 Linux 사용중이시라면 따로 준비할 건 없습니다.
 - NodeJS 및 React 설치
   - [windows](https://baengsu.tistory.com/12)
-  - [MacOS](https://pliss.tistory.com/133)
+  - [MacOS](https://velog.io/@burger/Mac-React-%EC%85%8B%ED%8C%85)
+  - 주의: `create-react-app` 은 이제 작동을 안하고, `npx create-react-app` 으로 입력해야 작동합니다.
   
 - [자바스크립트 공부](https://learnjs.vlpt.us/)
   
