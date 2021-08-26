@@ -27,7 +27,7 @@
 ## 세미나 자료
 
 ------------------
-[제작 중]()
+[제작 중](https://docs.google.com/presentation/d/1ThuaIqp7bGk4NL5HUYCeKTcbNF-DjuhRRThiJ0PiQCY/edit?usp=sharing)
 
 ## 세미나 중 질문
 
