@@ -24,7 +24,7 @@
             1. 정수 list의 각 정수 뒤에 "명" 덧붙이기 (띄어쓰기로 구분)
             2. 정수 list의 각 수가 짝수 일때만 출력 (띄어쓰기로 구분)
             3. 정수 list의 오름차순 정렬 (띄어쓰기로 구분)
-            
+
 ![example](example.gif)
 
 - 그 외 추가로 구현하고 싶으신게 있으시면 자유롭게 구현해주시면 됩니다!
@@ -36,4 +36,10 @@
 - 과제를 완료한 후 `git add .`, `git commit`, `git push`를 통해 github에 업로드한다.
 
 ## 제출 방식
-- 완성된 과제가 있는 private repository(waffle-android-assign)에서 `Settings > Manage access > Invite a collaborator` 로 들어가 [@veldic](https://github.com/veldic)을 초대한다.
+- 완성된 과제가 있는 private repository(waffle-android-assign)에서 `Settings > Manage access > Invite a collaborator` 로 들어가 [@veldic](https://github.com/veldic)을 초대한다. (아래 이미지 참고)
+![스크린샷 2020-08-30 02 13 52](https://user-images.githubusercontent.com/35535636/91642567-5eb9fe00-ea67-11ea-9382-89fcce03be70.png)
+![스크린샷 2020-08-30 02 14 59](https://user-images.githubusercontent.com/35535636/91642588-87da8e80-ea67-11ea-9d5a-60a3596463c9.png)
+
+- 마감 시점의 master (또는 main) branch 를 기준으로 세미나장이 직접 확인할 것입니다. GitHub repository 에 반영되도록 `commit`, `push` 해두는 것을 잊지 마세요.
+
+- 가급적 repository 생성과 collaborator 지정은 미리 해둬주세요! 제출 방식을 다들 올바로 이해하고 계신지와 함께, 가능하다면 대략적인 진행상황을 보면서 필요하면 몇 가지 말씀을 더 드릴 수도 있습니다.
