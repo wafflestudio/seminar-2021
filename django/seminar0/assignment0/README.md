@@ -5,7 +5,8 @@
 ### 과제 목적
 - 기본적인 서버와 DB의 개념과 관계를 이해합니다.
 - 로컬 환경에 Python 가상환경, Django와 DRF를 포함한 Python 패키지들, MySQL, Database GUI 툴, 그리고 Postman을 설치하고 익숙해집니다.
-- 직접 API를 호출하여 프론트엔드/클라이언트와 서버의 관계를 확인하고, Django와 DRF를 활용해 기본적인 GET API를 개발해 봅니다.
+- 직접 API를 호출하여 프론트엔드/클라이언트와 서버의 관계를 확인하고, Django를 활용해 기본적인 GET API를 개발해 봅니다.
+- 관계형 데이터베이스가 데이터를 저장하는 방식에 익숙해집니다.
 
 ### 주의할 점
 - 이 repository를 이미 로컬에 clone해두었다면, pull을 통해 과제 시작 전 최신화하는 것을 잊지마세요.
@@ -69,21 +70,18 @@ API call을 하고, 그 결과에 대한 스크린샷 역시 `/results`에 적�
 
 ## 제출 방식
 1. 자신의 GitHub 개인 계정에 `waffle-rookies-19.5-backend-0`라는 이름으로 private repository를 개설합니다.
-
-![스크린샷 2020-08-30 02 12 24](https://user-images.githubusercontent.com/35535636/91642533-097dec80-ea67-11ea-96e4-ab0dfa757187.png)
+<img width="1670" alt="스크린샷 2021-08-27 오전 12 16 44" src="https://user-images.githubusercontent.com/48513130/130989627-3aa2366c-7418-430d-a9ee-5100b3571e19.png">
 
 2. 개설 후 Settings > Manage access 로 들어갑니다.
+<img width="1665" alt="스크린샷 2021-08-27 오전 12 17 15" src="https://user-images.githubusercontent.com/48513130/130989733-e1ce14ce-12a1-49b7-9c3f-6dad82345630.png">
 
-![스크린샷 2020-08-30 02 13 52](https://user-images.githubusercontent.com/35535636/91642567-5eb9fe00-ea67-11ea-9382-89fcce03be70.png)
 
 3. collaborator로, 세미나 운영진들을 초대합니다.
 
-![스크린샷 2020-08-30 02 14 59](https://user-images.githubusercontent.com/35535636/91642588-87da8e80-ea67-11ea-9d5a-60a3596463c9.png)
-
 - [@Hank-Choi](https://github.com/Hank-Choi)
 - [@Jhvictor](https://github.com/Jhvictor4)
+<img width="494" alt="스크린샷 2021-08-27 오전 12 19 17" src="https://user-images.githubusercontent.com/48513130/130990048-f4597ca8-08cb-4dc2-bc93-0f9dd8285f1f.png">
 
-![스크린샷 2020-08-30 02 16 17](https://user-images.githubusercontent.com/35535636/91642619-cbcd9380-ea67-11ea-84ea-1a0729103755.png)
 
 4. 아래 스크린샷과 같은 directory 구조를 갖추어야 합니다.
 
