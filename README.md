@@ -34,6 +34,8 @@
 | 백엔드 (스프링) | 토요일 | 오후 3시       |
 | 프론트          | 토요일 | 오후 4시 30분  |
 | iOS             | 일요일 | 오후 1시       |
+    
+- iOS 세미나용 설문 링크 : https://docs.google.com/forms/d/1xooe-6mre4lDUAF9k_3kIqJQ97DSHsLKf8j9QbGBaHI/edit#responses
 
 </details>
 
