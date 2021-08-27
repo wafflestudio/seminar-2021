@@ -1,6 +1,6 @@
 # React 설치
 
-1. [react seminar readme](https://github.com/wafflestudio/19.5-rookies/tree/master/react)를 참고하여 NodeJS와 React, create-react-app을 설치해 주세요.
+1. [react seminar readme](https://github.com/wafflestudio/19.5-rookies/tree/master/react)의 '환경 세팅' 파트를 참고하여 NodeJS와 React, create-react-app을 설치해 주세요.
 1. create-react-app을 이용해 react 프로젝트를 만들어 주세요.
 1. 하단의 문구를 아래 사진과 같이 자신의 github id로 변경해 주세요.
 1. 캡쳐해서 세미나장 갠톡으로 보내 주세요.
