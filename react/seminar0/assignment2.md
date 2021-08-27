@@ -1,4 +1,4 @@
-# React 설치
+# first react app
 
 1. [react seminar readme](https://github.com/wafflestudio/19.5-rookies/tree/master/react)의 '환경 세팅' 파트를 참고하여 NodeJS와 React, create-react-app을 설치해 주세요.
 1. create-react-app을 이용해 react 프로젝트를 만들어 주세요.
