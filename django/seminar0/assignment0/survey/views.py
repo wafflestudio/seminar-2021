@@ -19,3 +19,5 @@ def get_survey(request, survey_id):
     if request.method == 'GET':
         survey = get_object_or_404(SurveyResult, id=survey_id)
         return JsonResponse(serialize_survey_result(survey))
+    else:
+        return HttpResponseNotAllowed(['GET', ])
