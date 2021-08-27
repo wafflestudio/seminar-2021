@@ -7,11 +7,10 @@
 - `HTML` 의 구조에 대해서 이해한다.
 - `HTML` / `CSS` / `JS` 의 역할을 이해하고, 사용법에 익숙해진다.
 
-## 과제 - `HTML` `CSS` `JS` 로 와플고등학교 인원 관리 프로그램 만들기
+## 과제 - `HTML` `CSS` `JS` 로 [와플고등학교 인원 관리 프로그램 간소화 페이지](http://rookies-seminar-0-assignment-example-website.s3-website.ap-northeast-2.amazonaws.com) 만들기
 1. 구현하기 까다로운 만큼 스펙을 정말정말 많이 간소화했습니다.
    - 학생의 정보는 `이름` 만 있고, 기능 역시 `추가` 기능만 있습니다.
    - 학생 이름은 항상 한글 세 글자라고 가정할 수 있습니다.
-2. [예제 사이트](http://rookies-seminar-0-assignment-example-website.s3-website.ap-northeast-2.amazonaws.com)를 만들어 두었으니, 확인하시고 '똑같이' 만들어 주시기 바랍니다.
 3. 채점할 스펙은 다음과 같습니다.
    - 기능
      - 추가 버튼으로 추가가 되는가
