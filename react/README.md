@@ -15,9 +15,9 @@
 
 
 ## 필수 사항
-- NodeJS 및 React 설치
-  - [windows](https://baengsu.tistory.com/12)
-  - [MacOS](https://pliss.tistory.com/133)
+- 환경 세팅
+  - [NodeJS 설치](https://ooeunz.tistory.com/5)
+  - [create-react-app 설치](https://create-react-app.dev/docs/getting-started/)
   
 - [자바스크립트 공부](https://learnjs.vlpt.us/)
   
