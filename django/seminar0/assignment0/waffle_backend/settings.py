@@ -85,6 +85,8 @@ DATABASES = {
     }
 }
 
+# You should clarify which field type to use when auto-creating primary keys; Since Django 3.2
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
