@@ -10,8 +10,8 @@
 
 ### 주의할 점
 - 이 repository를 이미 로컬에 clone해두었다면, pull을 통해 과제 시작 전 최신화하는 것을 잊지마세요.
-- 이 repo를 clone하되 로컬에 생성된 [waffle_backend](waffle_backend)에서 바로 작업하지 마세요.
-아래 '제출 방식'을 통해 생성한 본인의 `waffle-rookies-19.5-backend-0` repo를 로컬에 clone하고, 그 directory 바로 하위에 [waffle_backend](waffle_backend)
+- 이 repo를 clone하되 로컬에 생성된 [assignment0](./)에서 바로 작업하지 마세요.
+아래 '제출 방식'을 통해 생성한 본인의 `waffle-rookies-19.5-backend-0` repo를 로컬에 clone하고, 그 directory 바로 하위에 [assignment0](./)
 를 복붙하여 작업을 시작하세요.
 
 ### 과제 내용
@@ -24,7 +24,7 @@ runserver`를 통해 서버가 실행된 화면이 포함된 스크린샷을 `/r
 `pip list` 등을 통해 설치된 패키지와 버전을 확인할 수 있는 스크린샷들을 `/results`에 적절한 이름으로 포함시켜 주세요.
 그리고 (사후 추가된 부분이라 필수는 아니지만) 가급적 `python --version` 등을 통해 Python 버전을 확인하는 과정도 포함되어 있다면 좋겠습니다.
 
-3. 로컬 환경에 MySQL을 설치하여 waffle_backend의 [settings.py](./waffle_backend/waffle_backend/settings.py) 에 명시된 DATABASES 설정대로 서버가 DB와 연결을 맺도록 해야합니다.
+3. 로컬 환경에 MySQL을 설치하여 waffle_backend의 [settings.py](./waffle_backend/settings.py) 에 명시된 DATABASES 설정대로 서버가 DB와 연결을 맺도록 해야합니다.
 이 과정을 통해 로컬 MySQL에 올바른 password를 가진 user, database를 생성하고 user가 해당 database에 대한 권한(privileges)을 갖도록 할 것입니다.
 가급적 MySQL CLI의 명령어를 통해 이를 진행하시기 바랍니다.
 
@@ -32,7 +32,7 @@ runserver`를 통해 서버가 실행된 화면이 포함된 스크린샷을 `/r
 이 과정을 통해 database에 table들이 추가됩니다. Django migration을 이용해 table을 추가하는 과정임을 확인하세요.
 
 5. 이미 준비된 download_survey [command](https://docs.djangoproject.com/en/3.1/howto/custom-management-commands/) 를 이용해
-[예시 데이터](./waffle_backend/example_surveyresult.tsv)를 survey_surveyresult 테이블에 저장시켜야 합니다. 예시 데이터는 실제 여러분이 참여해주신 설문 결과이며,
+[예시 데이터](./example_surveyresult.tsv)를 survey_surveyresult 테이블에 저장시켜야 합니다. 예시 데이터는 실제 여러분이 참여해주신 설문 결과이며,
 애초에 익명이긴 하지만 사적인 내용이 포함되었을 수 있는 주관식 응답은 모두 제외했습니다. `python manage.py help`를 이용해 manage.py 를 통해 실행할 수 있는 command들을 확인할 수 있습니다.
 기본 command들 외에, 제가 미리 추가해둔 `download_survey`를 확인할 수 있을 것입니다.
 이 과정을 통해 database의 `survey_surveyresult`, `survey_operatingsystem` table에 row들을 insert하게 됩니다. Django command를 이용해 row를 추가하는 과정임을 확인하세요.
@@ -48,12 +48,12 @@ database를 선택하고 해당 database에 속한 table들을 출력하세요. 
 7. waffle_backend 서버를 `8001` port로 실행한 후, Postman을 통해 `GET /api/v1/results/`와 `GET /api/v1/results/{surveyresult_id}/`를
 호출하고 그 결과가 보이는 화면이 포함된 스크린샷을 `/results`에 적절한 이름으로 포함시켜 주세요.
 
-8. [views.py](waffle_backend/survey/views.py) 와 [urls.py](waffle_backend/survey/urls.py) 를 수정하여 `GET /api/v1/os/`와
-`GET /api/v1/os/{operatingsystem_id}/`를 개발하세요. 이미 [serializers.py](waffle_backend/survey/serializers.py)
+8. [views.py](./survey/views.py) 와 [urls.py](./survey/urls.py) 를 수정하여 `GET /api/v1/os/`와
+`GET /api/v1/os/{operatingsystem_id}/`를 개발하세요. 이미 [serializers.py](./survey/serializers.py)
 에 `serialize_survey_result`, `serialize_os`를 정의해두었기에 response 형식에 대해 고민할 필요는 없습니다.
 `GET /api/v1/os/`는 DB의 모든 `survey_operatingsystem`을 클라이언트/프론트엔드에게 전달하는 API입니다. `GET /api/v1/os/{operatingsystem_id}/`는
 같은 table에서 `operatingsystem_id`에 해당하는 primary key를 가진 row의 정보만 전달하는 API입니다. 두 API의 status code는 정상적인 경우 `200 OK`로 해주세요.
-여기까지 개발한 내용을 아래 '제출 방식'에서 설명하는 repository에 `/waffle_backend` directory로 포함시켜 주세요. 또한 개발한 두 API 역시 7.에서처럼 Postman을
+여기까지 개발한 내용을 아래 '제출 방식'에서 설명하는 repository에 `assignment0` directory로 포함시켜 주세요. 또한 개발한 두 API 역시 7.에서처럼 Postman을
 통해 확인한 후 해당 스크린샷을 `/results`에 적절한 이름으로 포함시켜 주세요.
 
 9. `GET /api/v1/os/{operatingsystem_id}/`를 개발할 때, `django.shortcuts`의 `get_object_or_404`를 사용하지 마세요.
@@ -87,15 +87,11 @@ API call을 하고, 그 결과에 대한 스크린샷 역시 `/results`에 적�
 
 ```
 /README.md
-/waffle_backend/manage.py
-/waffle_backend/waffle_backend/*
-/waffle_backend/survey/*
+/assignment0/manage.py
+/assignment0/waffle_backend/*
+/assignment0/survey/*
 /results/
 ```
-
-![스크린샷 2020-08-30 03 16 21](https://user-images.githubusercontent.com/35535636/91643553-3b934c80-ea6f-11ea-8e5c-c20b1e6e42a3.png)
-
-![스크린샷 2020-08-30 03 16 29](https://user-images.githubusercontent.com/35535636/91643554-3cc47980-ea6f-11ea-9ade-087b4845df11.png)
 
 5. 마감 시점에 master branch를 기준으로 collaborator로 지정된 세미나 운영진들이 확인할 것입니다. GitHub repository에 반영되도록 commit, push해두는 것을 잊지 마세요.
 
