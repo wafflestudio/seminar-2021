@@ -65,7 +65,7 @@
 
 ![스크린샷 2020-08-30 02 13 52](https://user-images.githubusercontent.com/35535636/91642567-5eb9fe00-ea67-11ea-9382-89fcce03be70.png)
 
-3. collaborator 로 세미나장 @woohm402 를 초대합니다.
+3. collaborator 로 세미나장 @woohm402 와 TA @ars-ki-00 을 초대합니다.
 
 ![스크린샷 2020-08-30 02 14 59](https://user-images.githubusercontent.com/35535636/91642588-87da8e80-ea67-11ea-9d5a-60a3596463c9.png)
 
@@ -89,3 +89,5 @@
     - [MDN](https://developer.mozilla.org/en-US/)
 - 아래 사이트는 자바스크립트의 기본 문법에 대한 설명을 제공합니다.
     - [자바스크립트 공부](https://learnjs.vlpt.us/)
+- 그리고 아래 사이트는 w3schools입니다.
+    - [w3schools](https://www.w3schools.com/html/) 
