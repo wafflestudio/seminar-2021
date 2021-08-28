@@ -65,7 +65,7 @@
 
 ![스크린샷 2020-08-30 02 13 52](https://user-images.githubusercontent.com/35535636/91642567-5eb9fe00-ea67-11ea-9382-89fcce03be70.png)
 
-3. collaborator 로 세미나장 @woohm402 를 초대합니다.
+3. collaborator 로 세미나장 @woohm402 와 TA @ars-ki-00 을 초대합니다.
 
 ![스크린샷 2020-08-30 02 14 59](https://user-images.githubusercontent.com/35535636/91642588-87da8e80-ea67-11ea-9d5a-60a3596463c9.png)
 
