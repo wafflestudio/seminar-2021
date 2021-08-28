@@ -327,7 +327,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 | | | | |
 | 이승민    |    veldic    |        |    spring boot, iOS|
 | | | | |
-| 이유빈    |    yblee2001    |    iOS    |    |
+| 이유빈    |    yblee2001    |    spring boot    |  iOS  |
 | | | | |
 | 이진호    |    elzino    |    spring boot    |    django|
 | | | | |
@@ -348,3 +348,5 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 | 최형욱    |    GoGiants1    |    spring boot    |    android, iOS|
 | | | | |
 | 한상현    |    Ethan-MoBeau    |        |    django, spring boot|
+| | | | |
+| 정원식    |    PFCjeong    |      django      |    spring boot   |

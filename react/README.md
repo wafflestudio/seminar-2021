@@ -9,21 +9,31 @@
 ## 세미나 일정
 
 
-| 세미나 | 주제 | 날짜 | 장소 |
-| --- | --- | --- | --- |
-| [seminar0](seminar-0) | `HTML` `CSS` `JS` | 2021.08.28, 16:30 ~ 17:45 | [zoom](https://snu-ac-kr.zoom.us/j/82516517509) |
+| 세미나 | 주제 | 날짜 및 시간 |
+| --- | --- | --- |
+| [seminar0](seminar-0) | `HTML` `CSS` `JS` | 2021.08.28, 16:30 ~ 17:45 |
 
+
+## 세미나 주의사항
+- 질문
+  - 선 구글링 후 질문
+  - 그렇다고 너무 질문을 아끼진 말아주세요.
+- 결석, 지각, 무단조퇴
+  - 세미나장이 보기에 사유가 적절하다면 출석 인정됩니다.
+    - 수업 7일 전까지 결석에 대해 미리 말씀해주시면, 녹화 영상도 제공됩니다.
+    - 이외 미리 말하지 않았더라도 지각 및 결석 사유가 매우 합당하다면 녹화 영상이 제공됩니다.
+  - 결석: 2점, 지각 및 무단조퇴: 1점으로 계산하여, 3점 이상 시 자동 탈락입니다.
 
 ## 필수 사항
+
 - OS 준비
   - Windows
-    - 그냥 윈도우에서도 개발이 가능은 합니다.
+    - 그냥 윈도우에서도 개발 가능은 합니다.
     - 그래도 wsl 세팅은 하시는 걸 추천합니다.
   - Mac OS 및 Linux 사용중이시라면 따로 준비할 건 없습니다.
-- NodeJS 및 React 설치
-  - [windows](https://baengsu.tistory.com/12)
-  - [MacOS](https://velog.io/@burger/Mac-React-%EC%85%8B%ED%8C%85)
-  - 주의: `create-react-app` 은 이제 작동을 안하고, `npx create-react-app` 으로 입력해야 작동합니다.
+- 환경 세팅
+  - [NodeJS 설치](https://ooeunz.tistory.com/5)
+  - [create-react-app 설치](https://create-react-app.dev/docs/getting-started/)
   
 - [자바스크립트 공부](https://learnjs.vlpt.us/)
   
