@@ -22,7 +22,7 @@
       - 더미 데이터는 [이 파일](assignment-dummy-data.js)의 데이터를 사용한다.
         - `name`: 이름
         - `grade`: 학년
-        - `profileImg`: 프로필 사진 url
+        - `profileImg`: 프로필 사진 url, 없을 수 (`''`) 있다. 이 경우 대체 텍스트를 적당히 띄운다.
   2. 헤더
       - 로고 클릭 시 새 탭에서 [와플스튜디오 홈페이지](https://wafflestudio.com) 가 열린다.
   3. 대시보드
