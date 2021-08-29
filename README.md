@@ -46,7 +46,7 @@
 | 회차     |                              시간 | 장소 | 자료 | 과제 | 참여 링크 | 영상 |
 | -------- | --------------------------------: | ---- | ---- | ---- | ---- | ---- |
 | OT       | 2021.08.22 (일)                  | Zoom |  [pdf][OT_PDF_LINK] <br> [ppt][OT_PPT_LINK]   |  자료 하단 참조    | [OT][OT_ZOOM_LINK] | [Video][OT_VIDEO_LINK] |
-| seminar0 | 2021.08.28 (토) ~ 2021.08.29 (일) | Zoom | [React](react/seminar0) <hr> [Django & Spring](django/seminar0) | [React](react/seminar0/assignment.md) <hr> [Django & Spring](django/seminar0/assignment0) | [React][REACT_ZOOM_LINK] <hr> [Django & Spring][DJANGO ZOOM LINK] | [React][REACT_SEMINAR_0_VIDEO] |
+| seminar0 | 2021.08.28 (토) ~ 2021.08.29 (일) | Zoom | [React](react/seminar0) <hr> [Django & Spring](django/seminar0) | [React](react/seminar0/assignment.md) <hr> [Django & Spring](django/seminar0/assignment0) | [React][REACT_ZOOM_LINK] <hr> [Django & Spring][DJANGO ZOOM LINK] <hr> [iOS][iOS_ZOOM_LINK] | [React][REACT_SEMINAR_0_VIDEO] |
 | seminar1 | 2021.09.04 (토) ~ 2021.09.05 (일) | Zoom |      |      |      | |
 | seminar2 | 2021.09.11 (토) ~ 2021.09.12 (일) | Zoom |      |      |      | |
 | seminar3 | 2021.09.25 (토) ~ 2021.09.26 (일) | Zoom |      |      |      | |
@@ -69,4 +69,5 @@
 [REACT_SEMINAR_0_VIDEO]: https://youtu.be/DQEd7xfGOsA
 
 [DJANGO ZOOM LINK]: https://snu-ac-kr.zoom.us/j/86836696847?pwd=eVlSL2VkZXZjalhvOGJjamI5ODFQZz09
+[iOS_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/87432134235
 
