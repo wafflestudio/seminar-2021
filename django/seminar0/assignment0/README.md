@@ -61,7 +61,7 @@ API call을 하고, 그 결과에 대한 스크린샷 역시 `/results`에 적�
 
 10. 이미 개발된 `GET /api/v1/results/`에 `os`라는 query params를 넣어 원하는 결과만 뽑을 수 있도록 변경해주세요. 예를 들어
     `GET /api/v1/results/?os=Windows` 라는 request를 날리는 경우 os가 윈도우라고 응답한 설문결과만을 반환해야 합니다. `os`에 들어갈 수 있는
-    것은 'Windows', 'MacOS', 'Linux' 이며 다른 입력이 들어올 경우 response의 status code는 `400 Bad Request`를 반환해야 합니다.
+    것은 'Windows', 'MacOS', 'Ubuntu (Linux)' 이며 다른 입력이 들어올 경우 response의 status code는 `400 Bad Request`를 반환해야 합니다.
 
 11. `waffle-rookies-19.5-backend-0`의 `README.md`에 과제 관련 하고 싶은 말, 어려웠던 점 등을 남겨주세요. 물론 적극적으로 해결되어야 할 피드백이나
 질문 사항은 [Issues](https://github.com/wafflestudio/rookies/issues) 등을 이용해주세요!
