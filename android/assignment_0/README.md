@@ -1,4 +1,5 @@
 # Wafflestudio Android Seminar 0 - Assignment
+### 마감일 : 2021.09.04 11:30
 
 ## 과제 목표
 - Android의 기본 동작 방식을 알고 앱을 생성하여 실행시켜 볼 수 있다. 

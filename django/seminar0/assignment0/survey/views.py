@@ -8,7 +8,7 @@ from survey.serializers import serialize_survey_result
 
 def get_survey_results(request):
     if request.method == 'GET':
-        params = request.content_params
+        params = request.GET.get('os')
         survey_results = list(map(lambda result: serialize_survey_result(result), SurveyResult.objects.all()))
         return JsonResponse({"surveys": survey_results}, status=200)
     else:
