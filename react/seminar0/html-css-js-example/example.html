@@ -8,7 +8,7 @@
 <body>
     <h1>이 파일은 html 예시입니다.</h1>
     <p>이건 p 태그를 이용한 글입니다.</p>
-    <input placeholder="이렇게 인풋을 받을 수도 있어요" />
+    <input id="example-input" placeholder="이렇게 인풋을 받을 수도 있어요" />
     <br /><br />
     <input placeholder="글씨가 잘려서 인라인 스타일로 키워 봤어요" style="width: 300px; height: 40px" />
     <br /><br />
@@ -26,7 +26,16 @@
         <img width="20" src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="github" />
     </a>
 
-    <div class="position-example-box">스타일 빡세게 먹인 친구</div>
+    <div id="example-box" class="position-example-box">스타일 빡세게 먹인 친구</div>
+
+    <br />
+    <button onclick="addRToExampleBox()">innerText 조작하는 예제</button>
+    <br />
+    <button onclick="alertInputValue()">value 가져오는 예제</button>
+    <br />
+    <button onclick="addElem()">child 추가하는 예제</button>
+
+    <ul id="example-ul"></ul>
 
     <script type="text/javascript" src="example.js"></script>
 </body>
