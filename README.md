@@ -75,4 +75,3 @@
 [iOS_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/87432134235
 [iOS_SEMINAR_0_VIDEO]: https://youtu.be/uc9GcZj1UmI
 [iOS_SEMINAR_0_PDF_LINK]: ./iOS/seminar0/ios-seminar-0.pdf
-
