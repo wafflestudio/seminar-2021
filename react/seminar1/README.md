@@ -11,8 +11,8 @@
     - Why React?
     - Virtual DOM
     - flux pattern
-1. `create-react-app` 구조 살펴보기
-    - `index.html`
+    - `create-react-app` 구조 살펴보기
+      - `index.html`
 1. React Component
     - JSX
     - State
