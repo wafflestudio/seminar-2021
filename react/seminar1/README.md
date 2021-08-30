@@ -18,10 +18,10 @@
     - State
       - `useState`
       - state management
-    - render
     - Props
       - 번외: `import` and `export`
       - how `index.js` works
+    - render
 1. Todo List 만들기
     - `key` in react
     - `immutable`
