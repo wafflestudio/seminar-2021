@@ -51,17 +51,18 @@ database를 선택하고 해당 database에 속한 table들을 출력하세요. 
 에 `serialize_survey_result`, `serialize_os`를 정의해두었기에 response 형식에 대해 고민할 필요는 없습니다.
 `GET /api/v1/os/`는 DB의 모든 `survey_operatingsystem`을 클라이언트/프론트엔드에게 전달하는 API입니다. `GET /api/v1/os/{operatingsystem_id}/`는
 같은 table에서 `operatingsystem_id`에 해당하는 primary key를 가진 row의 정보만 전달하는 API입니다. 두 API의 status code는 정상적인 경우 `200 OK`로 해주세요.
+
+
+9. 이미 개발된 `GET /api/v1/results/`에 `os`라는 query params를 넣어 원하는 결과만 뽑을 수 있도록 변경해주세요. 예를 들어
+    `GET /api/v1/results/?os=Windows` 라는 request를 날리는 경우 os가 윈도우라고 응답한 설문결과만을 반환해야 합니다. `os`에 들어갈 수 있는
+    것은 'Windows', 'MacOS', 'Ubuntu (Linux)' 이며 다른 입력이 들어올 경우 response의 status code는 `400 Bad Request`를 반환해야 합니다. 
 여기까지 개발한 내용을 아래 '제출 방식'에서 설명하는 repository에 `assignment0` directory로 포함시켜 주세요. 또한 개발한 두 API 역시 7.에서처럼 Postman을
 통해 확인한 후 해당 스크린샷을 `/results`에 적절한 이름으로 포함시켜 주세요.
 
-9. `GET /api/v1/os/{operatingsystem_id}/`를 개발할 때, `django.shortcuts`의 `get_object_or_404`를 사용하지 마세요.
+10. `GET /api/v1/os/{operatingsystem_id}/`를 개발할 때, `django.shortcuts`의 `get_object_or_404`를 사용하지 마세요.
 직접 [get()](https://docs.djangoproject.com/en/3.1/ref/models/querysets/#get) 을 이용하고, 해당 id의 row가 존재하지 않는 경우 발생하는
 Exception을 처리해 이 경우 별도의 data 없이 response의 status code가 `404 NOT FOUND`가 되도록 하세요. 일부러 존재하지 않는 id에 대해 Postman으로
 API call을 하고, 그 결과에 대한 스크린샷 역시 `/results`에 적절한 이름으로 포함시켜 주세요.
-
-10. 이미 개발된 `GET /api/v1/results/`에 `os`라는 query params를 넣어 원하는 결과만 뽑을 수 있도록 변경해주세요. 예를 들어
-    `GET /api/v1/results/?os=Windows` 라는 request를 날리는 경우 os가 윈도우라고 응답한 설문결과만을 반환해야 합니다. `os`에 들어갈 수 있는
-    것은 'Windows', 'MacOS', 'Ubuntu (Linux)' 이며 다른 입력이 들어올 경우 response의 status code는 `400 Bad Request`를 반환해야 합니다.
 
 11. `waffle-rookies-19.5-backend-0`의 `README.md`에 과제 관련 하고 싶은 말, 어려웠던 점 등을 남겨주세요. 물론 적극적으로 해결되어야 할 피드백이나
 질문 사항은 [Issues](https://github.com/wafflestudio/rookies/issues) 등을 이용해주세요!
