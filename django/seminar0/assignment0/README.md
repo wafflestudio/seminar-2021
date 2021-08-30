@@ -19,7 +19,7 @@
 runserver`를 통해 서버가 실행된 화면이 포함된 스크린샷을 `/results`에 적절한 이름으로 포함시켜 주세요. 4. 이후 정도까지는 진행하신 후에야
 서버를 완전히 정상 동작시킬 수 있을 것이고, 스크린샷도 이때 이후로 부탁드립니다. 참고로 터미널 등의 콘솔에 `runserver`를 시킨 직후의 화면 정도면 충분합니다.
 
-2. 로컬 환경에 Python을 설치하고, Python 3.8.3이며 waffle_backend만을 위한 '가상환경'을 activate 시킨 상태로
+2. 로컬 환경에 Python을 설치하고, Python 3.8.X이며 waffle_backend만을 위한 '가상환경'을 activate 시킨 상태로
 [requirements.txt](./requirements.txt) 의 패키지들을 설치해야 합니다. 가상환경을 activate 시킨 것을 확인할 수 있고,
 `pip list` 등을 통해 설치된 패키지와 버전을 확인할 수 있는 스크린샷들을 `/results`에 적절한 이름으로 포함시켜 주세요.
 그리고 (사후 추가된 부분이라 필수는 아니지만) 가급적 `python --version` 등을 통해 Python 버전을 확인하는 과정도 포함되어 있다면 좋겠습니다.
