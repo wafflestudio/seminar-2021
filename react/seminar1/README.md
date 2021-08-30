@@ -10,12 +10,14 @@
 1. React 개요
     - Why React?
     - Virtual DOM
+    - flux pattern
 1. `create-react-app` 구조 살펴보기
     - `index.html`
 1. React Component
     - JSX
     - State
       - `useState`
+      - state management
     - render
     - Props
       - 번외: `import` and `export`
