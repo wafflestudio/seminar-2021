@@ -46,6 +46,13 @@ export const NameDisplayWrapper = styled.div`
   overflow-y: scroll;
   line-height: 100px;
   align-items: start;
+  
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
 `
 
 export const NameDisplayList = styled.ul`
