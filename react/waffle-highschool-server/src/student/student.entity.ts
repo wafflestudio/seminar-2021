@@ -15,4 +15,11 @@ export class StudentEntity {
   @Column()
   @ApiProperty({ description: '학년', example: 2 })
   grade: validGrade;
+
+  @Column({ nullable: true })
+  @ApiProperty({
+    description: '프로필 사진 링크',
+    example: 'https://wafflestudio.com',
+  })
+  profile_img?: string | null;
 }

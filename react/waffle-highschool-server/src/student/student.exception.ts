@@ -40,3 +40,13 @@ export class IdNotFoundException extends WrrsException {
     );
   }
 }
+
+export class BadDataException extends WrrsException {
+  constructor() {
+    super(
+      ErrorCode.BAD_DATA,
+      '요청한 데이터가 올바르지 않습니다.',
+      HttpStatus.BAD_REQUEST,
+    );
+  }
+}

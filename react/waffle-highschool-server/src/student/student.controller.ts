@@ -1,4 +1,12 @@
-import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Patch,
+  Post,
+} from '@nestjs/common';
 import { StudentService } from './student.service';
 import { StudentEntity } from './student.entity';
 import {
@@ -12,6 +20,8 @@ import {
 import {
   CreateStudentRequestDto,
   DeleteStudentResponseDto,
+  PatchStudentRequestDto,
+  PatchStudentResponseDto,
 } from './student.dto';
 import { WrrsException } from '../common/exceptions/wrrs-exception';
 
@@ -45,7 +55,7 @@ export class StudentController {
     @Body()
     body,
   ) {
-    return this.studentService.create(body.name, body.grade);
+    return this.studentService.create(body);
   }
 
   @Get(':id')
@@ -59,6 +69,23 @@ export class StudentController {
   @ApiBadRequestResponse({ type: WrrsException })
   getStudent(@Param() params): Promise<StudentEntity> {
     return this.studentService.find(params.id);
+  }
+
+  @Patch(':id')
+  @ApiOperation({
+    summary: '학생 정보 수정하기',
+    description: '학생의 정보를 수정한다.',
+  })
+  @ApiBody({ type: PatchStudentRequestDto })
+  @ApiOkResponse({
+    type: PatchStudentResponseDto,
+  })
+  @ApiBadRequestResponse({ type: WrrsException })
+  async patchStudent(
+    @Param() params,
+    @Body() body,
+  ): Promise<PatchStudentResponseDto> {
+    return this.studentService.patch(params.id, body);
   }
 
   @Delete(':id')

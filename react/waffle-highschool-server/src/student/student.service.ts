@@ -3,12 +3,14 @@ import { StudentEntity } from './student.entity';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import {
+  BadDataException,
   DuplicatedStudentException,
   IdNotFoundException,
   InvalidGradeException,
   InvalidNameException,
 } from './student.exception';
-import { validGrade, validName } from './student.dto';
+import { CreateStudentRequestDto } from './student.dto';
+import { isEmpty } from 'lodash';
 
 @Injectable()
 export class StudentService {
@@ -20,9 +22,9 @@ export class StudentService {
   }
 
   getGuardedStudent(
-    name: string,
-    grade: number,
-  ): { name: validName; grade: validGrade } {
+    student: CreateStudentRequestDto,
+  ): Omit<StudentEntity, 'id'> {
+    const { grade, name, profile_img } = student;
     const guardedGrade = (() => {
       if (grade !== 1 && grade !== 2 && grade !== 3)
         throw new InvalidGradeException();
@@ -34,9 +36,16 @@ export class StudentService {
       return name;
     })();
 
+    const guardedProfileImg = (() => {
+      if (typeof profile_img !== 'string' && profile_img != null)
+        throw new BadDataException();
+      return profile_img || null;
+    })();
+
     return {
       name: guardedName,
       grade: guardedGrade,
+      profile_img: guardedProfileImg,
     };
   }
 
@@ -50,19 +59,30 @@ export class StudentService {
     return foundStudent;
   }
 
-  async create(name: string, grade: number) {
-    const student = this.getGuardedStudent(name, grade);
+  async patch(id: number, data: Partial<StudentEntity>) {
+    if (data.id || data.name || data.grade) throw new BadDataException();
+
+    if (isEmpty(data)) return { success: true as const };
+
+    const updateResult = await this.studentRepository.update(id, data);
+    if (updateResult.affected === 0) throw new IdNotFoundException();
+
+    return { success: true as const };
+  }
+
+  async create(student) {
+    const guardedStudent = this.getGuardedStudent(student);
     const foundStudent = await this.studentRepository.findOne({
-      where: student,
+      where: guardedStudent,
     });
     if (foundStudent) throw new DuplicatedStudentException();
 
-    return await this.studentRepository.save(student);
+    return await this.studentRepository.save(guardedStudent);
   }
 
   async delete(id: number) {
     const deletedResult = await this.studentRepository.delete(id);
     if (deletedResult.affected === 0) throw new IdNotFoundException();
-    return { success: true };
+    return { success: true as const };
   }
 }

@@ -16,6 +16,9 @@ export class WrrsException extends HttpException {
 }
 
 export enum ErrorCode {
+  // 데이터 관련 일반적인 에러
+  BAD_DATA = 20000,
+
   // 학생과 관련된 에러
   INVALID_GRADE = 30000,
   INVALID_NAME = 30001,
