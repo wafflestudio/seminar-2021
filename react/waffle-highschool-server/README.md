@@ -14,3 +14,7 @@
 | DB        |           postgresql |
 | Framework |               NestJS |
 | Formatter | eslint <br> prettier |
+
+# API Docs
+
+`/swagger`

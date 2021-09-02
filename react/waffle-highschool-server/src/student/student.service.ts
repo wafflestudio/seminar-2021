@@ -4,6 +4,7 @@ import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import {
   DuplicatedStudentException,
+  IdNotFoundException,
   InvalidGradeException,
   InvalidNameException,
 } from './student.exception';
@@ -43,8 +44,10 @@ export class StudentService {
     return this.studentRepository.find();
   }
 
-  find(id: number): Promise<StudentEntity> {
-    return this.studentRepository.findOne(id);
+  async find(id: number): Promise<StudentEntity> {
+    const foundStudent = await this.studentRepository.findOne(id);
+    if (!foundStudent) throw new IdNotFoundException();
+    return foundStudent;
   }
 
   async create(name: string, grade: number) {
@@ -57,7 +60,9 @@ export class StudentService {
     return await this.studentRepository.save(student);
   }
 
-  delete(id: number) {
-    return this.studentRepository.delete(id);
+  async delete(id: number) {
+    const deletedResult = await this.studentRepository.delete(id);
+    if (deletedResult.affected === 0) throw new IdNotFoundException();
+    return { success: true };
   }
 }

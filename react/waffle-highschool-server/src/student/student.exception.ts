@@ -30,3 +30,13 @@ export class InvalidNameException extends WrrsException {
     );
   }
 }
+
+export class IdNotFoundException extends WrrsException {
+  constructor() {
+    super(
+      ErrorCode.ID_NOT_FOUND,
+      '아이디가 존재하지 않습니다.',
+      HttpStatus.BAD_REQUEST,
+    );
+  }
+}
