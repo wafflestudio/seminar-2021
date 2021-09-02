@@ -1,13 +1,45 @@
-import { Controller, Get } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Post,
+  Put,
+} from '@nestjs/common';
 import { StudentService } from './student.service';
-import { Student } from './student.dto';
+import { StudentEntity } from './student.entity';
+import {DeleteResult, UpdateResult} from 'typeorm';
 
 @Controller('student')
 export class StudentController {
   constructor(private readonly studentService: StudentService) {}
 
   @Get()
-  getStudents(): Student[] {
-    return this.studentService.getStudents();
+  async getStudents(): Promise<StudentEntity[]> {
+    return this.studentService.findAll();
+  }
+
+  @Post()
+  async createStudent(
+    @Body()
+    { name, grade }: { name: string; grade: 1 | 2 | 3 },
+  ) {
+    return this.studentService.create(name, grade);
+  }
+
+  @Get(':id')
+  async getStudent(@Param() params): Promise<StudentEntity> {
+    return this.studentService.find(params.id);
+  }
+
+  @Put(':id')
+  async updateStudent(@Param() params, @Body() body): Promise<UpdateResult> {
+    return this.studentService.update(params.id, body.name, body.grade);
+  }
+
+  @Delete(':id')
+  async deleteStudent(@Param() params): Promise<DeleteResult> {
+    return this.studentService.delete(params.id);
   }
 }

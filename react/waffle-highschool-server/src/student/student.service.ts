@@ -1,27 +1,40 @@
 import { Injectable } from '@nestjs/common';
-import { Student } from './student.dto';
-
-const dummyStudents: Student[] = [
-  {
-    id: 1,
-    name: '김김김',
-    grade: 1,
-  },
-  {
-    id: 2,
-    name: '이이이',
-    grade: 1,
-  },
-  {
-    id: 3,
-    name: '이이이',
-    grade: 2,
-  },
-];
+import { StudentEntity } from './student.entity';
+import { Repository } from 'typeorm';
+import { InjectRepository } from '@nestjs/typeorm';
 
 @Injectable()
 export class StudentService {
-  getStudents(): Student[] {
-    return dummyStudents;
+  constructor(
+    @InjectRepository(StudentEntity)
+    private studentRepository: Repository<StudentEntity>,
+  ) {}
+
+  findAll(): Promise<StudentEntity[]> {
+    return this.studentRepository.find();
+  }
+
+  find(id: number): Promise<StudentEntity> {
+    return this.studentRepository.findOne(id);
+  }
+
+  create(name: string, grade: 1 | 2 | 3) {
+    const student = {
+      name,
+      grade,
+    };
+    return this.studentRepository.save(student);
+  }
+
+  update(id: number, name: string, grade: 1 | 2 | 3) {
+    const student = {
+      name,
+      grade,
+    };
+    return this.studentRepository.update(id, student);
+  }
+
+  delete(id: number) {
+    return this.studentRepository.delete(id);
   }
 }

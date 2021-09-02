@@ -11,6 +11,6 @@
 | key       |                value |
 | :-------- | -------------------: |
 | Language  |           TypeScript |
-| DB        |                      |
+| DB        |           postgresql |
 | Framework |               NestJS |
 | Formatter | eslint <br> prettier |
