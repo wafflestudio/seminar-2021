@@ -10,3 +10,23 @@ export class DuplicatedStudentException extends WrrsException {
     );
   }
 }
+
+export class InvalidGradeException extends WrrsException {
+  constructor() {
+    super(
+      ErrorCode.INVALID_GRADE,
+      '학년이 올바르지 않습니다.',
+      HttpStatus.BAD_REQUEST,
+    );
+  }
+}
+
+export class InvalidNameException extends WrrsException {
+  constructor() {
+    super(
+      ErrorCode.INVALID_NAME,
+      '이름이 올바르지 않습니다.',
+      HttpStatus.BAD_REQUEST,
+    );
+  }
+}

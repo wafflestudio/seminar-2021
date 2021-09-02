@@ -9,7 +9,7 @@ import {
 } from '@nestjs/common';
 import { StudentService } from './student.service';
 import { StudentEntity } from './student.entity';
-import {DeleteResult, UpdateResult} from 'typeorm';
+import { DeleteResult, UpdateResult } from 'typeorm';
 
 @Controller('student')
 export class StudentController {
@@ -23,9 +23,9 @@ export class StudentController {
   @Post()
   async createStudent(
     @Body()
-    { name, grade }: { name: string; grade: 1 | 2 | 3 },
+    body,
   ) {
-    return this.studentService.create(name, grade);
+    return this.studentService.create(body.name, body.grade);
   }
 
   @Get(':id')

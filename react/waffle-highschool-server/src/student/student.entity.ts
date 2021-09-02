@@ -1,4 +1,5 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { validGrade, validName } from './student.dto';
 
 @Entity()
 export class StudentEntity {
@@ -6,8 +7,8 @@ export class StudentEntity {
   id: number;
 
   @Column()
-  name: string;
+  name: validName;
 
   @Column()
-  grade: 1 | 2 | 3;
+  grade: validGrade;
 }
