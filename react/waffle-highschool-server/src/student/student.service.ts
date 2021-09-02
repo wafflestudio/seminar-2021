@@ -2,6 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { StudentEntity } from './student.entity';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
+import { WrrsException } from '../common/exceptions/wrrs-exception';
+import { DuplicatedStudentException } from './student.exception';
 
 @Injectable()
 export class StudentService {
@@ -18,12 +20,17 @@ export class StudentService {
     return this.studentRepository.findOne(id);
   }
 
-  create(name: string, grade: 1 | 2 | 3) {
+  async create(name: string, grade: 1 | 2 | 3) {
     const student = {
       name,
       grade,
     };
-    return this.studentRepository.save(student);
+    const foundStudent = await this.studentRepository.findOne({
+      where: student,
+    });
+    if (foundStudent) throw new DuplicatedStudentException();
+
+    return await this.studentRepository.save(student);
   }
 
   update(id: number, name: string, grade: 1 | 2 | 3) {
