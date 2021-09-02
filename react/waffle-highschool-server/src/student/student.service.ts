@@ -57,11 +57,6 @@ export class StudentService {
     return await this.studentRepository.save(student);
   }
 
-  update(id: number, name: string, grade: number) {
-    const student = this.getGuardedStudent(name, grade);
-    return this.studentRepository.update(id, student);
-  }
-
   delete(id: number) {
     return this.studentRepository.delete(id);
   }
