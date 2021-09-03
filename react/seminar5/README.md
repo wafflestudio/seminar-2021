@@ -7,18 +7,28 @@
 ## 수업 내용
 
 ------------------
-1. JS가 최선일까
+1. 코드 퀄리티를 어떻게 높일까
+   - lint
+   - prettier
+   - SonarQube
+3. JS가 최선일까
+   - JavaScript의 문제점
    - Typescript
-1. css 가 최선일까
+4. css 가 최선일까
+   - css의 문제점
    - sass
+   - [css module](https://react.vlpt.us/styling/02-css-module.html)
    - css-in-js
    - design library
       - material-ui
-1. create-react-app 이 최선일까
+5. create-react-app 이 최선일까
    - NextJS
    - GatsbyJS
-1. 과연 react 는 최선일까
+6. 과연 react 는 최선일까
    - svelte
+7. 웹 접근성
+   - tabIndex
+   - og, alt, role, lang
 
 ## 세미나 자료
 
