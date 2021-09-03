@@ -33,4 +33,4 @@
 
 ## 과제
 - [assignment.md](assignment.md)
-- due: 2021.09.12 (일) 23:59
+- due: 2021.09.11 (토) 12:00
