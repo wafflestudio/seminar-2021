@@ -4,7 +4,7 @@
 > Instructor 우현민([woohm402](https://github.com/woohm402))
 > 2021.08.28.(토) 16:30
 
-## 배울 내용
+## 수업 내용
 
 ------------------
 1. 프론트엔드란
@@ -18,25 +18,12 @@
 4. JS
     - 자바스크립트란
     - JS 주요 문법
-    
-## 준비 사항
-
-------------------
-- 없음
 
 ## 세미나 자료
 
 ------------------
-[제작 중](https://docs.google.com/presentation/d/1ThuaIqp7bGk4NL5HUYCeKTcbNF-DjuhRRThiJ0PiQCY/edit?usp=sharing)
-
-## 세미나 중 질문
-
-------------------
+[PPT](https://docs.google.com/presentation/d/1ThuaIqp7bGk4NL5HUYCeKTcbNF-DjuhRRThiJ0PiQCY/edit?usp=sharing)
 
 ## 과제
 - [assignment.md](assignment.md)
 - due: 2021.09.05 (일) 23:59
-
----
-special thanks to @ars-ki-00
-
