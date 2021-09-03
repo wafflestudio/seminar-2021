@@ -37,7 +37,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 권재영        | jaylions                   | spring    | react,android    |
 |               |                            |              |                     |
-| 김경민        | kkm20                      |  react            |    backend                 |
+| 김경민        | kkm20                      |  react            |                     |
 |               |                            |              |                     |
 | 김남태        | knt0613pow                 |  django   |  android                    |
 |               |                            |              |                     |
@@ -51,7 +51,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 김소원        | kwish2                     |     android         |     react, spring                |
 |               |                            |              |                     |
-| 김수연        | ksooyeon3                  |     android         |  backend                   |
+| 김수연        | ksooyeon3                  |     android         |                     |
 |               |                            |              |                     |
 | 김수영        | Swiminn                    |   django    |   android, react    |
 |               |                            |              |                     |
@@ -69,7 +69,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 김정훈        | jafacode                   | 	spring   |          iOS        |
 |               |                            |              |                     |
-| 김준희        | junhee-k                   | android      | backend             |
+| 김준희        | junhee-k                   | android      |              |
 |               |                            |              |                     |
 | 김지완        | ptkjw1997                  |   spring    |       react         |
 |               |                            |              |                     |
@@ -139,7 +139,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 안중원        | joongwon                   | react        | django             |
 |               |                            |              |                     |
-| 양주현        | JuTaK97                    |   android    |       backend       |
+| 양주현        | JuTaK97                    |   android    |              |
 |               |                            |              |                     |
 | 엄의섭        | eomiso                     | iOS      |      react         |
 |               |                            |              |                     |
@@ -163,9 +163,9 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 이경현        | LiTi0416                   | django      | react                |
 |               |                            |              |                     |
-| 이나경        | linak0                     |    react  |   android, backend    |
+| 이나경        | linak0                     |    react  |   android   |
 |               |                            |              |                     |
-| 이대희        | ldh5545                    |   react      |       backend       |
+| 이대희        | ldh5545                    |   react      |              |
 |               |                            |              |                     |
 | 이두현        | DooHyun-Lee                |spring       |                     |
 |               |                            |              |                     |
@@ -217,7 +217,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 임채은        | ice1039                    | react        | android               |
 |               |                            |              |                     |
-| 전연재        | jyjsvceo                   | react           | android, backend                    |
+| 전연재        | jyjsvceo                   | react           | android                    |
 |               |                            |              |                     |
 | 전진용        | junjinyong                 |         spring     |          react, django        |
 |               |                            |              |                     |
@@ -225,7 +225,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 전형민        | jhm1313                    |  django     |                     |
 |               |                            |              |                     |
-| 정다은        | daeun1234                  |android |backend, react |
+| 정다은        | daeun1234                  |android |react |
 |               |                            |              |                     |
 | 정성태        | footprinthere              | django      |  react              |
 |               |                            |              |                     |
@@ -243,7 +243,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 조형근        | HyungGeun-Cho              | react        |             |
 |               |                            |              |                     |
-| 최민우        | calsdn                     | android             | backend                    |
+| 최민우        | calsdn                     | android             |                    |
 |               |                            |              |                     |
 | 최병욱        | esc5221                    | django      |                     |
 |               |                            |              |                     |
@@ -253,7 +253,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |                            |              |                     |
 | 최유림        | peng-u-0807                |   iOS   |                     |
 |               |                            |              |                     |
-| 최유진        | kc626                      | iOS             | backend, react                    |
+| 최유진        | kc626                      | iOS             | react                    |
 |               |                            |              |                     |
 | 최주빈        | jubilant-choi              | iOS |  react, django   |
 |               |                            |              |                     |
