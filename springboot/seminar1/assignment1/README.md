@@ -1,6 +1,6 @@
-# 와플스튜디오 SpringBoot Seminar[1] 과제
+# 와플스튜디오 SpringBoot Seminar[1] 과제. Updated At 2021.9.5 02:04
 
-### due: 2020.09.11.(토) 23:59
+### due: 2021.09.11.(토) 23:59
 
 ### 과제 목적
 - SpringBoot CRUD 어플리케이션 개발 이해
@@ -22,8 +22,8 @@ ddl이 잘 db에 적용됐는지, 데이터는 잘 들어갔는지 확인합니�
 4. 현재 구성된 웹 어플리케이션에 유저 도메인을 추가할 것입니다.
 유저는 이름, 이메일을 가지고 있고 해당 두 값은 비어있거나 null이면 안됩니다. 추가적으로 이메일의 경우 중복되는 데이터가 존재하면 안됩니다. (spring의 validation과 Entity )
 
-2. `survey_surveyresult` table에 `user_id` column을 추가하세요. 이미 `survey_surveyresult`에 `user_id`가 없는 데이터들이 들어가있으므로,
-`user_id`는 당연히 nullable해야 하며, 연결되어있는 user row가 삭제된다고 해도 survey_surveyresult의 해당 row까지 같이 삭제되면 안 됩니다.
+2. `survey_response` table에 `user_id` column을 추가하세요. 이미 `survey_response`에 `user_id`가 없는 데이터들이 들어가있으므로,
+`user_id`는 당연히 nullable해야 하며, 연결되어있는 user row가 삭제된다고 해도 `survey_response`의 해당 row까지 같이 삭제되면 안 됩니다.
 (hint: cascade type)
 절대 DB에 직접 query를 실행해 column을 추가 또는 수정하지 말고, Spring프로젝트의 해당 model을
 수정하세요.
@@ -37,15 +37,15 @@ hint:
 
 7. 유저가 자신의 정보를 확인할 수 있도록 `GET /api/v1/user/me/` API를 개발하세요. 이는 로그인한 유저가 자신의 정보를 알기 위함입니다. 저희는 아직 로그인 로직을 구현 안했으므로 단순히 header에 `User-Id`라는 custom header를 추가해 로그인한 유저를 나타냅니다.
 
-8. 이제 드디어 서비스상 유의미한 기능을 추가할 수 있습니다. 유저가 `POST /api/v1/survey/` API를 통해 설문조사에 참여할 수 있도록 하세요. 비교적 자유롭게
+8. 이제 드디어 서비스상 유의미한 기능을 추가할 수 있습니다. 유저가 `POST /api/v1/result/` API를 통해 설문조사에 참여할 수 있도록 하세요. 비교적 자유롭게
 구현하셔도 되는데, spring_exp, rdb_exp, programming_exp, os는 request의 body에 key 이름으로서 빈 str 등이 아닌 값을 가진 채 필수로 포함되어야 하고
 넷 중 하나라도 빠진 요청은 `400 BAD REQUEST`가 되어야 합니다. 또한 python, rdb, programming에 해당하는 값은 당연히 SurveyResult model 내부에도 포함되어있듯
 1 이상 5 이하의 int로 변환되어 저장될 수 있어야 하며, 그렇지 않으면 마찬가지로 `400`입니다. body의 os에 대해서는 해당 이름과 같은 os가 없다면 `403 NOT FOUND`입니다.
 timestamp에는 해당 시점의 값이 자동으로 들어가야합니다. 또한 요청한 user의 id가 user_id로서 포함되어 저장되어야 합니다.
-설문 결과가 정상 생성되어 요청이 완료된 경우, `201 CREATED`와 함께, `GET /api/v1/survey/{surveyresult_id}/`에 해당하는 body와 동일하게 처리하면 됩니다.
+설문 결과가 정상 생성되어 요청이 완료된 경우, `201 CREATED`와 함께, `GET /api/v1/result/{survey_response_id}/`에 해당하는 body와 동일하게 처리하면 됩니다.
 한 유저가 여러 번 설문 결과를 제출할 수 있는 것은 정상적인 동작입니다. Postman 등으로 개발 과정에서 꾸준히 테스트하시되, 스크린샷을 포함시킬지는 자유이며 코드에 모든 내용을 반영하면 됩니다.
 
-9. `SurveyResponseDto.Response`가 자신의 내부에 `'os'`처럼 `'user'`에 대한 내용도 포함해 반환하도록 하세요. 해당 `surveyresponse`에 연결된 user가 없는 경우에는,
+9. `SurveyResponseDto.Response`가 자신의 내부에 `'os'`처럼 `'user'`에 대한 내용도 포함해 반환하도록 하세요. 해당 `survey_response`에 연결된 user가 없는 경우에는,
 `'user'`의 값이 null로 response body에 포함되어야 합니다.
 10. `waffle-rookies-19.5-springboot` `assignment1`브랜치의 `README.md`에 과제 관련 하고 싶은 말, 어려웠던 점 등을 남겨주세요. 물론 적극적으로 해결되어야 할 피드백이나
 질문 사항은 [Issues](https://github.com/wafflestudio/rookies/issues) 등을 이용해주세요!
@@ -67,7 +67,7 @@ timestamp에는 해당 시점의 값이 자동으로 들어가야합니다. 또�
 /results/*
 ```
 
-5. 마감 시점에 master branch를 기준으로 collaborator로 지정된 세미나 운영진들이 확인할 것입니다. GitHub repository에 반영되도록 commit, push해두는 것을 잊지 마세요.
+5. 마감 시점에 assignment1 branch를 기준으로 제출 시간을 확인할 것입니다. GitHub repository에 반영되도록 commit, push해두는 것을 잊지 마세요.
 
 
 ## 참고하면 좋은 것들
