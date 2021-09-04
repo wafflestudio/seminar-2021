@@ -8,7 +8,10 @@
 
 ------------------
 1. routing
-1. context
+    - url 분석
+    - react-router-dom
+3. context
+    - 번외: redux
 
 ## 세미나 자료
 
