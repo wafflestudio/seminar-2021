@@ -7,11 +7,19 @@
 ## 수업 내용
 
 ------------------
-1. routing
-    - url 분석
-    - react-router-dom
-3. context
-    - 번외: redux
+1. Routing
+1. work with backend
+   - API
+   - cookies, storage
+1. web security
+   - CSRF
+   - CORS
+   - authentication: JWT
+      - auto login
+1. deployment
+   - webserver
+   - network
+   - aws
 
 ## 세미나 자료
 

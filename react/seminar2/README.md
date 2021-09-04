@@ -8,16 +8,20 @@
 
 ------------------
 1. component lifecycle
-   - `useEffect`
    - render
-   - `useCallback`
-   - `useMemo`
+   - `useEffect`
 1. data with server
    - json
       - `json-server`
+      - 번외: `npm` and `yarn`
    - Promise
       - Promise
       - `async` / `await`
+1. Client State Management
+    - `Context`
+    - 번외: `Redux`, `Recoil`, `MobX`
+1. 번외: Server State Management
+   - `react-query`
 
 ## 세미나 자료
 
