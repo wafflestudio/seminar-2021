@@ -26,5 +26,5 @@
 ------------------
 
 ## 과제
-- [assignment.md](assignment.md)
-- due: 2021.09.26 (일) 23:59
+- [준비 중](assignment.md)
+- due: 2021.09.25 (일) 12:00
