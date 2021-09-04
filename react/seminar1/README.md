@@ -29,7 +29,7 @@
 ## 세미나 자료
 
 ------------------
-[제작 중](https://docs.google.com/presentation/d/1hZbGqQFWWNJ3axvaRnQE24keNCmOWMz_u_iXZWG_3yQ/edit?usp=sharing)
+[PPT](https://docs.google.com/presentation/d/1hZbGqQFWWNJ3axvaRnQE24keNCmOWMz_u_iXZWG_3yQ/edit?usp=sharing)
 
 ## 과제
 - [assignment.md](assignment.md)
