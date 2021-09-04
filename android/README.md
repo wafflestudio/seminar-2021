@@ -1,4 +1,4 @@
-# 19.5 rookies django 강좌
+# 19.5 rookies Android 강좌
 
 > instructor 이승민 @veldic
 
