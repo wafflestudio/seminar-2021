@@ -47,7 +47,7 @@
 | -------- | --------------------------------: | ---- | ---- | ---- | ---- | ---- |
 | OT       | 2021.08.22 (일)                  | Zoom |  [pdf][OT_PDF_LINK] <br> [ppt][OT_PPT_LINK]   |  자료 하단 참조    | [OT][OT_ZOOM_LINK] | [Video][OT_VIDEO_LINK] |
 | seminar0 | 2021.08.28 (토) ~ 2021.08.29 (일) | Zoom | [React](react/seminar0) <hr> [Django & Spring](django/seminar0) <hr> [iOS][iOS_SEMINAR_0_PDF_LINK] <hr> [android](android/seminar_0) | [React](react/seminar0/assignment.md) <hr> [Django & Spring](django/seminar0/assignment0) <hr> [iOS](iOS/seminar0/assignment.md) <hr>[android](android/assignment_0) | [React][REACT_SEMINAR_0_ZOOM_LINK] <hr> [Django & Spring][DJANGO ZOOM LINK] <hr> [iOS][iOS_SEMINAR_0_ZOOM_LINK] <hr>[android][ANDROID_ZOOM_LINK] | [React][REACT_SEMINAR_0_VIDEO] <hr> [Django & Spring][DJANGO SEMINAR 0 VIDEO] <hr> [iOS][iOS_SEMINAR_0_VIDEO] <hr> [android][ANDROID_SEMINAR_0_VIDEO]|
-| seminar1 | 2021.09.04 (토) ~ 2021.09.05 (일) | Zoom | [React](react/seminar1) <hr> [iOS](iOS/seminar1) <hr> [android](android/seminar_1) <hr> [Django](django/seminar1)                     | [React](react/seminar1/assignment.md) <hr> [iOS][iOS_SEMINAR_1_PDF_LINK] <hr> [Django](django/seminar1/assignment1)                                                  | [React][REACT_SEMINAR_1_ZOOM_LINK]  <hr>[android][ANDROID_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK] | [React][REACT_SEMINAR_1_VIDEO] |
+| seminar1 | 2021.09.04 (토) ~ 2021.09.05 (일) | Zoom | [React](react/seminar1) <hr> [iOS](iOS/seminar1) <hr> [android](android/seminar_1) <hr> [Django](django/seminar1)                     | [React](react/seminar1/assignment.md) <hr> [iOS][iOS_SEMINAR_1_PDF_LINK] <hr> [Django](django/seminar1/assignment1) <hr> [Spring Boot](springboot/seminar1/assignment1)                                               | [React][REACT_SEMINAR_1_ZOOM_LINK]  <hr>[android][ANDROID_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK] | [React][REACT_SEMINAR_1_VIDEO] <hr> [Spring Boot][SPRING_SEMINAR_1_VIDEO]|
 | seminar2 | 2021.09.11 (토) ~ 2021.09.12 (일) | Zoom |      |      |   [Django][DJANGO ZOOM LINK]   | |
 | seminar3 | 2021.09.25 (토) ~ 2021.09.26 (일) | Zoom |      |      |   [Django][DJANGO ZOOM LINK]  | |
 | seminar4 | 2021.10.09 (토) ~ 2021.10.10 (일) | Zoom |      |      |   [Django][DJANGO ZOOM LINK]  | |
@@ -79,6 +79,10 @@
 [iOS_SEMINAR_1_ZOOM_LINK]: 
 [iOS_SEMINAR_1_VIDEO]: 
 [iOS_SEMINAR_1_PDF_LINK]: ./iOS/seminar1/ios-seminar-1.pdf
+
+[SPRING_SEMINAR_1_VIDEO]: https://youtu.be/CqC8tQOCxPQ
+[SPRING_SEMINAR_1_ZOOM_LINK]:
+[SPRING_SEMINAR_1_
 
 [ANDROID_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/9990095624
 [ANDROID_SEMINAR_0_VIDEO]: https://youtu.be/orCngfd8_20
