@@ -2,6 +2,7 @@ from django.db import models
 
 
 class OperatingSystem(models.Model):
+
     name = models.CharField(max_length=50, db_index=True)
     description = models.CharField(max_length=200, blank=True)
     price = models.PositiveIntegerField(null=True)
@@ -16,7 +17,7 @@ class SurveyResult(models.Model):
         (5, 'very_high'),
     )
 
-    os = models.ForeignKey(OperatingSystem, null=True, related_name='surveys', on_delete=models.SET_NULL)
+    os = models.ForeignKey(OperatingSystem, null=True, on_delete=models.SET_NULL)
     python = models.PositiveSmallIntegerField(choices=EXPERIENCE_DEGREE)
     rdb = models.PositiveSmallIntegerField(choices=EXPERIENCE_DEGREE)
     programming = models.PositiveSmallIntegerField(choices=EXPERIENCE_DEGREE)
