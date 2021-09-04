@@ -29,4 +29,16 @@
 - 과제를 완료한 후 `git add .`, `git commit`, `git push origin assignment1`를 통해 github에 업로드한 뒤, main(master) branch로 Pull Request를 만든다.
 - 생성된 Pull Request에 [@veldic](https://github.com/veldic)을 Reviewers로 등록한다.
 
+```
+waffle-android-assign
+├── Assignment0
+├── Assignment1
+    ├── app
+    .
+    .
+    .
+```
+
+위와 같은 폴더 구조거 만들어지면 된다.
+
 - 마감 시점의 assignment1 branch를 기준으로 세미나장이 직접 확인할 것입니다.
