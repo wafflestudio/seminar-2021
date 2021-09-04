@@ -73,6 +73,12 @@ timestamp에는 해당 시점의 값이 자동으로 들어가야합니다. 또�
 ## 참고하면 좋은 것들
 - 추후 점진적으로 추가 예정입니다.
 
+- **validation 부분을 제대로 알려드리지 못했는데 코드에 많이 포함되어 있습니다. @Valid 어노테이션을 단 곳 혹은 entity를 DB에 삽입하려고 할 때 자동으로 validation 검사를 시행합니다. 이를 통해 쉽게 잘못된 요청에 대해 400 response를 반환할 수 있습니다. **
+
+- 아래 그림과 같이 `form-data`로 request body를 전송할 수 있습니다. 적절한 DTO와 @ModelAttribute 어노테이션을 사용하면 쉽게 DTO 오브젝트로 request body를 전달 받을 수 있습니다.
+ <img width="605" alt="스크린샷 2021-09-05 오전 2 17 55" src="https://user-images.githubusercontent.com/48513130/132103089-010135e6-2b63-4caa-8f84-c5c14f5c81fc.png">
+
+
 - https://www.baeldung.com/ 
 
 - [Validation 관련 문서](https://www.baeldung.com/spring-service-layer-validation)
@@ -80,8 +86,6 @@ timestamp에는 해당 시점의 값이 자동으로 들어가야합니다. 또�
 - [Header 받는 법](https://www.baeldung.com/spring-rest-http-headers)
 
 - https://docs.spring.io/spring-boot/docs/2.5.4/reference/pdf/spring-boot-reference.pdf
-
-- **validation 부분을 제대로 알려드리지 못했는데 코드에 많이 포함되어 있습니다. @Valid 어노테이션을 단 곳 혹은 entity를 DB에 삽입하려고 할 때 자동으로 validation 검사를 시행합니다. 이를 통해 쉽게 잘못된 요청에 대해 400 response를 반환할 수 있습니다. **
 
 - 앞으로도 늘 그렇겠지만, 과제를 진행하며 모르는 것들과 여러 난관에 부딪히리라 생각됩니다. 당연히 그 지점을 기대하고 과제를 드리는 것이고, 기본적으로 스스로 구글링을
 통해 여러 내용을 확인하고 적절한 수준까지 익숙해지실 수 있도록 하면 좋겠습니다.
