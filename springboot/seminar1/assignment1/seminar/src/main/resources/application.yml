@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/seminar?serverTimezone=UTC
+    username: waffle-spring
+    password: wafflestudio
+  sql:
+    init:
+      mode: always
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+      # create: 시작 시 테이블 drop 후 재생성
+      # update: 시작 시 자동 migrate
+      # none: db 그대로
+      # create-drop: 시작 시 테이블 create, 종료 시 drop
