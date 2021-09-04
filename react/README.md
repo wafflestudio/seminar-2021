@@ -25,6 +25,9 @@
 ## 참고할 만한 학습 링크
 - [해당 문서](./study-links.md) 참조
 
+## 과제용 서버
+- [해당 레포](https://github.com/wafflestudio/19.5-rookies-frontend-seminar-wafflehighschool-server) 참조
+
 ## 세미나 주의사항
 - 질문
   - 선 구글링 후 질문
