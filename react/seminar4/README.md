@@ -6,18 +6,15 @@
 
 ## 수업 내용
 
+1. Hooks
+   - Custom Hooks
+1. Typescript
+1. [Css Module](https://react.vlpt.us/styling/02-css-module.html)
+1. eslint & prettier  
+
 ------------------
-1. work with backend
-    - API
-    - cookies, storage
-    - authentication
-1. web security
-    - CSRF
-    - CORS
-1. deployment
-    - webserver
-    - network
-    - aws
+
+
     
 
 ## 세미나 자료
