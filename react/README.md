@@ -12,7 +12,7 @@
 | --- | --- | --- |
 | [seminar0](seminar0) | `HTML` <br> `CSS` <br> `JS` | 2021.08.28, 16:30 ~ 17:45 |
 | [seminar1](seminar1) | `React` <br> `Function Component` <br> `State` & `Props` <br> `Todo List` | 2021.09.04, 16:30 ~ 17:45 |
-| [seminar2](seminar2) | `Component Lifecycle` <br> `axios` <br> `State Management` | 2021.09.11, 16:30 ~ 17:45 |
+| [seminar2](seminar2) | `State Management` <br> `Routing` <br> `axios` <br>  | 2021.09.11, 16:30 ~ 17:45 |
 | [seminar3](seminar3) |  `routing` <br> `Work with Server` <br> `deployment`  | 2021.09.25, 16:30 ~ 17:45 |
 | [seminar4](seminar4) | `Hooks` <br> `Typescript` <br> `Css Module`<br> `eslint` & `prettier`  | 2021.10.09, 16:30 ~ 17:45 |
 | [seminar5](seminar5) | `.css alternates` <br> `SSR: CRA alternates` <br> `react alternates` <br> `Web Accessibility` | 2021.11.06, 16:30 ~ 17:45 |

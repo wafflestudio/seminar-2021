@@ -27,3 +27,4 @@
 ## 과제
 - [assignment.md](assignment.md)
 - due: 2021.09.05 (일) 23:59
+- 2021.09.06 업데이트: [과제 공통 피드백](https://github.com/wafflestudio/19.5-rookies/issues/317)

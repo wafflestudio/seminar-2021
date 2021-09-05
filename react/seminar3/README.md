@@ -7,7 +7,8 @@
 ## 수업 내용
 
 ------------------
-1. Routing
+1. Component Lifecycle
+   - `useEffect`와 render 에 대한 정확한 원리
 1. work with backend
    - API
    - cookies, storage
