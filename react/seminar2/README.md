@@ -13,6 +13,7 @@
 1. 번외: Server State Management
    - `react-query`
 1. Routing
+   - 번외: `package.json`
 1. data with server
     - json
         - `json-server`
