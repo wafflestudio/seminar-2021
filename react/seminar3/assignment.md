@@ -3,3 +3,6 @@
   - 학생의 정보를 변경할 시 서버에서 코멘트를 자동으로 달아 주므로, `refetch` 해야 함
   - 학생 목록 필터 기능
     - URL query 로 들어가야 함
+  - 쿠키로 공지띄우는 기능
+  - 로그인 및 자동 로그인
+  - [react-csv](https://www.npmjs.com/package/react-csv) 로 학생 목록 csv 다운받는 기능
