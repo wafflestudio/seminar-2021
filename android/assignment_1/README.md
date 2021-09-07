@@ -24,7 +24,7 @@
 
 ## 제출 방식
 - 본인의 github에 생성했던 `waffle-android-assign` repository를 그대로 사용한다. 
-- 기존에 사용하던 로컬 깃에서 `git breakout -b assignment1` 등으로 새로운 branch로 이동한다.
+- 기존에 사용하던 로컬 깃에서 `git checkout -b assignment1` 등으로 새로운 branch로 이동한다.
 - Android Studio를 통해 waffle-android-assign 폴더 안에 Assignment1 라는 이름의 새로운 프로젝트를 만든다.
 - 과제를 완료한 후 `git add .`, `git commit`, `git push origin assignment1`를 통해 github에 업로드한 뒤, main(master) branch로 Pull Request를 만든다.
 - 생성된 Pull Request에 [@veldic](https://github.com/veldic)을 Reviewers로 등록한다.
