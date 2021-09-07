@@ -289,15 +289,15 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 |               |           |             |              |
 | 고영현    |    yeonghyeonKO    |    iOS    |    spring boot|
 | | | | |
-| 구경회    |    heka1024    |    spring boot    |    |
+| 구경회    |    heka1024    |    |  spring boot      |
 | | | | |
 | 김기완    |    ars-ki-00    |    spring boot    |    |
 | | | | |
-| 김미승    |    mieseung    |    spring boot    |    react|
+| 김미승    |    mieseung    |      |    react,  spring boot|
 | | | | |
 | 김유진    |    yuzzznk    |    django    |    react, iOS|
 | | | | |
-| 김홍균    |    keeprainy    |    spring boot    |    |
+| 김홍균    |    keeprainy    |    |  spring boot  |
 | | | | |
 | 남우성    |    gitiss    |    django    |    spring boot, android|
 | | | | |
@@ -337,7 +337,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 | | | | |
 | 정지민    |    tictactoeid    |        |    spring boot, android|
 | | | | |
-| 정진우    |    bugoverdose    |    spring boot    |    android|
+| 정진우    |    bugoverdose    |     |    android,  spring boot |
 | | | | |
 | 조성빈    |    goranmoomin    |    django    |    iOS|
 | | | | |
@@ -345,7 +345,7 @@ django와 spring boot는 세미나 0 이후 결정하게 되므로, backend로 �
 | | | | |
 | 최종현    |    jonghyunchoe    |    spring boot    |    react, django|
 | | | | |
-| 최형욱    |    GoGiants1    |    spring boot    |    android, iOS|
+| 최형욱    |    GoGiants1    |     |    android, iOS, spring boot  |
 | | | | |
 | 한상현    |    Ethan-MoBeau    |        |    django, spring boot|
 | | | | |
