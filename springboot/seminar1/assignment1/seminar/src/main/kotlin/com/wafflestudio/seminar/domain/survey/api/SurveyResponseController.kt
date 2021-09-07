@@ -51,9 +51,4 @@ class SurveyResponseController(
         return SurveyResponseDto.Response()
     }
 
-    @PatchMapping("/{id}/")
-    fun modifySurveyResponseWithId(@ModelAttribute @Valid body: SurveyResponseDto.ModifyRequest): SurveyResponseDto.Response {
-        //TODO: API 생성
-        return SurveyResponseDto.Response()
-    }
 }
