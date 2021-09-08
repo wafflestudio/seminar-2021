@@ -1,4 +1,4 @@
-# 와플스튜디오 SpringBoot Seminar[1] 과제. Updated At 2021.9.5 02:04
+# 와플스튜디오 SpringBoot Seminar[1] 과제. Updated At 2021.9.8 22:10
 
 ### due: 2021.09.11.(토) 23:59
 
@@ -31,7 +31,8 @@ ddl이 잘 db에 적용됐는지, 데이터는 잘 들어갔는지 확인합니�
 
 4. 현재 이 서버는 유저 데이터가 없습니다. `POST /api/v1/user/`를 수정하여, 새로운 유저를 생성할 수 있는 api를 만들어주세요.
 hint: 
-    - `@ModelAttribute` 어노테이션과 UserDTO를 사용해 request body를 받아주세요. request body의 content-type은 `form-data` 여야 합니다.
+    - ~~`@ModelAttribute` 어노테이션과 UserDTO를 사용해 request body를 받아주세요. request body의 content-type은 `form-data` 여야 합니다.~~
+    - (2021/09/08 수정) json에서 snake_case의 객체 매핑을 쉽게 하기 위해 `@RequestBody` 사용하셔도 됩니다! (참고 이슈: [#328](https://github.com/wafflestudio/19.5-rookies/issues/328))
     - JpaRepository에서 기본 제공해주는 `save` 메소드를 이용해 db에 create가 가능합니다.
     - 실행 시마다 유저 데이터가 사라집니다. 원할한 테스트를 위해서 DataLoader에 기본 테스트용 유저 삽입 로직을 넣으면 디버깅이 편해집니다.
 
@@ -48,7 +49,7 @@ timestamp에는 해당 시점의 값이 자동으로 들어가야합니다. 또�
 9. `SurveyResponseDto.Response`가 자신의 내부에 `'os'`처럼 `'user'`에 대한 내용도 포함해 반환하도록 하세요. 해당 `survey_response`에 연결된 user가 없는 경우에는,
 `'user'`의 값이 null로 response body에 포함되어야 합니다.
 10. `waffle-rookies-19.5-springboot` `assignment1`브랜치의 `README.md`에 과제 관련 하고 싶은 말, 어려웠던 점 등을 남겨주세요. 물론 적극적으로 해결되어야 할 피드백이나
-질문 사항은 [Issues](https://github.com/wafflestudio/rookies/issues) 등을 이용해주세요!
+질문 사항은 [Issues](https://github.com/wafflestudio/19.5-rookies/issues) 등을 이용해주세요!
 
 ## 제출 방식
 1. 자신의 GitHub 개인 계정에 `waffle-rookies-19.5-springboot`라는 이름으로 private repository를 개설합니다.
@@ -78,6 +79,7 @@ timestamp에는 해당 시점의 값이 자동으로 들어가야합니다. 또�
 - 아래 그림과 같이 `form-data`로 request body를 전송할 수 있습니다. 적절한 DTO와 @ModelAttribute 어노테이션을 사용하면 쉽게 DTO 오브젝트로 request body를 전달 받을 수 있습니다.
  <img width="605" alt="스크린샷 2021-09-05 오전 2 17 55" src="https://user-images.githubusercontent.com/48513130/132103089-010135e6-2b63-4caa-8f84-c5c14f5c81fc.png">
 
+- raw - json 을 선택해서 json을 전달할 수도 있습니다! 이 때는 `@RequestBody` 어노테이션으로 DTO로 매핑하면 됩니다.
 
 - https://www.baeldung.com/ 
 
