@@ -11,12 +11,12 @@ class OperatingSystem(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
 
-    @NotBlank
+    @field:NotBlank
     var name: String? = null,
 
-    @NotBlank
+    @field:NotBlank
     var description: String? = null,
 
-    @NotNull
+    @field:NotNull
     var price: Long? = null,
 )
