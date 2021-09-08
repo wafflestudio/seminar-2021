@@ -1,4 +1,4 @@
-19.5 rookies react seminar 2
+19.5 rookies react seminar 2 (진도 미확정)
 ================================
 
 > Instructor 우현민([woohm402](https://github.com/woohm402))
