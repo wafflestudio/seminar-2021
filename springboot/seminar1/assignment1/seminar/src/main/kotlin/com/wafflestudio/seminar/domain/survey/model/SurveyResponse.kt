@@ -17,31 +17,31 @@ class SurveyResponse(
 
     @ManyToOne
     @JoinColumn(name = "os_id", referencedColumnName = "id")
-    @NotNull
+    @field:NotNull
     var os: OperatingSystem? = null,
 
     @Column(name = "spring_exp")
-    @NotNull
-    @Min(0, message = "The value must be between 1 and 5")
-    @Max(5, message = "The value must be between 1 and 5")
+    @field:NotNull
+    @field:Min(0, message = "The value must be between 1 and 5")
+    @field:Max(5, message = "The value must be between 1 and 5")
     var springExp: Int? = null,
 
     @Column(name = "rdb_exp")
-    @NotNull
-    @Min(0, message = "The value must be between 1 and 5")
-    @Max(5, message = "The value must be between 1 and 5")
+    @field:NotNull
+    @field:Min(0, message = "The value must be between 1 and 5")
+    @field:Max(5, message = "The value must be between 1 and 5")
     var rdbExp: Int? = null,
 
     @Column(name = "programming_exp")
-    @NotNull
-    @Min(0, message = "The value must be between 1 and 5")
-    @Max(5, message = "The value must be between 1 and 5")
+    @field:NotNull
+    @field:Min(0, message = "The value must be between 1 and 5")
+    @field:Max(5, message = "The value must be between 1 and 5")
     var programmingExp: Int? = null,
 
-    @NotBlank
+    @field:NotBlank
     var major: String? = null,
 
-    @NotBlank
+    @field:NotBlank
     var grade: String? = null,
 
     @Column(name = "backend_reason")
@@ -52,6 +52,6 @@ class SurveyResponse(
     @Column(name = "something_to_say")
     var somethingToSay: String? = null,
 
-    @NotNull
+    @field:NotNull
     var timestamp: LocalDateTime = LocalDateTime.now(),
 )
