@@ -43,7 +43,7 @@ class SurveyResponseController(
 
     @PostMapping("/")
     fun addSurveyResponse(
-        @ModelAttribute @Valid body: SurveyResponseDto.CreateRequest,
+        @RequestBody @Valid body: SurveyResponseDto.CreateRequest,
         @RequestHeader("User-Id") userId: Long
     ): SurveyResponseDto.Response {
         //TODO: API 생성
