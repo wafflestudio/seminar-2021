@@ -23,6 +23,7 @@
    - aws
 1. 웹뷰
    - 번외: React Native
+1. HOC와 children 
 
 ## 세미나 자료
 
