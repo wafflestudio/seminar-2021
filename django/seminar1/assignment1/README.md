@@ -30,7 +30,7 @@ MySQL에 직접 `desc survey_surveyresult;`를 실행한 결과의 텍스트 또
 하지만 이미 DB에 migrate까지 진행했다면, 다시 model을 수정하여 또 새로운 migration 파일을 생성하지 말고, 잘못 진행했던 migrate를 Django 명령어를 이용해
 기존 상태로 되돌린 후 해당 migration 파일을 삭제하고 진행하세요.
 
-2. 이미 정의되어 있는 `POST /api/v1/user/`와 `PUT /api/v1/user/`를 이용해 Postman으로 User의 회원가입과 로그인을 각각 진행하고 해당
+2. 이미 정의되어 있는 `POST /api/v1/user/`와 `PUT /api/v1/user/login`를 이용해 Postman으로 User의 회원가입과 로그인을 각각 진행하고 해당
 request, response가 모두 보이는 스크린샷을 `/results`에 적절한 이름으로 포함시켜 주세요. 회원가입과 로그인 API 모두 내부적으로 Django `login()`을
 포함하고 있기에, 두 API 중 어떤 것이라도 정상 처리되는 시점에 [Django CSRF 문서](https://docs.djangoproject.com/en/3.2/ref/csrf/#how-it-works)에도 나와있듯
 csrftoken이 변경되어 이를 신경 써야함을 알 수 있습니다. 이후 POST, PUT, DELETE 같은 method의 API 요청이 동작하지 못하면 이를 고려해야하는 것을 잊지마세요.
