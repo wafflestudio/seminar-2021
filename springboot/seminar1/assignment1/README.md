@@ -38,12 +38,12 @@ hint:
 
 7. 유저가 자신의 정보를 확인할 수 있도록 `GET /api/v1/user/me/` API를 개발하세요. 이는 로그인한 유저가 자신의 정보를 알기 위함입니다. 저희는 아직 로그인 로직을 구현 안했으므로 단순히 header에 `User-Id`라는 custom header를 추가해 로그인한 유저를 나타냅니다.
 
-8. 이제 드디어 서비스상 유의미한 기능을 추가할 수 있습니다. 유저가 `POST /api/v1/result/` API를 통해 설문조사에 참여할 수 있도록 하세요. 비교적 자유롭게
+8. 이제 드디어 서비스상 유의미한 기능을 추가할 수 있습니다. 유저가 `POST /api/v1/results/` API를 통해 설문조사에 참여할 수 있도록 하세요. 비교적 자유롭게
 구현하셔도 되는데, spring_exp, rdb_exp, programming_exp, os는 request의 body에 key 이름으로서 빈 str 등이 아닌 값을 가진 채 필수로 포함되어야 하고
 넷 중 하나라도 빠진 요청은 `400 BAD REQUEST`가 되어야 합니다. 또한 python, rdb, programming에 해당하는 값은 당연히 SurveyResult model 내부에도 포함되어있듯
 1 이상 5 이하의 int로 변환되어 저장될 수 있어야 하며, 그렇지 않으면 마찬가지로 `400`입니다. body의 os에 대해서는 해당 이름과 같은 os가 없다면 `404 NOT FOUND`입니다.
 timestamp에는 해당 시점의 값이 자동으로 들어가야합니다. 또한 요청한 user의 id가 user_id로서 포함되어 저장되어야 합니다.
-설문 결과가 정상 생성되어 요청이 완료된 경우, `201 CREATED`와 함께, `GET /api/v1/result/{survey_response_id}/`에 해당하는 body와 동일하게 처리하면 됩니다.
+설문 결과가 정상 생성되어 요청이 완료된 경우, `201 CREATED`와 함께, `GET /api/v1/results/{survey_response_id}/`에 해당하는 body와 동일하게 처리하면 됩니다.
 한 유저가 여러 번 설문 결과를 제출할 수 있는 것은 정상적인 동작입니다. Postman 등으로 개발 과정에서 꾸준히 테스트하시되, 스크린샷을 포함시킬지는 자유이며 코드에 모든 내용을 반영하면 됩니다.
 
 9. `SurveyResponseDto.Response`가 자신의 내부에 `'os'`처럼 `'user'`에 대한 내용도 포함해 반환하도록 하세요. 해당 `survey_response`에 연결된 user가 없는 경우에는,
