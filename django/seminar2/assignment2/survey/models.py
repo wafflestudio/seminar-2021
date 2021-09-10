@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.db import models
 
 
@@ -27,4 +27,4 @@ class SurveyResult(models.Model):
     waffle_reason = models.CharField(max_length=500, blank=True)
     say_something = models.CharField(max_length=500, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(User, null=True, on_delete=models.DO_NOTHING)
+    user = models.ForeignKey(get_user_model(), null=True, on_delete=models.DO_NOTHING)

@@ -1,47 +1,49 @@
-from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login, logout, get_user_model
 from django.db import IntegrityError
-from django.views import View
-
-from rest_framework import status, viewsets
+from rest_framework import status, viewsets, permissions
+from rest_framework.views import APIView
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from user.serializers import UserSerializer, UserLoginSerializer, UserCreateSerializer
 
-from user.serializers import UserSerializer
+User = get_user_model()
 
 
-class UserViewSet(viewsets.GenericViewSet):
-    serializer_class = UserSerializer
-    queryset = User.objects.all()
+class UserSignUpView(APIView):
+    permission_classes = (permissions.AllowAny, )
 
-    def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
+    def post(self, request, *args, **kwargs):
+
+        serializer = UserCreateSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
         try:
-            user = serializer.save()
+            user, jwt_token = serializer.save()
         except IntegrityError:
-            return Response(status=status.HTTP_409_CONFLICT)
+            return Response(status=status.HTTP_409_CONFLICT, data='이미 존재하는 유저 이메일입니다.')
 
-        # 가입했으니 바로 로그인 시켜주기
-        login(request, user)
-        return Response(self.get_serializer(user).data, status=status.HTTP_201_CREATED)
+        return Response({'user': user.email, 'token': jwt_token}, status=status.HTTP_201_CREATED)
 
-    # PUT /api/v1/user/login/
-    @action(detail=False, methods=['PUT'])
-    def login(self, request):
-        username = request.data.get('username')
-        password = request.data.get('password')
 
-        user = authenticate(request, username=username, password=password)
-        if user:
-            login(request, user)
-            return Response(self.get_serializer(user).data)
-        # 존재하지 않는 사용자이거나 비밀번호가 틀린 경우
-        return Response(status=status.HTTP_403_FORBIDDEN, data='아이디나 패스워드가 일치하지 않습니다.')
+class UserLoginView(APIView):
+    permission_classes = (permissions.AllowAny, )
+
+    def post(self, request):
+
+        serializer = UserLoginSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        token = serializer.validated_data['token']
+
+        return Response({'success': True, 'token': token}, status=status.HTTP_200_OK)
+
+
+class UserViewSet(viewsets.GenericViewSet):
+
+    permission_classes = (permissions.IsAuthenticated, )
+    serializer_class = UserSerializer
+    queryset = User.objects.all()
 
     def update(self, request, pk=None):
-
         if pk != 'me':
             return Response(status=status.HTTP_403_FORBIDDEN, data='다른 유저 정보를 수정할 수 없습니다.')
 
@@ -50,11 +52,6 @@ class UserViewSet(viewsets.GenericViewSet):
         serializer = self.get_serializer(user, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.update(user, serializer.validated_data)
-        return Response(status=status.HTTP_200_OK)
-
-    @action(detail=False, methods=['POST'])
-    def logout(self, request):
-        logout(request)
         return Response(status=status.HTTP_200_OK)
 
     def retrieve(self, request, pk=None):
