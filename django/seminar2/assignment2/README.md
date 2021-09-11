@@ -36,6 +36,7 @@
 - 대부분 구현이 되어 있습니다. 여러분은 AbstractBaseUser, UserManager를 보시고, PyCharm 좌측 하단에 TODO 탭을 타고 들어가서 비어있는 부분을 구현해주시면 됩니다.
 
 - 이제 유저 식별은 `username`이 아닌, `email`로 진행하려 합니다. 해당 스펙을 만족하도록 구현해주세요!
+- 해당 내용을 구현하지 않으시면 어플이 정상 작동하지 않는다는 점 참고하여 주시기 바랍니다.
 
 ### 3
 - `seminar`라는 새로운 Django app을 만들고 survey, user directory와 같은 층위에 seminar directory를 위치시키세요.
@@ -79,7 +80,6 @@ null이 가능하다고 명시하지 않은 값엔 null이 들어가면 안 됩�
     "last_name": User last_name,
     "last_login": User last_login,
     "date_joined": User date_joined,
-    "token": Token key (회원가입과 로그인 경우에만 포함)
     "participant": {
         "id": ParticipantProfile id,
         "university": ParticipantProfile university(string),

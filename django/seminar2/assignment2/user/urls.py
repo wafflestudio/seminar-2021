@@ -7,7 +7,7 @@ router = SimpleRouter()
 router.register('user', UserViewSet, basename='user')  # /api/v1/user/
 
 urlpatterns = [
-    path('signup/', UserSignUpView.as_view(), name='signup'),
-    path('login/', UserLoginView.as_view(), name='login'),
+    path('signup/', UserSignUpView.as_view(), name='signup'),  # /api/v1/signup/
+    path('login/', UserLoginView.as_view(), name='login'),  # /api/v1/login/
     path('', include(router.urls), name='auth-user')
 ]
