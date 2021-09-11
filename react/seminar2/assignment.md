@@ -58,3 +58,6 @@
     - 배포를 해야 한다.
       - aws 개인 계정을 생성하고, 그를 이용해 만든 사이트를 빌드하고 S3과 cloudfront에 배포한다.
       - cloudfront에 배포된 url을 PR과 리드미에 첨부한다.
+
+## 참고
+- 데이터 타입은 [dummy-db.json](dummy-db.json) 에 있는 형식을 사용하면 나중에 편하다.
