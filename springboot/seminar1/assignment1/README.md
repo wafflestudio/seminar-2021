@@ -24,7 +24,6 @@ ddl이 잘 db에 적용됐는지, 데이터는 잘 들어갔는지 확인합니�
 
 2. `survey_response` table에 `user_id` column을 추가하세요. 이미 `survey_response`에 `user_id`가 없는 데이터들이 들어가있으므로,
 `user_id`는 당연히 nullable해야 하며, 연결되어있는 user row가 삭제된다고 해도 `survey_response`의 해당 row까지 같이 삭제되면 안 됩니다.
-(hint: cascade type)
 절대 DB에 직접 query를 실행해 column을 추가 또는 수정하지 말고, Spring프로젝트의 해당 model을
 수정하세요.
 현재 스프링 프로젝트가 시작될 때마다 `application.yml`에 설정한대로 테이블이 drop되고 `DataLoader.kt`에서 기존 데이터가 추가됩니다.
