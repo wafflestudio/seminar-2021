@@ -23,9 +23,7 @@ ddl이 잘 db에 적용됐는지, 데이터는 잘 들어갔는지 확인합니�
 유저는 이름, 이메일을 가지고 있고 해당 두 값은 비어있거나 null이면 안됩니다. 추가적으로 이메일의 경우 중복되는 데이터가 존재하면 안됩니다. (spring의 validation과 Entity )
 
 2. `survey_response` table에 `user_id` column을 추가하세요. 이미 `survey_response`에 `user_id`가 없는 데이터들이 들어가있으므로,
-`user_id`는 당연히 nullable해야 하며, 연결되어있는 user row가 삭제된다고 해도 `survey_response`의 해당 row까지 같이 삭제되면 안 됩니다.
-절대 DB에 직접 query를 실행해 column을 추가 또는 수정하지 말고, Spring프로젝트의 해당 model을
-수정하세요.
+`user_id`는 당연히 nullable해야 합니다.
 현재 스프링 프로젝트가 시작될 때마다 `application.yml`에 설정한대로 테이블이 drop되고 `DataLoader.kt`에서 기존 데이터가 추가됩니다.
 
 4. 현재 이 서버는 유저 데이터가 없습니다. `POST /api/v1/user/`를 수정하여, 새로운 유저를 생성할 수 있는 api를 만들어주세요.
