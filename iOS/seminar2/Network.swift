@@ -24,7 +24,7 @@ enum NetworkError {
     case parsingError
 }
 
-let timetableDataUrl = "https://waffle-ios.s3.ap-northeast-2.amazonaws.com/waffle-ioss.json"
+let timetableDataUrl = "https://waffle-ios.s3.ap-northeast-2.amazonaws.com/timetable.json"
 
 struct WaffleNetwork {
     static func request(with urlString: String, done: @escaping (WaffleTimetableList) -> (), failure: @escaping (NetworkError) -> ()) {
