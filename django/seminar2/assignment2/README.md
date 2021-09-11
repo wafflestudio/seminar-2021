@@ -38,6 +38,7 @@
 - 이제 유저 식별은 `username`이 아닌, `email`로 진행하려 합니다. 해당 스펙을 만족하도록 구현해주세요!
 - `username`, `email (필수)`, `password` 를 request body로 signup (or) login을 하면, request body로 token이 내려보내집니다.
 - 이렇게 발급된 토큰을 `Authoriaztion : JWT <token>` 형태로 헤더에 넣기만 하면, 토큰을 통해 유저 인증 관리를 할 수 있게 됩니다.
+- ![image](https://user-images.githubusercontent.com/54717129/132949141-67643d74-5f29-400f-a4a3-efe6377c6ee4.png)
 - 해당 내용을 구현하지 않으시면 어플이 정상 작동하지 않는다는 점 참고하여 주시기 바랍니다.
 
 ### 3
