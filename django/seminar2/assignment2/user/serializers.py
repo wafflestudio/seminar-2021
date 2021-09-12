@@ -34,7 +34,7 @@ class UserCreateSerializer(serializers.Serializer):
         return data
 
     def create(self, validated_data):
-        # TODO (유저 만들고, 비밀번호 설정하기; 아래 코드를 수정해주세요)
+        # TODO (1. 유저 만들고 (ORM) , 2. 비밀번호 설정하기; 아래 코드를 수정해주세요.)
         user = None
         return user, jwt_token_of(user)
 

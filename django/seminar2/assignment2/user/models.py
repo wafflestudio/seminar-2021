@@ -27,7 +27,7 @@ class CustomUserManager(BaseUserManager):
         extra_fields.setdefault('is_staff', False)
         extra_fields.setdefault('is_superuser', False)
 
-        return  # TODO (implement this line)
+        return  # TODO (이 모델의 부모 클래스를 보고, 이 라인에 알맞은 코드를 작성해주세요.)
 
     def create_superuser(self, email, password, **extra_fields):
 
@@ -37,12 +37,15 @@ class CustomUserManager(BaseUserManager):
         if extra_fields.get('is_staff') is not True or extra_fields.get('is_superuser') is not True:
             raise ValueError('권한 설정이 잘못되었습니다.')
 
-        return  # TODO (implement this line)
+        return  # TODO (이 모델의 부모 클래스를 보고, 이 라인에 알맞은 코드를 작성해주세요.)
 
 
 class User(AbstractBaseUser, PermissionsMixin):
 
-    # TODO (implement this class)
+    # TODO 유저 필드를 작성해주세요.
+    #  기존 과제 0, 과제 1에서 사용하던 유저 정보를 모두 포함하고 있어야 합니다.
+    #  1. 이제 이메일은 유저마다 고유한 식별자가 되어야 합니다. 필드 선언 시 적절한 옵션을 지정해주세요
+    #  2. 위에 선언한 CustomManager를 이 모델의 매니저로 선언하여야 합니다.
 
     # 해당 필드에 대한 설명은 부모 AbstractBaseUser 클래스 참고
     EMAIL_FIELD = 'email'
