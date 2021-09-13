@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Seminar2</string>
+    <string name="write_title">WRITE TITLE</string>
+    <string name="add">ADD</string>
+    <string name="delete">DELETE</string>
+    <string name="write_detail">WRITE DETAIL</string>
+</resources>
