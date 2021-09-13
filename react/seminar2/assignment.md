@@ -8,7 +8,7 @@
 - Context를 이용한 클라이언트 상태관리를 할 수 있다.
 - S3과 Cloudfront를 이용해 사이트를 배포할 수 있다.
 
-## 과제 스펙
+## 과제 스펙 ([피그마](https://www.figma.com/file/L2fvx1jalkip0mkiBKMeJR/wafflestudio-19.5-react-seminar-2?node-id=0%3A1))
 - 세미나 1 과제의 스펙에서 다음 항목이 변경 / 추가된다.
 - 변경
     - 학생 목록이 비어 있을 때 뷰가 생겼다.
