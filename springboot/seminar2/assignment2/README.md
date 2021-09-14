@@ -28,9 +28,9 @@
 ## 제출 방식
 - 제출 방식은 과제1과 동일합니다. master(main) 브랜치에는 현재 과제의 스켈레톤 코드와 assignment1이 완성된 상태가 있어야 하며 그 상태에서 assignment2 브랜치를 분기해 작업해주시고 해당 branch PR을 날려주시면 됩니다.
 
-7. 마감 시점에 PR을 기준으로 collaborator로 지정된 세미나 운영진들이 확인할 것입니다. GitHub repository에 반영되도록 commit, push해두는 것을 잊지 마세요.
+1. 마감 시점에 PR을 기준으로 과제 제출을 확인할 것입니다. GitHub repository에 반영되도록 commit, push해두는 것을 잊지 마세요.
 
-8. master branch의 상태는 반드시 [skeleton code](waffle_backend)와 동일해야합니다.
+2. master branch의 상태는 반드시 [skeleton code](seminar)와 동일해야합니다.
 
 ## 참고하면 좋은 것들
 - 추후 점진적으로 추가 예정입니다.
