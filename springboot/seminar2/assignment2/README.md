@@ -28,7 +28,7 @@
     ```
   - 로그인 혹은 회원가입 시에 Response 헤더에 Authentication이라는 key로 JWT가 반환됩니다. 다른 요청을 보낼 때 해당 JWT를 Authentication 헤더에 실어보낼 경우 서버에 현재 로그인한 유저의 정보를 전달할 수 있습니다.
   - JwtAuthenticationFilter는 각 request마다 JWT를 분석해 유저가 해당 api에 대한 접근 권한이 있는지를 파악합니다.
-  - 접근 권한을 세세하게 조정하고 싶다면 SecurityConfig에서 각 api별로 권한을 설정하면 됩니다. 유저의 권한은 유저 테이블에 roles로 저장되어 있습니다. 여러 role을 가지는 경우 roles 값을 "admin, a, b, c" 와 같이 저장하면 됩니다.
+  - 접근 권한을 세세하게 조정하고 싶다면 SecurityConfig에서 각 api별로 권한을 설정하면 됩니다. 유저의 권한은 유저 테이블에 roles로 저장되어 있습니다. 여러 role을 가지는 경우 roles 값을 "admin, a, b, c" 와 같이 저장하면 됩니다. 아래 과제스펙에 나오는 role과는 다르고 서버의 접근권한을 나타냅니다. 물론 동기화 시킬 수도 있습니다만 하고 싶으신 분만 하시면 됩니다!. 
   - `@CurrentUser`라는 어노테이션을 만들었습니다. 다음과 같이 controller 함수를 작성하는 경우 자동으로 user 인자에 로그인한 유저의 정보가 전달됩니다. 제가 만든 `/api/v1/users/me/`확인하시면 이해가 빠를 것 같습니다.
     ```Kotlin
     fun me(@CurrentUser user:User)
