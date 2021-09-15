@@ -8,11 +8,14 @@
 - Codable을 이해한다.
 - Model을 효율적으로 설계하는 방법을 고민한다.
 - Table View와 Table View Cell에 익숙해진다.
-* 토이 프로젝트 / 팀 프로젝트를 하게 되면 외부 서버와 데이터를 주고 받는 작업이 중요해질 것입니다. 이 과제를 통해 Network 연결에 익숙해지길 바랍니다~
+
+*토이 프로젝트 / 팀 프로젝트를 하게 되면 외부 서버와 데이터를 주고 받는 작업이 중요해질 것입니다. 이 과제를 통해 
+익숙해지길 바랍니다~
 
 ## 과제 - 고도화된 Waffle TT 만들기
+<img width="919" alt="Screen Shot 2021-09-16 at 12 16 08 AM" src="https://user-images.githubusercontent.com/54926767/133461055-29033000-0cb4-4918-978e-160c30f1e602.png">
 
-- 메인 View Controller에서 Member 리스트 데이터를 fetch하고(/members/) 그 데이터들을 보여 주는 Table View를 만듭니다. Member 데이터에는 "team" 값이 포함되어 있는데, 각 "team" 에 맞게 Table View의 Section을 분리합니다. (그림 참고)
+- 메인 View Controller에서 Member 리스트 데이터를 fetch하고(/members/) 그 데이터들을 보여 주는 Table View를 만듭니다. Member 데이터에는 "team" 값이 포함되어 있는데, 각 "team" 에 맞게 Table View의 Section을 분리합니다. 각 Section의 title에 team 값을 넣습니다. (그림 참고)
 - 위에서 만든 Table View Cell을 터치하면 Navigation 위계에 따라 상세 프로필 View Controller로 이동합니다. 상세 프로필 View Controller에서 Member의 id를 이용한 Member 상세 데이터를 fetch하고(/members/{id}) 그 데이터들을 보여주는, Table View를 포함한 View들을 만듭니다. UIImage 객체를 이용해 profie_image를 불러와 보여주는 뷰도 만듭니다.(스켈레톤 파일 참고) 예시 그림에 있는 데이터들을 모두 보여주어야 하며, 그림에 포함되지 않은 데이터를 추가로 보여줘도 됩니다. (그림 참고)
 - 위에서 만든 Table View Cell을 터치하면 Navigation 위계에 따라 강의 디테일 View Controller로 이동합니다. 예시 그림에 있는 데이터들을 보여주는 View(Table View를 사용해도 되고 사용하지 않아도 됩니다)를 만듭니다. (그림 참고)
 - Navigation title을 구현해야 합니다. (title text는 View에 맞도록 자유롭게 써주시면 됩니다. Large title일 필요는 없습니다.)
@@ -25,12 +28,12 @@
 
 ## 데이터 API
 - 과제에 필요한 Network 관련 스켈레톤 코드를 Network.swift에 올려 놓았습니다.
-- base URL : https://developer.apple.com/documentation/foundation/urlsession
+- base URL : https://jkhi75xm0a.execute-api.ap-northeast-2.amazonaws.com/waffle/
 
-- Member 리스트 불러오는 path : /members/
-ex) 
-- Request(GET) : https://developer.apple.com/documentation/foundation/urlsession/members/
-- Response : 
+### Member 리스트 불러오는 path : /members/
+- ex) 
+  - Request(GET) : https://jkhi75xm0a.execute-api.ap-northeast-2.amazonaws.com/waffle/members/
+  - Response : 
 ```json
     {
         "statusCode": 200,
@@ -54,10 +57,10 @@ ex)
     }
 ```
 
-- 한 Member의 상세 정보를 불러오는 path : /members/{id}
-ex) 
-- Request(GET) : https://developer.apple.com/documentation/foundation/urlsession/members/1
-- Response : 
+### 한 Member의 상세 정보를 불러오는 path : /members/{id}
+- ex) 
+  - Request(GET) : https://jkhi75xm0a.execute-api.ap-northeast-2.amazonaws.com/waffle/members/1
+  - Response : 
 ```json
     {
     "statusCode": 200,
