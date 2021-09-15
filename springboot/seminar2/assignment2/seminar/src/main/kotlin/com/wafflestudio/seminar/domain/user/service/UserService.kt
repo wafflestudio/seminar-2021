@@ -1,6 +1,9 @@
-package com.wafflestudio.seminar.domain.user
+package com.wafflestudio.seminar.domain.user.service
 
+import com.wafflestudio.seminar.domain.user.model.User
+import com.wafflestudio.seminar.domain.user.repository.UserRepository
 import com.wafflestudio.seminar.domain.user.dto.UserDto
+import com.wafflestudio.seminar.domain.user.exception.UserAlreadyExistsException
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Service
 

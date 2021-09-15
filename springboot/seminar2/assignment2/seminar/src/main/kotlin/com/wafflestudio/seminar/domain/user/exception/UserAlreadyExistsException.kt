@@ -1,4 +1,4 @@
-package com.wafflestudio.seminar.domain.user
+package com.wafflestudio.seminar.domain.user.exception
 
 import com.wafflestudio.seminar.global.common.exception.ConflictException
 import com.wafflestudio.seminar.global.common.exception.DataNotFoundException

@@ -1,6 +1,6 @@
 package com.wafflestudio.seminar.global.auth.model
 
-import com.wafflestudio.seminar.domain.user.UserRepository
+import com.wafflestudio.seminar.domain.user.repository.UserRepository
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.core.userdetails.UsernameNotFoundException

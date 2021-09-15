@@ -1,4 +1,4 @@
-package com.wafflestudio.seminar.domain.user
+package com.wafflestudio.seminar.domain.user.model
 
 import com.wafflestudio.seminar.domain.model.BaseEntity
 import javax.persistence.*

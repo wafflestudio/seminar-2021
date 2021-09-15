@@ -2,7 +2,7 @@ package com.wafflestudio.seminar.domain.survey.model
 
 import com.wafflestudio.seminar.domain.model.BaseEntity
 import com.wafflestudio.seminar.domain.os.model.OperatingSystem
-import com.wafflestudio.seminar.domain.user.User
+import com.wafflestudio.seminar.domain.user.model.User
 import java.time.LocalDateTime
 import javax.persistence.*
 import javax.validation.constraints.Max

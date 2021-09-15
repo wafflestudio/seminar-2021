@@ -1,16 +1,12 @@
 package com.wafflestudio.seminar.domain.user.api
 
-import com.wafflestudio.seminar.domain.user.User
-import com.wafflestudio.seminar.domain.user.UserService
+import com.wafflestudio.seminar.domain.user.model.User
+import com.wafflestudio.seminar.domain.user.service.UserService
 import com.wafflestudio.seminar.domain.user.dto.UserDto
 import com.wafflestudio.seminar.global.auth.CurrentUser
 import com.wafflestudio.seminar.global.auth.JwtTokenProvider
-import org.springframework.http.HttpEntity
-import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
-import org.springframework.web.servlet.function.EntityResponse
-import javax.servlet.http.HttpServletResponse
 import javax.validation.Valid
 
 @RestController

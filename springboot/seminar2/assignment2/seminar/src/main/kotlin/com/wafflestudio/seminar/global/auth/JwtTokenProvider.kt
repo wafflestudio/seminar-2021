@@ -1,6 +1,6 @@
 package com.wafflestudio.seminar.global.auth
 
-import com.wafflestudio.seminar.domain.user.UserRepository
+import com.wafflestudio.seminar.domain.user.repository.UserRepository
 import com.wafflestudio.seminar.global.auth.model.CustomAuthenticationToken
 import com.wafflestudio.seminar.global.auth.model.UserPrincipal
 import io.jsonwebtoken.*

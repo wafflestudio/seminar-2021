@@ -1,9 +1,6 @@
 package com.wafflestudio.seminar.domain.user.dto
 
-import com.wafflestudio.seminar.domain.os.dto.OperatingSystemDto
-import com.wafflestudio.seminar.domain.survey.model.SurveyResponse
-import com.wafflestudio.seminar.domain.user.User
-import java.time.LocalDateTime
+import com.wafflestudio.seminar.domain.user.model.User
 import javax.validation.constraints.NotBlank
 
 class UserDto {

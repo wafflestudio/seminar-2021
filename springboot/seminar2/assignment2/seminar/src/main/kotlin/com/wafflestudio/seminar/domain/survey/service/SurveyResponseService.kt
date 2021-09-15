@@ -6,10 +6,9 @@ import com.wafflestudio.seminar.domain.survey.dto.SurveyResponseDto
 import com.wafflestudio.seminar.domain.survey.exception.SurveyResponseNotFoundException
 import com.wafflestudio.seminar.domain.survey.model.SurveyResponse
 import com.wafflestudio.seminar.domain.survey.repository.SurveyResponseRepository
-import com.wafflestudio.seminar.domain.user.User
+import com.wafflestudio.seminar.domain.user.model.User
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
-import javax.transaction.Transactional
 
 @Service
 class SurveyResponseService(

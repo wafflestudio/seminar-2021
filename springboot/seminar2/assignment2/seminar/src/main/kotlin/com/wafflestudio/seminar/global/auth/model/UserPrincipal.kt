@@ -1,6 +1,6 @@
 package com.wafflestudio.seminar.global.auth.model
 
-import com.wafflestudio.seminar.domain.user.User
+import com.wafflestudio.seminar.domain.user.model.User
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
