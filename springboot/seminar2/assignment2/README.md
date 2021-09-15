@@ -233,7 +233,7 @@ online 여부 외에는 하나라도 빠지면 `400`으로 응답하며, 적절�
 
 - 마감 시점에 PR을 기준으로 과제 제출을 확인할 것입니다. GitHub repository에 반영되도록 commit, push해두는 것을 잊지 마세요.
 
-- master branch의 상태는 반드시 [skeleton code](waffle_backend)와 동일해야합니다.
+- master branch의 상태는 반드시 [skeleton code](waffle_backend)+assignment1의 스펙이 반영된  동일해야합니다.
 
 ## 참고하면 좋은 것들
 - 추후 점진적으로 추가 예정입니다.
