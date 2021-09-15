@@ -10,7 +10,8 @@ class UserService(
     private val passwordEncoder: PasswordEncoder
 ) {
     fun signup(signupRequest: UserDto.SignupRequest): User {
+        if (userRepository.existsByEmail(signupRequest.email)) throw UserAlreadyExistsException()
         val encodedPassword = passwordEncoder.encode(signupRequest.password)
-        return userRepository.save(User(signupRequest.email, encodedPassword))
+        return userRepository.save(User(signupRequest.email, signupRequest.name, encodedPassword))
     }
 }

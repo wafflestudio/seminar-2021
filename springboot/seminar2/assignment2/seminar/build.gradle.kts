@@ -38,8 +38,6 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
     implementation("org.hibernate.validator:hibernate-validator")
-
-    api("org.modelmapper:modelmapper:2.3.8")
 }
 
 tasks.withType<KotlinCompile> {

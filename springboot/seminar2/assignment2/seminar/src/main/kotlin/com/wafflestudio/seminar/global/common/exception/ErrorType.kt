@@ -12,6 +12,7 @@ enum class ErrorType (
     OS_NOT_FOUND(4002),
 
     CONFLICT(9000),
+    USER_ALREADY_EXISTS(9001),
 
     SERVER_ERROR(10000)
 }

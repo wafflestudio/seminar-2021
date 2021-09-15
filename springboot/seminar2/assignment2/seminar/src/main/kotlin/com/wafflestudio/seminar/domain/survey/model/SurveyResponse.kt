@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull
 
 @Entity
 class SurveyResponse(
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "os_id", referencedColumnName = "id")
     @field:NotNull
     val os: OperatingSystem,

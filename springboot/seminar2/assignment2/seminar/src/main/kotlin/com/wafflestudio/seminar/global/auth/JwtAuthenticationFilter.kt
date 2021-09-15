@@ -7,7 +7,7 @@ import javax.servlet.FilterChain
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-class JwtAuthorizationFilter(
+class JwtAuthenticationFilter(
     authenticationManager: AuthenticationManager?,
     private val jwtTokenProvider: JwtTokenProvider
 ) : BasicAuthenticationFilter(authenticationManager) {
@@ -17,12 +17,10 @@ class JwtAuthorizationFilter(
         filterChain: FilterChain
     ) {
         val token = request.getHeader(jwtTokenProvider.headerString)
-        if (token == null || !jwtTokenProvider.validateToken(token)) {
-            filterChain.doFilter(request, response)
-            return
+        if (token != null && jwtTokenProvider.validateToken(token)) {
+            val authentication = jwtTokenProvider.getAuthenticationTokenFromJwt(token)
+            SecurityContextHolder.getContext().authentication = authentication
         }
-        val authentication = jwtTokenProvider.getAuthenticationTokenFromJwt(token)
-        SecurityContextHolder.getContext().authentication = authentication
         filterChain.doFilter(request, response)
     }
 }

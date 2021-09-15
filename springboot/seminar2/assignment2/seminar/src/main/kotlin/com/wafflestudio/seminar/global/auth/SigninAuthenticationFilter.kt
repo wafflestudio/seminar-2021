@@ -13,7 +13,7 @@ import javax.servlet.FilterChain
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-class GeneralAuthenticationFilter(
+class SigninAuthenticationFilter(
     authenticationManager: AuthenticationManager?,
     private val jwtTokenProvider: JwtTokenProvider
 ) : UsernamePasswordAuthenticationFilter(authenticationManager) {

@@ -12,7 +12,9 @@ class User(
     @field:NotBlank
     val email: String,
 
-    @Column
+    @field:NotBlank
+    val name: String,
+
     @field:NotBlank
     val password: String,
 
