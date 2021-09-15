@@ -15,9 +15,9 @@
 ## 과제 - 고도화된 Waffle TT 만들기
 <img width="919" alt="Screen Shot 2021-09-16 at 12 16 08 AM" src="https://user-images.githubusercontent.com/54926767/133461055-29033000-0cb4-4918-978e-160c30f1e602.png">
 
-- 메인 View Controller에서 Member 리스트 데이터를 fetch하고(/members/) 그 데이터들을 보여 주는 Table View를 만듭니다. Member 데이터에는 "team" 값이 포함되어 있는데, 각 "team" 에 맞게 Table View의 Section을 분리합니다. 각 Section의 title에 team 값을 넣습니다. (그림 참고)
-- 위에서 만든 Table View Cell을 터치하면 Navigation 위계에 따라 상세 프로필 View Controller로 이동합니다. 상세 프로필 View Controller에서 Member의 id를 이용한 Member 상세 데이터를 fetch하고(/members/{id}) 그 데이터들을 보여주는, Table View를 포함한 View들을 만듭니다. UIImage 객체를 이용해 profie_image를 불러와 보여주는 뷰도 만듭니다.(스켈레톤 파일 참고) 예시 그림에 있는 데이터들을 모두 보여주어야 하며, 그림에 포함되지 않은 데이터를 추가로 보여줘도 됩니다. (그림 참고)
-- 위에서 만든 Table View Cell을 터치하면 Navigation 위계에 따라 강의 디테일 View Controller로 이동합니다. 예시 그림에 있는 데이터들을 보여주는 View(Table View를 사용해도 되고 사용하지 않아도 됩니다)를 만듭니다. (그림 참고)
+- 메인 View Controller에서 Member 리스트 데이터를 fetch하고("/members/") Member들의 데이터 "name"과 "team"을 보여 주는 Table View를 만듭니다. "team" 에 따라 Table View의 Section을 분리합니다. 각 Section의 title에 team 값을 넣습니다. (그림 참고)
+- 위에서 만든 Table View Cell을 터치하면 Navigation 위계에 따라 push되어 상세 프로필 View Controller로 이동합니다. 이때 Cell이 보여 주고 있는 Member 데이터를 상세 프로필 View Controller에 넘겨 주어야 합니다. 상세 프로필 View Controller에서 Member의 id를 이용하여 Member 상세 데이터를 fetch합니다.("/members/{id}") fetch한 Member 데이터 중 "course_title", "credit을" 보여주는, Table View를 만듭니다. "profie_image"의 값을 통해 외부 이미지를 불러와 보여주는 뷰(UIImage 객체를 이용)를 만듭니다. "name"과 "team" 도 뷰를 통해 보여줍니다. 그림에 포함되지 않은 데이터를 추가로 보여줘도 됩니다. (그림 참고)
+- 위에서 만든 Table View Cell을 터치하면 Navigation 위계에 따라 강의 디테일 View Controller로 push되어 이동합니다. 예시 그림에 있는 Lecture의 데이터들("course_title", instructor" 등)을 보여주는 View를 만듭니다.(Table View를 사용해도 되고 사용하지 않아도 됩니다) (그림 참고)
 - Navigation title을 구현해야 합니다. (title text는 View에 맞도록 자유롭게 써주시면 됩니다. Large title일 필요는 없습니다.)
 - Member Model, Lecture Model은 반드시 구현해야 하고, 그 외에 필요하다고 생각되는 Model들이 있으면 구현합니다.
 - Request 작업을 할 때 status code가 200이 아닌 경우 "서버에 문제가 발생했어요" 라는 메시지의 Alert view가 뜨도록 에러 처리를 해주세요.
@@ -117,26 +117,15 @@
 ```
 
 ## 제출 방식
-1. 자신의 GitHub 개인 계정에 `waffle-rookies-19.5-ios` 이라는 이름으로 private repository를 개설합니다. 개설할 때 Add a README file을 체크해 주세요. 그리고 저희가 과제를 하시는 분이 누구인지 식별할 수 있도록 README file에 이름이 포함된 간단한 정보를 적어 주세요.
+1. `seminar-2-assignment` 브랜치에서 과제를 진행해 주세요. 
 
-![image](https://user-images.githubusercontent.com/39977696/131165209-a6da208f-e12c-4e74-9d45-321916ded169.png)
+2. 과제 제출 시, main 브랜치로 pull request를 생성해 주세요.
 
-2. 개설 후 Settings > Manage access 로 들어갑니다. (다음 그림을 참고해주세요)
+3. 세미나장 두 사람에게 request review를 해주세요.
 
-![스크린샷 2020-08-30 02 13 52](https://user-images.githubusercontent.com/35535636/91642567-5eb9fe00-ea67-11ea-9382-89fcce03be70.png)
-
-3. collaborator 로 세미나장 @jskeum 와 @Ethan-MoBeau 를 등록해 주세요. (다음 그림을 참고해주세요)
-
-![스크린샷 2020-08-30 02 14 59](https://user-images.githubusercontent.com/35535636/91642588-87da8e80-ea67-11ea-9d5a-60a3596463c9.png)
-
-4. `seminar-2-assignment` 브랜치에서 과제를 진행해 주세요. 앞으로 과제들은 같은 레퍼지토리의 다른 브랜치에서 진행하게 될 것입니다.
-
-5. 과제 제출 시, main 브랜치로 pull request를 생성해 주세요.
-
-6. 세미나장 두 사람에게 request review를 해주세요.
-
-7. 마감 시점의 pull request 를 기준으로 세미나장들이 직접 확인하고 피드백을 드릴 것입니다.
+4. 마감 시점의 pull request 를 기준으로 세미나장들이 직접 확인하고 피드백을 드릴 것입니다.
 
 ## 참고 자료
-- UIImage : https://developer.apple.com/documentation/uikit/uiimageview
+- UIImageView : https://developer.apple.com/documentation/uikit/uiimageview
+- UIImage : https://developer.apple.com/documentation/uikit/uiimage
 - URLSession : https://developer.apple.com/documentation/foundation/urlsession
