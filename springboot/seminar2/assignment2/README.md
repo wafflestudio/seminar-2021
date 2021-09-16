@@ -130,7 +130,7 @@ online 여부 외에는 하나라도 빠지면 `400`으로 응답하며, 적절�
 양의 정수가 아닌 값이 오는 경우, time이 `14:30`과 같은 형태가 아닌 경우는 `400`으로 응답합니다. time은 24시간제로 받아들이면 됩니다.  online은 True 또는 False와 같은 대소문자 무관한 문자열이어야 하며, 아닌 경우 `400`으로 응답합니다. online이 request body에 포함되지
 않는 경우, `True`를 기본으로 합니다. response는 아래와 같아야 하며, `201`로 응답합니다. model의 column 이름은 자유롭게 정해도 되지만, response는 하나의 차이도 없이 같아야 합니다.
 세미나 진행자 자격을 가진 User만 요청할 수 있으며, 그렇지 않은 경우 `403`으로 응답합니다. 요청한 User가 기본적으로 해당 Seminar의 담당자가 됩니다.
-````json
+````
 {
     "id": Seminar id,
     "name": Seminar name,
@@ -173,7 +173,8 @@ online 여부 외에는 하나라도 빠지면 `400`으로 응답하며, 적절�
   - `GET /api/v1/seminar/?name={name}`으로 query param이 주어지면, {name} str을 포함하는 name을 가진 Seminar들을 모두 가져옵니다.
 해당하는 Seminar가 없으면 `{"count":0,"results":[]}`를 body로 합니다.
   - response는 아래와 같으며, 기본적으로 Seminar의 created_at을 기준으로 가장 최근에 만들어진 Seminar가 위에 오도록 body를 구성합니다.
-    ````json
+  - List 응답에 대해 ListResponse 라는 common dto를 정의해놨으니 사용히시면 됩니다.
+    ````
     {
         "count": results count,
         "results":[
