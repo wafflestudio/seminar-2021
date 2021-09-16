@@ -47,7 +47,7 @@
 - 이 서비스에서 User의 유형으로는 '참여자'와 '진행자'가 있습니다. User는 진행자이면서 참여자일 수도 있습니다. 둘 다 아닌 User는 database에 존재하면 안 됩니다.
 - 참여자인 User의 경우 `ParticipantProfile` model과 one-to-one 관계를 가지며, 진행자인 User의 경우 `InstructorProfile` model과
 one-to-one 관계를 가집니다. 두 model을 정의해서 User와 연결시켜야 합니다.
-- 두 model 모두 생성 시점과 수정 시점을 `DateTimeField`로 저장하는 created_at, updated_at column을 가집니다.
+- 두 model 모두 생성 시점과 수정 시점을 `DateTime`타입으로 저장하는 created_at, updated_at column을 가집니다.
 
 ### 3
 - `seminar`라는 새로운 도메인을 추가할 것입니다.
