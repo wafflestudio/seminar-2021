@@ -8,9 +8,8 @@
 
 1. Hooks
    - Custom Hooks
-1. Typescript
-1. [Css Module](https://react.vlpt.us/styling/02-css-module.html)
-1. eslint & prettier  
+1. Ref
+1. 제어 vs 비제어 컴포넌트 
 
 ------------------
 
