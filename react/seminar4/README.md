@@ -7,9 +7,26 @@
 ## 수업 내용
 
 1. Hooks
-   - Custom Hooks
+  - Custom Hooks
 1. Ref
-1. 제어 vs 비제어 컴포넌트 
+1. 제어 vs 비제어 컴포넌트
+2. More than JS
+  - Typescript, CoffeeScript
+4. More than Css
+  - sass, Css Modules, CSS-in-JS
+5. SSR vs CSR vs SSG
+6. 웹 접근성
+  - div 떡칠이 나쁜 이유
+  - tabindex, alt, form
+7. 반응형 웹, px vs rem
+8. 웹뷰
+9. eslint & prettier
+10. 브라우저 렌더 과정: 16.6ms
+11. 남은 과제들
+  - 브라우저 작동 원리, html, css, js 기본 다지기 (이벤트 루프? 이벤트 델리게이션?)
+  - 공식문서로 근본 다지기
+  - redux, formik, react-query 등 현업에서 많이 쓰이는 수많은 라이브러리들에 대한 적응
+  - `git`
 
 ------------------
 
