@@ -35,3 +35,7 @@
     3. 학생 코멘트 작성 기능 구현
     4. 팝업 공지 기능 구현
     5. csv 다운받는 기능 구현
+  
+- API
+  - 엔드포인트: `https://p04fpgjlo3.execute-api.ap-northeast-2.amazonaws.com/v1/`
+  - API 문서: https://p04fpgjlo3.execute-api.ap-northeast-2.amazonaws.com/swagger
