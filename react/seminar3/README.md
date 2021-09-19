@@ -15,19 +15,20 @@
       1. 콜백을 이용한 비동기 처리
       2. 콜백 지옥 
    3. Promise를 이용한 비동기 처리
-      1. Promise란, Promise의 사용법
-      2. async와 await
+      1. Promise란
+      2. Promise의 사용법
 1. HTTP 통신
    1. HTTP 기초
       1. 클라이언트 - 서버 구조
       2. CRUD
       3. JSON
       4. API
-      5. RESTful API 
+      5. HTTP 
+      6. RESTful API 
    2. axios를 이용해 서버와 통신하기
-      1. 메소드 지정
-      2. body에 데이터 넣기
-      3. header에 데이터 넣기
+      1. 서버와 통신하는 방법
+      2. axios란
+      3. axios 사용법
    3. 기타
       1. 쿠키와 세션
       2. 인증 (Authorization)
