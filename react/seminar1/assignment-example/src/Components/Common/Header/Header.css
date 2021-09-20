@@ -1,4 +1,4 @@
-header {
+#header {
   width: 100%;
   padding: 46px 0 0 43px;
   display: flex;
@@ -6,6 +6,6 @@ header {
 
 }
 
-header #title {
+#header #title {
   margin-left: 22px;
 }
