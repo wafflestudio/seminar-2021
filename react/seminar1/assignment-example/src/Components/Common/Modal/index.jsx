@@ -58,7 +58,7 @@ const Modal = ({ isModal, handleModal, handleAddStudent }) => {
             />
           </div>
           <div className="buttons">
-            <button onClick={handleCloseModal} className="danger">
+            <button type="button" onClick={handleCloseModal} className="danger">
               닫기
             </button>
             <button type="submit" className="submit">
