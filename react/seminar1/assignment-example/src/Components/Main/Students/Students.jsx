@@ -1,6 +1,11 @@
 import Student from "./Student";
 
-const Students = ({ students, selectedStudent, keyword }) => {
+const Students = ({
+  students,
+  selectedStudent,
+  keyword,
+  handleSelectStudent,
+}) => {
   return (
     <section className="student-list">
       <header>
@@ -14,7 +19,7 @@ const Students = ({ students, selectedStudent, keyword }) => {
             <Student
               key={student.id}
               student={student}
-              handleSelectStudent={() => {}}
+              handleSelectStudent={() => handleSelectStudent(student)}
               isSelected={selectedStudent && student.id === selectedStudent.id}
             />
           ))}

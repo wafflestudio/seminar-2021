@@ -3,7 +3,12 @@ import Students from "./Students";
 
 import "./index.css";
 
-const StudentsSection = ({ students, selectedStudent, handleModal }) => {
+const StudentsSection = ({
+  students,
+  selectedStudent,
+  handleModal,
+  handleSelectStudent,
+}) => {
   const [keyword, setKeyword] = useState("");
 
   return (
@@ -19,6 +24,7 @@ const StudentsSection = ({ students, selectedStudent, handleModal }) => {
       <Students
         students={students}
         selectedStudent={selectedStudent}
+        handleSelectStudent={handleSelectStudent}
         keyword={keyword}
       />
     </section>

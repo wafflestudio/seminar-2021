@@ -7,7 +7,7 @@ const Student = ({ student, handleSelectStudent, isSelected }) => {
   const { name, grade } = student;
 
   return (
-    <article className="student">
+    <article className={`student ${isSelected ? "selected" : ""}`}>
       <span className="name">{name}</span>
       <span className="grade">{grade}</span>
       <button onClick={handleSelectStudent}>

@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   text-align: center;
+  overflow-x: hidden;
+  border-bottom: 1px solid rgb(172, 172, 172)
 }
 
 .student:hover, .student.selected {
@@ -24,11 +26,17 @@
   height: 33px;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: -40px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: right 0.2s ease 0s;
+}
+
+.student.selected button,
+.student:hover button {
+  right: 20px;
 }
 
 .student button #arrow {
