@@ -19,7 +19,7 @@ const StudentsSection = ({
           onChange={(e) => setKeyword(e.target.value)}
           placeholder="검색"
         />
-        <button onClick={handleModal}>추가</button>
+        <button onClick={() => handleModal(true)}>추가</button>
       </section>
       <Students
         students={students}

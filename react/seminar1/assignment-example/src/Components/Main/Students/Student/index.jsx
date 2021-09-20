@@ -10,7 +10,7 @@ const Student = ({ student, handleSelectStudent, isSelected }) => {
     <article className={`student ${isSelected ? "selected" : ""}`}>
       <span className="name">{name}</span>
       <span className="grade">{grade}</span>
-      <button onClick={handleSelectStudent}>
+      <button onClick={handleSelectStudent} tabIndex="-1">
         <img src={isSelected ? leftArrow : rightArrow} alt="arrow" id="arrow" />
       </button>
     </article>
