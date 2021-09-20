@@ -20,7 +20,7 @@
 
 .student-list {
   width: 100%;
-  height: 598px; 
+  height: calc(100% - 55px); 
   border: 1px solid rgb(199, 199, 199);
   overflow-y: auto;
 }

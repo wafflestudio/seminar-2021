@@ -1,7 +1,8 @@
 .main-box {
-  width: 100%;
+  min-width: 1024px;
   position: fixed;
-  inset: 200px 42px 0;
+  inset: 200px 42px 20px;
   display: flex;
   justify-content: space-between;
+  overflow: auto;
 }
