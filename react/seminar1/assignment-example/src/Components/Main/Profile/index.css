@@ -4,3 +4,59 @@
   border: 1px solid rgb(221, 221, 221);
   box-sizing: border-box;
 }
+
+.profile form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile form .buttons {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: space-between;
+}
+
+.profile form .buttons button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.profile form .buttons button.submit {
+  background-color: #ECFFEB;
+}
+
+.profile form .buttons button.danger {
+  background-color: #FDE4E4;
+}
+
+.profile form img {
+  width: 260px;
+  height: 260px;
+  margin: 100px auto;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 50%;
+}
+
+.profile form .inputs {
+  margin: 10px 0;
+  padding: 0 20px;
+  width: 100%;
+
+}
+
+.profile form .inputs label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.profile form .inputs input {
+  width: calc(100% - 100px);
+   height: 30px;
+   line-height: 30px;
+}
+
+

@@ -16,28 +16,39 @@ const Profile = ({
     <section className="profile">
       {isSelected ? (
         <form onSubmit={onSubmit}>
-          <div>
-            <button type="submit">저장</button>
-            <button onClick={handleDeleteStudent}>삭제</button>
+          <div className="buttons">
+            <button type="submit" className="submit">
+              저장
+            </button>
+            <button onClick={handleDeleteStudent} className="danger">
+              삭제
+            </button>
           </div>
-          <label>이름</label>
-          <input
-            value={inputs.name}
-            name="name"
-            onChange={handleChangeInputs}
-          />
-          <label>학년</label>
-          <input
-            value={inputs.grade}
-            name="grade"
-            onChange={handleChangeInputs}
-          />
-          <label>프로필</label>
-          <input
-            value={inputs.profileImg}
-            name="profileImg"
-            onChange={handleChangeInputs}
-          />
+          <img src={inputs.profileImg} alt="profileImg" />
+          <div className="inputs">
+            <label>이름</label>
+            <input
+              value={inputs.name}
+              name="name"
+              onChange={handleChangeInputs}
+            />
+          </div>
+          <div className="inputs">
+            <label>학년</label>
+            <input
+              value={inputs.grade}
+              name="grade"
+              onChange={handleChangeInputs}
+            />
+          </div>
+          <div className="inputs">
+            <label>프로필</label>
+            <input
+              value={inputs.profileImg}
+              name="profileImg"
+              onChange={handleChangeInputs}
+            />
+          </div>
         </form>
       ) : (
         <p>
