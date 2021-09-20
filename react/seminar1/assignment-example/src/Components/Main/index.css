@@ -1,0 +1,7 @@
+.main-box {
+  width: 100%;
+  position: fixed;
+  inset: 200px 42px 0;
+  display: flex;
+  justify-content: space-between;
+}
