@@ -36,10 +36,10 @@
       4. CORS
 
 ## 세미나 자료
-- [제작 중](https://docs.google.com/presentation/d/1aLGdr4udy6cVxffcr3-VfF3KXIor5RGY9s9qIrz0p9o/edit?usp=sharing)
+- [PPT](https://docs.google.com/presentation/d/1aLGdr4udy6cVxffcr3-VfF3KXIor5RGY9s9qIrz0p9o/edit?usp=sharing)
 
 ------------------
 
 ## 과제
-- [준비 중](assignment.md)
+- [과제 스펙](assignment.md)
 - due: 2021.10.09 (토) 12:00
