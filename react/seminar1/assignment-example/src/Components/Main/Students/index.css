@@ -1,0 +1,43 @@
+.student-list-section {
+  width: 45%;
+}
+
+.student-list-section .search-bar {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.student-list-section .search-bar input {
+  width: 178px;
+  height: 30px;
+}
+
+.student-list-section .search-bar button {
+  width: 99px;
+  height: 30px;
+}
+
+.student-list {
+  width: 100%;
+  height: calc(100% - 55px); 
+  border: 1px solid rgb(199, 199, 199);
+  overflow-y: auto;
+}
+
+
+.student-list header {
+  height: 59px;
+  background-color: #C4C4C4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.student-list .name {
+  width: 160px;
+}
+
+.student-list .grade{
+  width: 78px;
+}
