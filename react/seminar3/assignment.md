@@ -37,6 +37,14 @@
   - 지금까지는 `window.alert`를 사용했다. 사실 `window.alert`를 막 쓰는 건 좋지 않다 ([참고](https://developer.mozilla.org/ko/docs/Web/API/Window/alert#%EC%B0%B8%EA%B3%A0))
   - `alert` 대신 적당한 토스트 라이브러리를 찾아서, 그걸로 대체한다.
     - [예를 들어 이런 거](https://www.npmjs.com/package/react-toastify)
+- 코드 퀄리티
+  - 강력한 필수 스펙입니다. 아주 중요하게, 모든 부분에서 지켜져야 합니다.
+    1. `camelCase`, `PascalCase` 가 필수스펙이 됩니다.
+    2. `useState` 안에 상수만 넣어야 합니다. props, context에서 꺼낸 값 등등 또는 그 값을 2차 가공한 값이 들어가면 스펙 오류입니다.
+  - 필수 스펙입니다.
+    1. `prettier` 적용해 주시기 바랍니다.
+- 배포
+  - 가령 cloudfront가 던지는 403 404 같은 에러들이 모두 해결되어야 합니다.
 
 ## 참고사항
 - 이번 과제부터, 라이브러리 제한이 완전히 풀립니다. 사용하고 싶으신 대로 사용하시기 바랍니다!
