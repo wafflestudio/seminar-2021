@@ -1,11 +1,21 @@
 spring:
+  profiles:
+    active: local
+app:
+  jwt:
+    jwt-secret-key: wafflestudio
+    jwt-expiration-in-ms: 10800000
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: local
   datasource:
     url: jdbc:mysql://localhost:3306/seminar?serverTimezone=UTC
     username: waffle-spring
     password: wafflestudio
-  sql:
-    init:
-      mode: always
   jpa:
     generate-ddl: true
     hibernate:
@@ -14,9 +24,26 @@ spring:
       # update: 시작 시 자동 migrate
       # none: db 그대로
       # create-drop: 시작 시 테이블 create, 종료 시 drop
+    show-sql: true
 
-app:
-  jwt:
-    jwt-secret-key: wafflestudio
-    jwt-expiration-in-ms: 10800000
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:mysql://:3306/seminar?serverTimezone=UTC
+    username: waffle-spring
+    password: wafflestudio
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
 

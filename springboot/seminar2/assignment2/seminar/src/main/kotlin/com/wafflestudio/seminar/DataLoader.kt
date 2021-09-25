@@ -6,6 +6,7 @@ import com.wafflestudio.seminar.domain.survey.model.SurveyResponse
 import com.wafflestudio.seminar.domain.survey.repository.SurveyResponseRepository
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.ApplicationRunner
+import org.springframework.context.annotation.Profile
 import org.springframework.core.io.ClassPathResource
 import org.springframework.stereotype.Component
 import java.io.BufferedReader
@@ -15,6 +16,7 @@ import java.time.format.DateTimeFormatter
 
 
 @Component
+@Profile("local")
 class DataLoader(
     private val operatingSystemRepository: OperatingSystemRepository,
     private val surveyResponseRepository: SurveyResponseRepository,
