@@ -18,7 +18,7 @@ class TestExample(TestCase):
         OperatingSystem.objects.create(
             name='os'
         )
-        User.objects.create_user(
+        self.user = User.objects.create_user(
             email='user@user.com',
             password='password'
         )
@@ -35,7 +35,7 @@ class TestExample(TestCase):
         
         client = self.client
         
-        client.force_login(User.objects.get(id=1))
+        client.force_login(self.user)
         response = client.get('/api/v1/user/me/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
