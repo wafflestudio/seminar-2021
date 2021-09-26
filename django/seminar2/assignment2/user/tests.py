@@ -4,7 +4,6 @@ from django.test import TestCase
 # Create your tests here.
 from rest_framework import status
 
-from seminar.models import ParticipantProfile, InstructorProfile
 from user.models import User
 from user.test_user import UserFactory
 

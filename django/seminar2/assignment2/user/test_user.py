@@ -3,7 +3,6 @@ from factory.django import DjangoModelFactory
 from user.models import User
 from django.test import TestCase
 from rest_framework import status
-import json
 
 from seminar.models import InstructorProfile, ParticipantProfile
 from user.serializers import jwt_token_of

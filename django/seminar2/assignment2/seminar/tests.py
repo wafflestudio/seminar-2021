@@ -4,8 +4,7 @@ from django.utils import timezone
 from factory.django import DjangoModelFactory
 from rest_framework import status
 
-from seminar.models import ParticipantProfile, InstructorProfile, Seminar, UserSeminar
-from user.models import User
+from seminar.models import Seminar, UserSeminar
 from user.test_user import UserFactory
 
 
