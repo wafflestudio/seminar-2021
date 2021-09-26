@@ -7,3 +7,5 @@ django-debug-toolbar==2.2
 djangorestframework==3.11.1
 djangorestframework-jwt
 django-rest-authtoken
+django-filter
+factory-boy

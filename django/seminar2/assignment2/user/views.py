@@ -53,27 +53,10 @@ class UserViewSet(viewsets.GenericViewSet):
 
         user = request.user
 
-        # FIXME 뷰셋의 serializer 를 그대로 이용하고자 하며, 코드량이 길지 않으면 서비스를 분리하지 않을 수도 있겠죠?
         serializer = self.get_serializer(user, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
-        validated_data = serializer.validated_data
-
-        university = validated_data.pop('university')
-        company, year = validated_data.pop('company'), validated_data.pop('year')
-
-        if hasattr(user, 'instructor'):
-            profile = user.instructor
-            profile.company = company
-            profile.year = year
-            profile.save(update_fields=['company', 'year'])
-
-        if hasattr(user, 'participant'):
-            profile = user.participant
-            profile.university = university
-            profile.update(update_fields=['university'])
-
         serializer.update(user, serializer.validated_data)
-        return Response(status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_200_OK, data=self.get_serializer(user).data)
 
     def retrieve(self, request, pk=None):
 
@@ -87,7 +70,7 @@ class UserViewSet(viewsets.GenericViewSet):
     def participant(self, request):
 
         service = CreateParticipantProfileService(data={'university': request.data.get('university')},
-                                                  partial=True)
+                                                  partial=True, context={'request': request})
         status_code, data = service.execute()
         return Response(status=status_code, data=data)
 

@@ -83,11 +83,11 @@ class UserCreateSerializer(serializers.Serializer):
     @transaction.atomic
     def create(self, validated_data):
         user = User.objects.create_user(
-            email=validated_data['email'],
-            username=validated_data['username'],
-            password=validated_data['password'],
-            first_name=validated_data['first_name'],
-            last_name=validated_data['last_name']
+            email=validated_data.pop('email'),
+            username=validated_data.pop('username'),
+            password=validated_data.pop('password'),
+            first_name=validated_data.pop('first_name', ''),
+            last_name=validated_data.pop('last_name', '')
         )
         self.build_profile(user, validated_data)
         return user, jwt_token_of(user)
@@ -185,6 +185,24 @@ class UserSerializer(serializers.ModelSerializer):
         user = super().create(validated_data)
         return user
 
+    def update(self, user, validated_data):
+
+        university = validated_data.get('university')
+        company, year = validated_data.get('company'), validated_data.get('year')
+
+        if hasattr(user, 'instructor'):
+            profile = user.instructor
+            profile.company = company
+            profile.year = year
+            profile.save(update_fields=['company', 'year'])
+
+        if hasattr(user, 'participant'):
+            profile = user.participant
+            profile.university = university
+            profile.save(update_fields=['university'])
+
+        super().update(user, validated_data)
+        return user
 
 class CreateParticipantProfileService(serializers.Serializer):
 
