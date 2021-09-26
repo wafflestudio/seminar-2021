@@ -2,8 +2,9 @@ from django.shortcuts import get_object_or_404, render
 from django.views.decorators.http import require_http_methods
 from rest_framework import status, viewsets, permissions
 from rest_framework.response import Response
+from rest_framework.views import APIView
 
-from survey.serializers import OperatingSystemSerializer, SurveyResultSerializer
+from survey.serializers import OperatingSystemSerializer, SurveyResultSerializer, OperatingSystemCreateService
 from survey.models import OperatingSystem, SurveyResult
 
 
@@ -49,6 +50,18 @@ class OperatingSystemViewSet(viewsets.GenericViewSet):
         except OperatingSystem.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
         return Response(self.get_serializer(os).data)
+
+    # POST api/v1/os/
+    def create(self, request):
+
+        # TODO("Seminar Practice")
+        name = request.data.get('name')
+        service = OperatingSystemCreateService(data={'name': name})
+
+        status, data = service.execute()
+
+        return Response(status=status, data=data)
+
 
 
 @require_http_methods('GET')
