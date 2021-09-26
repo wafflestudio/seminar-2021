@@ -1,4 +1,4 @@
-from rest_framework import serializers
+from rest_framework import serializers, status
 
 from survey.models import OperatingSystem, SurveyResult
 from user.serializers import UserSerializer
@@ -28,7 +28,6 @@ class SurveyResultSerializer(serializers.ModelSerializer):
             'os_name'
         )
 
-
     def get_os(self, survey):
         return OperatingSystemSerializer(survey.os, context=self.context).data
 
@@ -54,3 +53,17 @@ class OperatingSystemSerializer(serializers.ModelSerializer):
             'description',
             'price',
         )
+
+
+class OperatingSystemCreateService(serializers.Serializer):
+
+    name = serializers.CharField(max_length=100, allow_blank=True)
+
+    def execute(self):
+
+        self.is_valid()
+        name = self.validated_data['name']
+        os = OperatingSystem.objects.create(
+            name=name
+        )
+        return status.HTTP_200_OK, OperatingSystemSerializer(os).data
