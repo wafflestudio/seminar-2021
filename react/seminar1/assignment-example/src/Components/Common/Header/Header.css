@@ -1,0 +1,11 @@
+#header {
+  width: 100%;
+  padding: 46px 0 0 43px;
+  display: flex;
+  align-items: center;
+
+}
+
+#header #title {
+  margin-left: 22px;
+}

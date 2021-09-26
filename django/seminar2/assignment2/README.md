@@ -12,7 +12,7 @@
 - 이 repo를 clone하되 로컬에 생성된 [waffle_backend](waffle_backend) 에서 바로 작업하지 마세요.
 아래 '제출 방식'을 통해 생성한 본인의 `waffle-rookies-19.5-backend-2` repo를 로컬에 clone하고, 그 directory 바로 하위에 [waffle_backend](waffle_backend)
 를 복붙하여 작업을 시작하세요.
-- [seminar1](../seminar1) 내부의 waffle_backend와 착각하지 마세요! 또한 본인이 1번째 과제를 위해 기존에 작업했던 서버를 그대로 사용하지 마세요!
+- [assignment1](../../seminar1/assignment1) 내부의 waffle_backend와 착각하지 마세요! 또한 본인이 1번째 과제를 위해 기존에 작업했던 서버를 그대로 사용하지 마세요!
 - 일반적인 경우 서로 다른 서버면 다른 Python 가상 환경을 쓰는 것이 맞고, 1번째 과제와 별도로 지금의 과제에 대해서는 별개의 Python 가상 환경을 구축하는 것이
 바람직합니다. 하지만 1번째 과제와 사용하는 Python 버전, 패키지 등에 사실상 차이가 거의 없으므로, 기존 환경을 그대로 이용하셔도 괜찮습니다.
 - '과제 내용'에 언급되어있는 database 설정을 반드시 참조하세요. 로컬 MySQL의 기존 `waffle_backend` database를 그대로 이용하지 않습니다.
@@ -38,6 +38,7 @@
 - 이제 유저 식별은 `username`이 아닌, `email`로 진행하려 합니다. 해당 스펙을 만족하도록 구현해주세요!
 - `username`, `email (필수)`, `password` 를 request body로 signup (or) login을 하면, request body로 token이 내려보내집니다.
 - 이렇게 발급된 토큰을 `Authoriaztion : JWT <token>` 형태로 헤더에 넣기만 하면, 토큰을 통해 유저 인증 관리를 할 수 있게 됩니다.
+- ![image](https://user-images.githubusercontent.com/54717129/132949141-67643d74-5f29-400f-a4a3-efe6377c6ee4.png)
 - 해당 내용을 구현하지 않으시면 어플이 정상 작동하지 않는다는 점 참고하여 주시기 바랍니다.
 
 ### 3
@@ -61,16 +62,16 @@ one-to-one 관계를 가집니다. 두 model을 정의해서 User와 연결시�
 ### 5
 - 회원가입 API인 `POST /api/v1/signup/`는 이미 정의되어 있습니다. request의 body에 `role`의 값이 `participant`인지,
 `instructor`인지에 따라 ParticipantProfile 또는 InstructorProfile이 User와 함께 생성되도록 하세요. `role`이 둘 중 하나의 값이 아닌 경우 `400`으로 적절한 에러 메시지와 함께 응답합니다.
-- 회원가입 API에 대한 아래의 내용은 [#186 issue](https://github.com/wafflestudio/rookies/issues/186)에 따라 명시되었습니다. 기본적으로 5.의 관련 내용과 같다고 생각하시면 됩니다.
+- 회원가입 API에 대한 아래의 내용은 [#186 issue](https://github.com/wafflestudio/rookies/issues/186)에 따라 명시되었습니다. 기본적으로 6.의 관련 내용과 같다고 생각하시면 됩니다.
   - `role`이 `participant`인 User는 소속 대학에 대한 정보(university)를 저장할 수 있습니다. 정보가 없는 경우, `""`으로 DB에 저장됩니다.
-  - `role`이 `participant`인 User는 Seminar에 참여할 수 있는지에 대한 정보(accepted)를 받을 수 있습니다. 정보가 없는 경우, `True`로 받아들이면 됩니다.(사후 수정 - [#218 issue](https://github.com/wafflestudio/rookies/issues/218) 참고)
+  - `role`이 `participant`인 User는 Seminar에 참여할 수 있는지에 대한 정보(accepted)를 받을 수 있습니다. 정보가 없는 경우, `True`로 받아들이면 됩니다.([#218 issue](https://github.com/wafflestudio/rookies/issues/218) 참고)
   - `role`이 `instructor`인 User는 소속 회사에 대한 정보(company)와 자신이 몇 년차 경력인지(year)를 저장할 수 있습니다. 정보가 없는 경우, 각각 `""`과 null으로 DB에 저장됩니다.
   - 참여자인 User가 request body에 company를 포함하는 등, 자신의 유형과 맞지 않는 정보가 들어오면 그냥 무시하면 됩니다. body가 완전히 비어있어도 무시하면 됩니다.
   - year에 0 또는 양의 정수가 아닌 값이 오는 경우는 `400`으로 응답하며, 적절한 에러 메시지를 포함합니다.
 -  `PUT /api/v1/user/me/`, `GET /api/v1/user/{user_id}/`의 response body는 `UserSerializer`를 그대로 이용하되,
 아래와 같이 확장 하세요. 이번 과제에서 정의하는 model의 column 이름은 자유롭게 정해도 되지만, response는 하나의 차이도 없이 같아야 합니다.
 값의 위치에 `Participant university` 등으로 적혀있는 것은, 어떤 model에 해당 정보를 어떤 type으로 저장하면 될지 힌트를 제공하는 것이고, 실제 저장은 다른 구조로 다른 이름으로 해도 됩니다.
-단, 2.와 3.에서 직접 언급한 table 및 column의 구조와 이름은 지키셔야 합니다.
+단, 3.와 4.에서 직접 언급한 table 및 column의 구조와 이름은 지키셔야 합니다.
 null이 가능하다고 명시하지 않은 값엔 null이 들어가면 안 됩니다. 처음부터 이와 같은 body를 갖출 수는 없고,
 아래에 기술되는 과제 내용을 참고하여 개발이 진행되어감에 따라 이에 가까워질 것입니다.
 ````
@@ -123,7 +124,7 @@ null이 가능하다고 명시하지 않은 값엔 null이 들어가면 안 됩�
 ### 7
 - User는 진행자로 가입한 경우, 사후적으로 참여자로 등록할 수 있습니다. `POST /api/v1/user/participant/`를 통해 가능하며, 이때 `university`를 함께
 request body로 제공할 수 있습니다. 이것이 포함되는 경우, 서버는 이를 저장해야합니다. university의 입력이 없는 경우 `""`으로 저장하면 됩니다. accepted의 입력이 없는 경우, `True`로 받아들이면 됩니다.
-이미 참여자인 사람이 또 요청하면 `400`으로 응답하며, 적절한 에러 메시지를 포함합니다. 성공적인 경우 `201`로 응답하고 4.의 response body와 같은 구조를 가지면 됩니다.
+이미 참여자인 사람이 또 요청하면 `400`으로 응답하며, 적절한 에러 메시지를 포함합니다. 성공적인 경우 `201`로 응답하고 5.의 response body와 같은 구조를 가지면 됩니다.
 - 한 번 진행자 또는 참여자가 된 User는 서비스 로직상 해당 Profile을 잃지 않습니다.
 
 ### 8
@@ -229,11 +230,11 @@ online 여부 외에는 하나라도 빠지면 `400`으로 응답하며, 적절�
 
 ### 11
 - `waffle-rookies-19.5-backend-2`의 `README.md`에 과제 관련 하고 싶은 말, 어려웠던 점 등을 남겨주세요. 물론 적극적으로 해결되어야 할 피드백이나
-질문 사항은 [Issues](https://github.com/wafflestudio/rookies/issues) 등을 이용해주세요!
+질문 사항은 [Issues](https://github.com/wafflestudio/19.5-rookies/issues) 등을 이용해주세요!
 - `GET /api/v1/seminar/` API에 관련해, Django Debug Toolbar를 이용하여 query를 보고 스크린샷과 함께 느낀 점이나 이를 통해 조금이라도 query를 개선한 부분을 남겨주세요.
 물론 다른 API들에 대해서 추가적으로 포함하셔도 좋습니다.
 - 개발 과정의 흐름이나 시행 착오를 알아보기 좋게 작성해주셔도 좋습니다.
-- 구현을 하다가 과제 내용에 명시되지 않은 경우가 있다고 생각되면 [Issues](https://github.com/wafflestudio/rookies/issues) 에서 질문해주세요.
+- 구현을 하다가 과제 내용에 명시되지 않은 경우가 있다고 생각되면 [Issues](https://github.com/wafflestudio/19.5-rookies/issues) 에서 질문해주세요.
 
 ## 제출 방식
 1. 자신의 GitHub 개인 계정에 `waffle-rookies-19.5-backend-2`라는 이름으로 private repository를 개설합니다.
@@ -302,7 +303,7 @@ online 여부 외에는 하나라도 빠지면 `400`으로 응답하며, 적절�
 
 - 앞으로도 늘 그렇겠지만, 과제를 진행하며 모르는 것들과 여러 난관에 부딪히리라 생각됩니다. 당연히 그 지점을 기대하고 과제를 드리는 것이고, 기본적으로 스스로 구글링을
 통해 여러 내용을 확인하고 적절한 수준까지 익숙해지실 수 있도록 하면 좋겠습니다.
-- [Issues](https://github.com/wafflestudio/rookies/issues) 에 질문하는 것을 어려워하지 마시길 바랍니다. 필요하다면 본인의 환경에 대한 정보를 잘 포함시켜주세요.
+- [Issues](https://github.com/wafflestudio/19.5-rookies/issues) 에 질문하는 것을 어려워하지 마시길 바랍니다. 필요하다면 본인의 환경에 대한 정보를 잘 포함시켜주세요.
 또한 Issue 제목에 과제 내용의 번호 등을 사용하시기보다, 궁금한 내용의 키워드가 포함되도록 해주세요. 답이 정해져있지 않은 설계에 대한 고민 공유도 좋습니다.
 - 문제를 해결하기 위해 질문하는 경우라면, 질문을 통해 기대하는 바, (가급적 스크린샷 등을 포함한) 실제 문제 상황, 이를 해결하기 위해 시도해본 것, 예상해본 원인 등을 포함시켜 주시는 것이 자신과 질문을 답변하는 사람, 제3자 모두에게 좋습니다.
 - 저는 직장을 다니고 있으므로 아주 빠른 답변은 어려울 수 있고, 특히 과제 마감 직전에 여러 질문이 올라오거나 하면 마감 전에 모든 답변을 드릴 수 있다는 것은
