@@ -19,7 +19,7 @@ class UserFactory(DjangoModelFactory):
     def create(cls, **kwargs):
         is_instructor, is_participant = kwargs.pop('is_instructor', False), kwargs.pop('is_participant', False)
         user = User.objects.create(**kwargs)
-        user.set_password(kwargs.pop('password'))
+        user.set_password(kwargs.get('password', ''))
         user.save()
         if is_instructor:
             InstructorProfile.objects.create(user=user)
