@@ -121,6 +121,8 @@ class UserSerializer(serializers.ModelSerializer):
     university = serializers.CharField(required=False, write_only=True)
     company = serializers.CharField(required=False, write_only=True)
     year = serializers.IntegerField(required=False, write_only=True)
+    first_name = serializers.CharField(max_length=30, required=False)
+    last_name = serializers.CharField(max_length=30, required=False)
 
     class Meta:
         model = User
@@ -140,7 +142,11 @@ class UserSerializer(serializers.ModelSerializer):
             'company',
             'year'
         )
-        extra_kwargs = {'password': {'write_only': True}}
+        extra_kwargs = {'password': {'write_only': True, 'required': False}, 'last_login': {'read_only': True}}
+
+    def validate_password(self, value):
+
+        return make_password(value)
 
     def validate_year(self, value):
 
@@ -156,6 +162,18 @@ class UserSerializer(serializers.ModelSerializer):
     def validate_company(self, value):
 
         return value or ''
+
+    def validate(self, data):
+        first_name = data.get('first_name')
+        last_name = data.get('last_name')
+        year = data.get('year')
+        if bool(first_name) ^ bool(last_name):
+            raise serializers.ValidationError("성과 이름 중에 하나만 입력할 수 없습니다.")
+        if first_name and last_name and not (first_name.isalpha() and last_name.isalpha()):
+            raise serializers.ValidationError("이름에 숫자가 들어갈 수 없습니다.")
+        if year and year <= 0:
+            raise serializers.ValidationError("year; 양의 정수만 가능합니다.")
+        return super().validate(data)
 
     def get_participant(self, instance):
 
@@ -187,8 +205,8 @@ class UserSerializer(serializers.ModelSerializer):
 
     def update(self, user, validated_data):
 
-        university = validated_data.get('university')
-        company, year = validated_data.get('company'), validated_data.get('year')
+        university = validated_data.get('university', '')
+        company, year = validated_data.get('company', ''), validated_data.get('year')
 
         if hasattr(user, 'instructor'):
             profile = user.instructor
