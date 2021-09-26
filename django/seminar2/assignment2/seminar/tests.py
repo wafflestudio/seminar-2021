@@ -6,23 +6,7 @@ from rest_framework import status
 
 from seminar.models import ParticipantProfile, InstructorProfile, Seminar, UserSeminar
 from user.models import User
-
-
-class UserFactory(DjangoModelFactory):
-    class Meta:
-        model = User
-
-    email = 'test@test.com'
-
-    @classmethod
-    def create(cls, **kwargs):
-        is_instructor, is_participant = kwargs.pop('is_instructor', False), kwargs.pop('is_participant', False)
-        user = super().create(**kwargs)
-        if is_instructor:
-            InstructorProfile.objects.create(user=user)
-        if is_participant:
-            ParticipantProfile.objects.create(user=user)
-        return user
+from user.test_user import UserFactory
 
 
 class SeminarFactory(DjangoModelFactory):

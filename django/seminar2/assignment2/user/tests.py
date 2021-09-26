@@ -6,27 +6,25 @@ from rest_framework import status
 
 from seminar.models import ParticipantProfile, InstructorProfile
 from user.models import User
+from user.test_user import UserFactory
 
 
 class UserTestCase(TestCase):
 
     @classmethod
     def setUpTestData(cls):
-        cls.user = User.objects.create_user(
+        cls.user = UserFactory(
             email='test@test.com',
             username='test',
-            password='test'
+            password='test',
+            is_participant=True,
+            is_instructor=True
         )
-        participant = ParticipantProfile.objects.create(
-            user=cls.user
-        )
-        instructor = InstructorProfile.objects.create(
-            user=cls.user
-        )
-        User.objects.create_user(
+        cls.instructor = UserFactory(
             email='instructor@test.com',
             username='test',
-            password='test'
+            password='test',
+            is_instructor=True
         )
 
     def test_signup(self):
