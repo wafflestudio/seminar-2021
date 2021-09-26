@@ -88,6 +88,7 @@
 
 [SPRING_SEMINAR_1_VIDEO]: https://youtu.be/CqC8tQOCxPQ
 [SPRING_SEMINAR_2_VIDEO]: https://youtu.be/SuHTS4n8SW4
+[SPRING_SEMINAR_3_VIDEO]: https://youtu.be/4BnwsQSBaYM
 
 [ANDROID_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/9990095624
 [ANDROID_SEMINAR_0_VIDEO]: https://youtu.be/orCngfd8_20
