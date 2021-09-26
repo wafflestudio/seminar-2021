@@ -5,7 +5,7 @@ from django.db.models import Q, F
 from django.utils import timezone
 
 from django.shortcuts import render
-from rest_framework import status
+from rest_framework import status, serializers
 from rest_framework.decorators import api_view
 from django.contrib.auth import get_user_model
 
@@ -48,8 +48,14 @@ class SeminarViewSet(GenericViewSet):
 
         serializer = self.get_serializer(data=data)
         serializer.is_valid(raise_exception=True)
-        serializer.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+        # FIXME: 예외처리 때문에 Service 레이어가 애매해지는 경우. 어떻게 해결하면 좋을지 각자만의 방법을 떠올리면서 열람해봅시다..!
+        try:
+            seminar = serializer.save()
+        except serializers.ValidationError as e:
+            return Response(status=status.HTTP_403_FORBIDDEN, data=e.detail)
+
+        return Response(self.get_serializer(seminar).data, status=status.HTTP_201_CREATED)
 
     def update(self, request, pk=None):
 
@@ -64,10 +70,16 @@ class SeminarViewSet(GenericViewSet):
         if not seminar:
             return Response(status=status.HTTP_404_NOT_FOUND, data='그런 세미나는 없습니다.')
 
-        serializer = self.get_serializer(data=request.data, context={'seminar': seminar})
-        serializer.is_valid(raise_exception=True)
-        serializer.update(seminar, serializer.validated_data)
-        return Response(serializer.validated_data, status=status.HTTP_201_CREATED)
+        serializer = self.get_serializer(data=request.data, context={'seminar': seminar}, partial=True)
+        serializer.is_valid()
+
+        # FIXME: 여기도 예외처리 때문에 Service 레이어가 애매해지는 경우.
+        try:
+            serializer.update(seminar, serializer.validated_data)
+        except serializers.ValidationError as e:
+            return Response(status=status.HTTP_400_BAD_REQUEST, data=e.detail)
+
+        return Response(self.get_serializer(seminar).data, status=status.HTTP_200_OK)
 
 
 class UserSeminarView(APIView):

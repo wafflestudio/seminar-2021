@@ -74,20 +74,13 @@ class InstructorSerializer(serializers.ModelSerializer):
 
 class SeminarSerializer(serializers.ModelSerializer):
 
+    online = serializers.BooleanField(required=False, default=True)
     participants = serializers.SerializerMethodField()
     instructors = serializers.SerializerMethodField()
 
     class Meta:
         model = Seminar
         exclude = ('created_at', 'updated_at', )
-
-    def validate_capacity(self, value):
-
-        seminar = self.context.get('seminar')
-        if seminar and seminar.user_seminars.filter(is_active=True).count() > value:
-            raise serializers.ValidationError('이미 들어찬 정원보다 적게는 줄일 수 없어요')
-
-        return value
 
     def get_participants(self, instance):
 
@@ -101,16 +94,26 @@ class SeminarSerializer(serializers.ModelSerializer):
 
         return instructors
 
-
     def create(self, validated_data):
-        seminar = super().create(validated_data)
+
         user = self.context['request'].user
+        if not hasattr(user, 'instructor'):
+            raise serializers.ValidationError('강사만 세미나를 등록할 수 있습니다.')
+
+        seminar = super().create(validated_data)
         UserSeminar.objects.create(
             seminar=seminar,
             user=user,
             is_instructor=True
         )
         return seminar
+
+    def update(self, instance, validated_data):
+
+        capacity = validated_data.get('capacity')
+        if capacity and instance.user_seminars.filter(is_active=True).count() > capacity:
+            raise serializers.ValidationError('이미 들어찬 정원보다 적게는 줄일 수 없어요')
+        super().update(instance, validated_data)
 
 
 class SeminarViewSerializer(SeminarSerializer):
@@ -212,13 +215,13 @@ class RegisterSeminarService(serializers.Serializer):
         self.is_valid()
         seminar_id = self.context.get('seminar_id')
         role = self.validated_data['role']
-        user = self.context.get('user')
+        user = self.context.get('request').user
         seminar = Seminar.objects.get_or_none(id=seminar_id)
 
         if not seminar:
             return status.HTTP_404_NOT_FOUND, '그런 세미나는 없습니다.'
 
-        if not hasattr(user, role):
+        if not hasattr(user, UserRole.PARTICIPANT):
             return status.HTTP_403_FORBIDDEN, f'{role} 프로필이 없습니다.'
 
         if role == UserRole.PARTICIPANT:
