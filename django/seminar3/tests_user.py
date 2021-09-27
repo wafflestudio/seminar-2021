@@ -122,11 +122,11 @@ class PutUserMeTestCase(TestCase):
             email='bdv111@snu.ac.kr',
             is_participant=True
         )
-        cls.participant.university = '서울대학교'
+        cls.participant.participant.university = '서울대학교'
         cls.participant.save()
         cls.participant_token = 'JWT ' + jwt_token_of(User.objects.get(email='bdv111@snu.ac.kr'))
 
-        cls.participant = UserFactory(
+        cls.instructor = UserFactory(
             username='inst',
             password='password',
             first_name='Davin',
@@ -134,8 +134,8 @@ class PutUserMeTestCase(TestCase):
             email='bdv123@snu.ac.kr',
             is_instructor=True
         )
-        cls.participant.year = 1
-        cls.participant.save()
+        cls.instructor.instructor.year = 1
+        cls.instructor.save()
         cls.instructor_token = 'JWT ' + jwt_token_of(User.objects.get(email='bdv123@snu.ac.kr'))
 
     def test_put_user_incomplete_request(self):
