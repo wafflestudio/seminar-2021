@@ -2,6 +2,7 @@ from factory.django import DjangoModelFactory
 
 from user.models import User
 from django.test import TestCase
+from django.db import transaction
 from rest_framework import status
 import json
 
@@ -60,7 +61,8 @@ class PostUserTestCase(TestCase):
 
     def test_post_user_중복(self):
         data = self.post_data
-        response = self.client.post('/api/v1/signup/', data=data)
+        with transaction.atomic():
+           response = self.client.post('/api/v1/signup/', data=data)
         self.assertEqual(response.status_code, status.HTTP_409_CONFLICT)
 
         user_count = User.objects.count()
