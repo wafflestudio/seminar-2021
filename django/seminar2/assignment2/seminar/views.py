@@ -48,36 +48,22 @@ class SeminarViewSet(GenericViewSet):
 
         serializer = self.get_serializer(data=data)
         serializer.is_valid(raise_exception=True)
-
-        # FIXME: 예외처리 때문에 Service 레이어가 애매해지는 경우. 어떻게 해결하면 좋을지 각자만의 방법을 떠올리면서 열람해봅시다..!
-        try:
-            seminar = serializer.save()
-        except serializers.ValidationError as e:
-            return Response(status=status.HTTP_403_FORBIDDEN, data=e.detail)
+        seminar = serializer.save()
 
         return Response(self.get_serializer(seminar).data, status=status.HTTP_201_CREATED)
 
     def update(self, request, pk=None):
 
-        user = request.user
-        if not user.user_seminars.filter(seminar__id=pk, is_instructor=True).exists():
-            return Response(status=status.HTTP_403_FORBIDDEN, data='권한이 없습니다.')
-
         # Fixme: 위의 retrieve 에서 같은 404 처리를 어떻게 하는지 함께 비교해보시면 될 듯 합니다. 많은 경우에 get() 호출 시 에러가 아닌 다른 처리를 해주어야 합니다.
         #  이 때 BaseManager 를 상속 후 함수를 추가하고, 이를 매니저로 사용하는 모델을 커스텀함으로써 모든 모델에 손쉽게 해당 로직을 반영할 수 있습니다.
-        seminar = Seminar.objects.get_or_none(id=pk)
+        #  이런 식의 구현에서 좀 더 나아가면, 상황별로 exception 을 custom 하고, 직접 exception_handler 를 구현 뒤 등록할 수도 있습니다.
 
-        if not seminar:
+        if not (seminar := Seminar.objects.get_or_none(id=pk)):
             return Response(status=status.HTTP_404_NOT_FOUND, data='그런 세미나는 없습니다.')
 
-        serializer = self.get_serializer(data=request.data, context={'seminar': seminar}, partial=True)
+        serializer = self.get_serializer(data=request.data, context={'request': request}, partial=True)
         serializer.is_valid()
-
-        # FIXME: 여기도 예외처리 때문에 Service 레이어가 애매해지는 경우.
-        try:
-            serializer.update(seminar, serializer.validated_data)
-        except serializers.ValidationError as e:
-            return Response(status=status.HTTP_400_BAD_REQUEST, data=e.detail)
+        serializer.update(seminar, serializer.validated_data)
 
         return Response(self.get_serializer(seminar).data, status=status.HTTP_200_OK)
 

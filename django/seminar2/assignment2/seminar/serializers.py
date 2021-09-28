@@ -1,5 +1,6 @@
 from django.utils import timezone
 from rest_framework import serializers, status
+from rest_framework.exceptions import PermissionDenied, ValidationError
 
 from .models import ParticipantProfile, InstructorProfile, Seminar, UserSeminar
 
@@ -16,7 +17,7 @@ class UserRole:
 
 class ParticipantSerializer(serializers.ModelSerializer):
 
-    id = serializers.SerializerMethodField()
+    id = serializers.IntegerField(source='user.id')
     university = serializers.CharField(required=False, allow_null=True, default='')
     accepted = serializers.BooleanField(required=False, allow_null=True, default=True)
 
@@ -28,9 +29,6 @@ class ParticipantSerializer(serializers.ModelSerializer):
             'university',
             'accepted',
         )
-
-    def get_id(self, instance):
-        return instance.user.id
 
     def validate_university(self, value):
         return value or ''
@@ -44,10 +42,9 @@ class ParticipantSerializer(serializers.ModelSerializer):
         return super().create(validated_data)
 
 
-
 class InstructorSerializer(serializers.ModelSerializer):
 
-    id = serializers.SerializerMethodField()
+    id = serializers.IntegerField(source='user.id')
     company = serializers.CharField(required=False, allow_null=True, default='')
     year = serializers.IntegerField(required=False, allow_null=True)
 
@@ -58,10 +55,6 @@ class InstructorSerializer(serializers.ModelSerializer):
             'company',
             'year',
         )
-
-    def get_id(self, instance):
-
-        return instance.user.id
 
     def validate_company(self, value):
         return value or ''
@@ -84,13 +77,13 @@ class SeminarSerializer(serializers.ModelSerializer):
 
     def get_participants(self, instance):
 
-        participants = ParticipantSerializer(list(instance.user_seminars.filter(is_instructor=False)), many=True).data
+        participants = ParticipantSerializer(instance.user_seminars.filter(is_instructor=False), many=True).data
 
         return participants
 
     def get_instructors(self, instance):
 
-        instructors = InstructorSerializer(list(instance.user_seminars.filter(is_instructor=True)), many=True).data
+        instructors = InstructorSerializer(instance.user_seminars.filter(is_instructor=True), many=True).data
 
         return instructors
 
@@ -98,7 +91,7 @@ class SeminarSerializer(serializers.ModelSerializer):
 
         user = self.context['request'].user
         if not hasattr(user, 'instructor'):
-            raise serializers.ValidationError('강사만 세미나를 등록할 수 있습니다.')
+            raise PermissionDenied('강사만 세미나를 등록할 수 있습니다.')
 
         seminar = super().create(validated_data)
         UserSeminar.objects.create(
@@ -110,16 +103,21 @@ class SeminarSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
 
+        user = self.context['request'].user
+
+        if not user.user_seminars.filter(seminar__id=instance.id, is_instructor=True).exists():
+            raise PermissionDenied('권한이 없습니다.')
+
         capacity = validated_data.get('capacity')
         if capacity and instance.user_seminars.filter(is_active=True).count() > capacity:
-            raise serializers.ValidationError('이미 들어찬 정원보다 적게는 줄일 수 없어요')
+            raise ValidationError('이미 들어찬 정원보다 적게는 줄일 수 없어요')
+
         super().update(instance, validated_data)
 
 
 class SeminarViewSerializer(SeminarSerializer):
 
     participant_count = serializers.SerializerMethodField()
-    instructors = serializers.SerializerMethodField()
 
     class Meta:
         model = Seminar
@@ -137,8 +135,8 @@ class SeminarViewSerializer(SeminarSerializer):
 
 class ParticipantSeminarSerializer(serializers.ModelSerializer):
 
-    id = serializers.SerializerMethodField()
-    name = serializers.SerializerMethodField()
+    id = serializers.IntegerField(source='seminar.id')
+    name = serializers.CharField(source='seminar.name')
     joined_at = serializers.DateTimeField(source='created_at')
 
     class Meta:
@@ -151,17 +149,11 @@ class ParticipantSeminarSerializer(serializers.ModelSerializer):
             'dropped_at'
         )
 
-    def get_id(self, instance):
-        return instance.seminar.id
-
-    def get_name(self, instance):
-        return instance.seminar.name
-
 
 class InstructorSeminarSerializer(serializers.ModelSerializer):
 
-    id = serializers.SerializerMethodField()
-    name = serializers.SerializerMethodField()
+    id = serializers.IntegerField(source='seminar.id')
+    name = serializers.CharField(source='seminar.name')
     joined_at = serializers.DateTimeField(source='created_at')
 
     class Meta:
@@ -171,12 +163,6 @@ class InstructorSeminarSerializer(serializers.ModelSerializer):
             'name',
             'joined_at'
         )
-
-    def get_id(self, instance):
-        return instance.seminar.id
-
-    def get_name(self, instance):
-        return instance.seminar.name
 
 
 class DropSeminarService(serializers.Serializer):
