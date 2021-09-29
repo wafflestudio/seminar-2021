@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assignment3Skeleton</string>
+    <string name="team_waffle">waffle</string>
+    <string name="team_ios">iOS</string>
+</resources>
