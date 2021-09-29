@@ -6,18 +6,19 @@
 
 ## 수업 내용
 
-1. React 고급 기술
+1. 개발 mindset
+2. React 고급 기술
    1. 폼 
       1. 제어 컴포넌트
       2. 비제어 컴포넌트
    2. immutable
    3. Ref
    4. custom hooks
-2. 브라우저 렌더 원리
-3. 정적 타입 검사: Typescript
-4. Css Advanced
+3. 브라우저 렌더 원리
+4. 정적 타입 검사: Typescript
+5. Css Advanced
    - Css Modules, Sass, CSS-in-JS
-5. linter & prettier
+6. linter & prettier
 
 ## 세미나 자료
 
