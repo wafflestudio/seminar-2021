@@ -1,4 +1,4 @@
-# Wafflestudio Android Seminar 2 - Assignment
+# Wafflestudio Android Seminar 3 - Assignment
 #### due: 2021.10.17 24:00
 
 ## 과제 목표
@@ -44,7 +44,7 @@
 - 다음의 방식을 사용하여 과제를 진행한다.
     - Android Studio를 통해 `waffle-android-assign` 폴더 안에 Assignment3 라는 이름의 새로운 프로젝트를 만들어 진행한다.
     - `wafflestudio/19.5-rookies repo`를 clone한 뒤, `android/assignment_3/Assignment3Skeleton` 폴더를 복사하여 진행한다.
-- 과제를 완료한 후 `git add .`, `git commit`, `git push origin assignment2`를 통해 github에 업로드한 뒤, main(master) branch로 Pull Request를 만든다.
+- 과제를 완료한 후 `git add .`, `git commit`, `git push origin assignment3`를 통해 github에 업로드한 뒤, main(master) branch로 Pull Request를 만든다.
 - 생성된 Pull Request에 [@veldic](https://github.com/veldic)을 Reviewers로 등록한다.
 
 ```
