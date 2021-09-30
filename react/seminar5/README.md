@@ -7,22 +7,18 @@
 ## 수업 내용
 
 ------------------
-1. css 가 최선일까
-   - css 의 문제점
-   - sass
-   - css-in-js
-   - design library
-      - material-ui
-      - semantic-ui-react
-      - react-bootstrap
-1. create-react-app 이 최선일까
-   - NextJS
-   - GatsbyJS
-1. 과연 react 는 최선일까
-   - svelte, angular, vue, ...
-1. 웹 접근성
-   - tabIndex
-   - og, alt, role, lang
+1. SEO
+2. SSR vs CSR vs SSG
+3. 웹 접근성: 적절한 태그와 속성을 사용해야 하는 이유 (tabIndex, lang, form, alt 등)
+4. 웹뷰란?
+5. 브라우저 렌더 과정: 16.6ms
+6. 남은 과제들: 이런 게 있다
+    - 브라우저 작동 원리, html, css, js 기본 다지기 (이벤트 루프? 이벤트 델리게이션?)
+    - 공식문서로 근본 다지기
+    - redux, formik, react-query 등 현업에서 많이 쓰이는 수많은 라이브러리들에 대한 적응
+    - `git`
+    - 프론트 개발자로서의 센스
+    - 테스팅
 
 ## 세미나 자료
 
