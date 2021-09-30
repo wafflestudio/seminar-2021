@@ -5,13 +5,14 @@
 
 ## 과제 목적
 - animation을 이해하고 UiView에 animation을 적용해본다.
-- Gesture를 이해하고 UIPanGeatureRecognizer를 사용해본다.
+- gesture를 이해하고 UIPanGeatureRecognizer를 사용해본다.
 - UiPickerView를 사용해본다.
 
 ## 과제 - UiPickerView와 슬라이드 뷰가 구현되어 있는 간단한 앱 만들기
+https://user-images.githubusercontent.com/54926767/135480836-fbd1bd51-b887-47e7-8bbc-74c923d1ef6c.mov
 
 - 메인 View Controller에서 "세미나 선택하기" 버튼을 터치하면 UiPickerView가 들어 있는 View Controller가 modal 형태로 present되어 나타납니다.
-- PickerView는 그림처럼 1개의 컴포넌트에 5개의 text row로 구성되어 있으며, 각 row text에 와플 세미나들의 이름을 넣습니다.
+- PickerView는 그림처럼 1개의 컴포넌트에 5개의 text row로 구성되어 있으며, 각 row text에 와플 세미나들의 이름을 넣습니다. (iOS, Android, Frontend, Django, Spring Boot)
 - PickerView가 있는 View Controller에서 "선택하기" 버튼을 누르면 해당 View Controller가 dismiss되며, 선택한 세미나의 이름이 메인 View Controller에 나타나게 합니다. (delegate pattern을 참고해주세요!)
 - 메인 View Controller 바닥에 100 ~ 200 height 높이의 View가 보이게 합니다. Bottom View의 원래 height는 500 ~ 'superView의 height' 가 되게 합니다.
 - Bottom View를 Pan Gesture를 통해 위아래로 끌 수 있게 PanGestureRecognizer를 구현하고 적용합니다.
