@@ -10,8 +10,8 @@ User = get_user_model()
 class Seminar(BaseModel):
 
     name = models.CharField(max_length=100, blank=False)
-    capacity = models.IntegerField()
-    count = models.IntegerField()
+    capacity = models.PositiveIntegerField()
+    count = models.PositiveIntegerField()
     time = models.TimeField()
     online = models.BooleanField(blank=True, default=True)
     created_at = models.DateTimeField(auto_now_add=True)
