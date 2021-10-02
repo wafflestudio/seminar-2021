@@ -150,8 +150,8 @@ class UserSerializer(serializers.ModelSerializer):
 
     def validate_year(self, value):
 
-        if value <= 0:
-            raise serializers.ValidationError('year; 양의 정수만 가능합니다.')
+        if value < 0:
+            raise serializers.ValidationError('year; 0 또는 양의 정수만 가능합니다.')
 
         return value
 
@@ -225,19 +225,24 @@ class UserSerializer(serializers.ModelSerializer):
 class CreateParticipantProfileService(serializers.Serializer):
 
     university = serializers.CharField(allow_null=True)
+    accepted = serializers.BooleanField(allow_null=True)
 
     def validate_university(self, value):
         return value or ''
 
+    def validate_accepted(self, value):
+        return True if value is None else value
+
     def execute(self):
-        self.is_valid()
+        self.is_valid(raise_exception=True)
         user = self.context['request'].user
         university = self.validated_data['university']
+        accepted = self.validated_data['accepted']
 
         if hasattr(user, 'participant'):
             return status.HTTP_409_CONFLICT, '이미 수강생으로 등록되어 있는 사용자입니다.'
 
-        ParticipantProfile.objects.create(university=university, user=user)
+        ParticipantProfile.objects.create(university=university, user=user, accepted=accepted)
         return status.HTTP_201_CREATED, UserSerializer(user).data
 
 

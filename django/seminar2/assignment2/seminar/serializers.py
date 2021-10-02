@@ -17,7 +17,6 @@ class UserRole:
 
 class ParticipantSerializer(serializers.ModelSerializer):
 
-    id = serializers.IntegerField(source='user.id')
     university = serializers.CharField(required=False, allow_null=True, default='')
     accepted = serializers.BooleanField(required=False, allow_null=True, default=True)
 
@@ -44,7 +43,6 @@ class ParticipantSerializer(serializers.ModelSerializer):
 
 class InstructorSerializer(serializers.ModelSerializer):
 
-    id = serializers.IntegerField(source='user.id')
     company = serializers.CharField(required=False, allow_null=True, default='')
     year = serializers.IntegerField(required=False, allow_null=True)
 
