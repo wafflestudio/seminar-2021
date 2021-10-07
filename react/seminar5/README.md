@@ -7,18 +7,35 @@
 ## 수업 내용
 
 ------------------
-1. SEO
-2. SSR vs CSR vs SSG
-3. 웹 접근성: 적절한 태그와 속성을 사용해야 하는 이유 (tabIndex, lang, form, alt 등)
-4. 웹뷰란?
-5. 브라우저 렌더 과정: 16.6ms
-6. 남은 과제들: 이런 게 있다
-    - 브라우저 작동 원리, html, css, js 기본 다지기 (이벤트 루프? 이벤트 델리게이션?)
-    - 공식문서로 근본 다지기
-    - redux, formik, react-query 등 현업에서 많이 쓰이는 수많은 라이브러리들에 대한 적응
+1. SSR vs CSR vs SSG
+    1. 웹의 발전과 함께 존재한 MPA
+        1. 웹의 발전
+        2. ajax
+        3. SSR
+        4. 서버 개발자와 퍼블리셔
+    2. SSG
+    3. 앱의 발전과 함께 등장한 SPA
+        1. 앱의 발전
+        2. CSR
+        3. 프론트엔드의 분리
+    4. SEO
+    5. SSR vs CSR vs SSG
+2. React 사용하는 법
+    1. [React의 본질](https://ko.reactjs.org/docs/add-react-to-a-website.html#add-react-in-one-minute)
+    2. CRA가 하는 일
+    3. GatsbyJS: React + SSG
+    4. NextJS: React + CSR + SSR + SSG
+3. 모바일
+    1. 웹앱 vs 하이브리드 앱 vs 네이티브 앱 vs 웹뷰
+    2. 네이티브의 특징과 React Native
+4. 웹 접근성: 적절한 태그와 속성을 사용해야 하는 이유 (tabIndex, lang, form, alt 등)
+5. 남은 과제들: 이런 게 있다
+    - 공식문서
+    - html, css, js 기본 다지기 (이벤트 루프? 이벤트 델리게이션?)
     - `git`
-    - 프론트 개발자로서의 센스
     - 테스팅
+    - 프로젝트 또는 스터디
+6. 마무리
 
 ## 세미나 자료
 
