@@ -17,7 +17,6 @@ class UserRole:
 
 class ParticipantSerializer(serializers.ModelSerializer):
 
-    id = serializers.IntegerField(source='user.id')
     university = serializers.CharField(required=False, allow_null=True, default='')
     accepted = serializers.BooleanField(required=False, allow_null=True, default=True)
 
@@ -44,7 +43,6 @@ class ParticipantSerializer(serializers.ModelSerializer):
 
 class InstructorSerializer(serializers.ModelSerializer):
 
-    id = serializers.IntegerField(source='user.id')
     company = serializers.CharField(required=False, allow_null=True, default='')
     year = serializers.IntegerField(required=False, allow_null=True)
 
@@ -70,6 +68,7 @@ class SeminarSerializer(serializers.ModelSerializer):
     online = serializers.BooleanField(required=False, default=True)
     participants = serializers.SerializerMethodField()
     instructors = serializers.SerializerMethodField()
+    time = serializers.TimeField(format='%H:%M', input_formats=['%H:%M', ])
 
     class Meta:
         model = Seminar
@@ -109,9 +108,8 @@ class SeminarSerializer(serializers.ModelSerializer):
             raise PermissionDenied('권한이 없습니다.')
 
         capacity = validated_data.get('capacity')
-        if capacity and instance.user_seminars.filter(is_active=True).count() > capacity:
-            raise ValidationError('이미 들어찬 정원보다 적게는 줄일 수 없어요')
-
+        if capacity is not None and instance.user_seminars.filter(is_active=True, is_instructor=False).count() > capacity:
+            raise serializers.ValidationError('이미 들어찬 정원보다 적게는 줄일 수 없어요')
         super().update(instance, validated_data)
 
 
@@ -198,7 +196,7 @@ class RegisterSeminarService(serializers.Serializer):
 
     def execute(self):
 
-        self.is_valid()
+        self.is_valid(raise_exception=True)
         seminar_id = self.context.get('seminar_id')
         role = self.validated_data['role']
         user = self.context.get('request').user
@@ -207,7 +205,7 @@ class RegisterSeminarService(serializers.Serializer):
         if not seminar:
             return status.HTTP_404_NOT_FOUND, '그런 세미나는 없습니다.'
 
-        if not hasattr(user, UserRole.PARTICIPANT):
+        if not hasattr(user, role):
             return status.HTTP_403_FORBIDDEN, f'{role} 프로필이 없습니다.'
 
         if role == UserRole.PARTICIPANT:

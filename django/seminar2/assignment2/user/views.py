@@ -68,8 +68,7 @@ class UserViewSet(viewsets.GenericViewSet):
 
     @action(detail=False, methods=['POST'])
     def participant(self, request):
-
-        service = CreateParticipantProfileService(data={'university': request.data.get('university')},
+        service = CreateParticipantProfileService(data={'university': request.data.get('university'), 'accepted': request.data.get('accepted')},
                                                   partial=True, context={'request': request})
         status_code, data = service.execute()
         return Response(status=status_code, data=data)

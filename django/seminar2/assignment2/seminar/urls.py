@@ -8,6 +8,6 @@ router.register('seminar', SeminarViewSet, basename='seminar')
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('seminar/<seminar_id>/user', UserSeminarView.as_view()),
+    path('seminar/<seminar_id>/user/', UserSeminarView.as_view()),
     path('query_practice/', query_practice)
 ]
