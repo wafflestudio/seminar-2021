@@ -31,7 +31,7 @@ class SeminarTest(TestCase):
             'name': '세미나',
             'capacity': 1,
             'count': 1,
-            'time': timezone.now().time()
+            'time': timezone.now().strftime('%H:%M')
         }
 
     def test_post_seminar_성공(self):
@@ -116,7 +116,7 @@ class SeminarTest(TestCase):
         client.force_login(self.both)
         data = {'role': 'instructor'}
 
-        response = client.post('/api/v1/seminar/1/user', data=data)
+        response = client.post('/api/v1/seminar/1/user/', data=data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
 
@@ -126,7 +126,7 @@ class SeminarTest(TestCase):
         client.force_login(self.both)
         data = {'role': 'participant'}
 
-        response = client.post('/api/v1/seminar/1/user', data=data)
+        response = client.post('/api/v1/seminar/1/user/', data=data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
         user_seminar = self.both.user_seminars.get(seminar_id=1)
@@ -138,13 +138,13 @@ class SeminarTest(TestCase):
         client.force_login(self.both)
         data = {'role': 'participant'}
 
-        response = client.post('/api/v1/seminar/1/user', data=data)
+        response = client.post('/api/v1/seminar/1/user/', data=data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
-        response = client.delete('/api/v1/seminar/1/user', data=data, content_type='application/json')
+        response = client.delete('/api/v1/seminar/1/user/', data=data, content_type='application/json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-        response = client.post('/api/v1/seminar/1/user', data=data)
+        response = client.post('/api/v1/seminar/1/user/', data=data)
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
 
