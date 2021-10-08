@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('survey.urls')),
     path('api/v1/', include('user.urls')),
+    path('api/v1/', include('seminar.urls')),
 ]
 
 if settings.DEBUG_TOOLBAR:
@@ -30,3 +31,5 @@ if settings.DEBUG_TOOLBAR:
     urlpatterns += [
         url(r'^__debug__/', include(debug_toolbar.urls)),
     ]
+
+urlpatterns += [path('api-auth/', include('rest_framework.urls')), ]

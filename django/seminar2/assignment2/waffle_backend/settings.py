@@ -39,11 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django_filters',
     'rest_framework',
     'rest_framework_jwt',
     'rest_framework.authtoken',
+    'common',
     'survey.apps.SurveyConfig',
-    'user.apps.UserConfig'
+    'user.apps.UserConfig',
+    'seminar.apps.SeminarConfig'
 ]
 
 MIDDLEWARE = [
@@ -147,7 +150,8 @@ REST_FRAMEWORK = {
     ),
 
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+       'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+       'rest_framework.authentication.SessionAuthentication'
     ),
 }
 
@@ -169,3 +173,5 @@ JWT_AUTH = {
 
 # Custom User Model
 AUTH_USER_MODEL = 'user.User'
+
+SITE_ID = 3

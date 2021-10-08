@@ -8,7 +8,7 @@ from waffle_backend import settings
 from survey.models import OperatingSystem, SurveyResult
 
 
-def download_survey():
+def download_survey(user=None):
     # NOTE: if you run this command multiple times, rows of 'survey_surveyresult' table will be added repeatedly.
     #       to block that behavior, uncomment below lines.
     #
@@ -35,7 +35,7 @@ def download_survey():
             t = SurveyResult.objects.create(timestamp=timezone.make_aware(datetime.strptime(data[0], '%Y-%m-%d %H:%M:%S')),
                                         os=operating_system, python=int(data[2]), rdb=int(data[3]),
                                         programming=int(data[4]), major=data[5], grade=data[6],
-                                        backend_reason=data[7], waffle_reason=data[8], say_something=data[9])
+                                        backend_reason=data[7], waffle_reason=data[8], say_something=data[9], )
 
 
 class Command(BaseCommand):
