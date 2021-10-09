@@ -18,6 +18,8 @@
 
 ## 세미나 자료
 
+[PPT](https://docs.google.com/presentation/d/1DX191gsANzvn4oPlsFPosStzZDxRwnqWXdSsJfRBWyg/edit?usp=sharing)
+
 ------------------
 
 ## 과제
