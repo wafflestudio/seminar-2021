@@ -50,7 +50,7 @@
 | seminar1 | 2021.09.04 (토) ~ 2021.09.05 (일) | Zoom | [React](react/seminar1) <hr> [iOS](iOS/seminar1) <hr> [android](android/seminar_1) <hr> [Django](django/seminar1) <hr> [Spring Boot](springboot/seminar1)    | [React](react/seminar1/assignment.md) <hr> [iOS](iOS/seminar1/assignment.md) <hr> [android](android/assignment_1) <hr> [Django](django/seminar1/assignment1) <hr> [Spring Boot](springboot/seminar1/assignment1)                                               | [React][REACT_SEMINAR_1_ZOOM_LINK] <hr> [iOS][iOS_SEMINAR_1_ZOOM_LINK]  <hr>[android][ANDROID_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK] | [React][REACT_SEMINAR_1_VIDEO] <hr> [iOS](https://youtu.be/dlvXLJJdEn0) <hr> [android](https://youtu.be/ExkERcY1FyM) <hr> [Spring Boot][SPRING_SEMINAR_1_VIDEO]|
 | seminar2 | 2021.09.11 (토) ~ 2021.09.12 (일) | Zoom | [React](react/seminar2) <hr> [android](android/seminar_2) <hr> [Django](django/seminar2) <hr> [iOS][iOS_SEMINAR_2_PDF_LINK] | [React](react/seminar2/assignment.md) <hr> [android](android/assignment_2) <hr> [iOS](iOS/seminar2/assignment/assignment.md) | [React][REACT_SEMINAR_2_ZOOM_LINK] <hr> [android][ANDROID_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK] <hr> [iOS][iOS_SEMINAR_2_ZOOM_LINK] | [React][REACT_SEMINAR_2_VIDEO] <hr> [iOS][iOS_SEMINAR_2_VIDEO] <hr> [android][ANDROID_SEMINAR_2_VIDEO] <hr> [Spring Boot][SPRING_SEMINAR_2_VIDEO]|
 | seminar3 | 2021.09.25 (토) ~ 2021.09.26 (일) | Zoom | [React](react/seminar3)  <hr> [android](android/seminar_3) <hr> [Django](django/seminar3) <hr> [iOS][iOS_SEMINAR_3_PDF_LINK]  | [React](react/seminar3/assignment.md) <hr>[android](android/assignment_3)  <hr> [Django](django/seminar3/assignment3) <hr> [iOS](iOS/seminar3/assignment/assignment.md)| [React][REACT_SEMINAR_3_ZOOM_LINK] <hr> [android][ANDROID_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK]  | [android][ANDROID_SEMINAR_3_VIDEO]<hr> [Spring Boot][SPRING_SEMINAR_3_VIDEO] <hr> [iOS][iOS_SEMINAR_3_VIDEO]|
-| seminar4 | 2021.10.09 (토) ~ 2021.10.10 (일) | Zoom | [React](react/seminar4) | [React](react/seminar4/assignment.md)     | [React][REACT_SEMINAR_4_ZOOM_LINK] <hr>  [Django][DJANGO ZOOM LINK]  | |
+| seminar4 | 2021.10.09 (토) ~ 2021.10.10 (일) | Zoom | [React](react/seminar4) | [React](react/seminar4/assignment.md)     | [React][REACT_SEMINAR_4_ZOOM_LINK] <hr>  [Django][DJANGO ZOOM LINK]  | [React][REACT_SEMINAR_4_VIDEO] |
 | seminar5 | 2021.11.06 (토) ~ 2021.11.07 (일) | Zoom |      |      |   [Django][DJANGO ZOOM LINK]  | |
 
 * 녹화 영상은 필요할 시 각 세미나장께 요청주시기 바랍니다.
@@ -73,6 +73,7 @@
 [REACT_SEMINAR_0_VIDEO]: https://youtu.be/DQEd7xfGOsA
 [REACT_SEMINAR_1_VIDEO]: https://youtu.be/68BHZB7tjY4
 [REACT_SEMINAR_2_VIDEO]: https://youtu.be/54MQket6KDc
+[REACT_SEMINAR_4_VIDEO]: https://youtu.be/WB6-MVcsO-g
 
 [DJANGO ZOOM LINK]: https://snu-ac-kr.zoom.us/j/86836696847?pwd=eVlSL2VkZXZjalhvOGJjamI5ODFQZz09
 [DJANGO SEMINAR 0 VIDEO]: https://youtu.be/dCen0qvKaac
