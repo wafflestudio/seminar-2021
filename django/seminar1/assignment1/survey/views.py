@@ -20,7 +20,9 @@ class SurveyResultViewSet(viewsets.GenericViewSet):
 
     def list(self, request):
         surveys = self.get_queryset().select_related('os')
-        return Response(self.get_serializer(surveys, many=True).data)
+        sz = self.get_serializer(surveys, many=True)
+        print(sz.context)
+        return Response(sz.data)
 
     def retrieve(self, request, pk=None):
         survey = get_object_or_404(SurveyResult, pk=pk)

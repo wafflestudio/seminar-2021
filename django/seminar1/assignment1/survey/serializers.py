@@ -67,3 +67,4 @@ class OperatingSystemCreateService(serializers.Serializer):
             name=name
         )
         return status.HTTP_200_OK, OperatingSystemSerializer(os).data
+
