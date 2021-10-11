@@ -1,7 +1,7 @@
 19.5-rookies Seminar 4 Assignment
 ================================
 
-### **due: 2021.10.31(일) 23:59**
+### **due: 2021.11.06 (토) 12:00**
 
 ### 스펙
 1. 디자인 및 기능 소폭 수정
@@ -47,6 +47,8 @@
       - 3개 이상의 파일에 `styled-components`를 적용한다.
         - 더이상 css 파일이 아닌 `.js` (혹은 `.ts`) 파일이 되겠죠?
       - 물론 `js -> ts 마이그레이션`과 동일하게, 마음에 들었다면 싹다 적용해도 된다. 위 조건만 지켜지면 된다.
+7. 최종 스펙 점검
+   - 이 문서 맨 밑 참고
 
 ### API
 세미나 3 과제와 병렬적으로 가기 위해 기존 엔드포인트를 유지해야 했다.
@@ -72,7 +74,6 @@ https://g5imzjo8qf.execute-api.ap-northeast-2.amazonaws.com/v1
 - 4번: 이건 쉽게 하실 수 있을 것 같습니다 
 - 5번: 비교적 어렵습니다. 라이브러리가 제한되어 있어서 더 어렵습니다. 폴링이라고 치면 잘 안 나오는데, `리액트에서 setInterval 사용하는 방법` 치시면 많이 나올 거예요.
 주기적으로 뭔가 실행하도록 세팅하는 메소드입니다. 저걸 이용해서, 주기적으로 데이터 `fetch`하는 함수 실행하면 되겠죠? 폴링 자체는 5줄 정도밖에 안 나올거예요
-
 
 ### 참고할 만한 링크
 - [virtual scroll vs infinite scroll](https://mvcp.tistory.com/entry/Javascript-FrameworkVirtual-scrolling-Infinite-scrolling)
