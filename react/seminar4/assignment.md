@@ -22,6 +22,8 @@
    - 따라서 학생 코멘트 목록에 [페이지네이션](https://velog.io/@yjkeem0918/Pagination-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98) 이 추가된다.
    - 각 페이지별로 무조건 20개의 아이템만 전송된다. 자세한 내용은 [해당 api](https://g5imzjo8qf.execute-api.ap-northeast-2.amazonaws.com/swagger/#/%ED%95%99%EC%83%9D%20%EA%B4%80%EB%A6%AC%20API/CommentController_getComments) 를 참고한다.
    - `virtual scroll`로 구현하면 좋지만, 여의치 않다면 `infinite scroll` 방식으로 구현한다.
+   - 그런데 코멘트 순서가 시간 역순이고 커서기반이 아닌 오프셋기반 페이지네이션으로 구현되어 있기 때문에, 페이지네이션된 상태에서 코멘트 목록이 수정될 경우 이후 코멘트 목록을 어떻게 처리해야 할지가 상당히 애매해진다.
+   - 따라서 모종의 이유로 코멘트가 추가될 경우, 저장된 코멘트 목록 데이터를 싹 날리고 page=1부터 다시 로드하는 방향으로 구현되어야 한다.
 4. 자동 로그아웃
    - 로그인 시 발급받는 토큰의 수명이 10분으로 줄어든다.
    - 앱 마운트 시, [토큰이 살아있는지 확인하는 api](https://g5imzjo8qf.execute-api.ap-northeast-2.amazonaws.com/swagger/#/auth/AuthController_check_token) 를 이용해 토큰이 살아있다면 자동 로그인하고 토큰이 죽었으면 자동 로그아웃해야 한다.
@@ -77,3 +79,7 @@ https://g5imzjo8qf.execute-api.ap-northeast-2.amazonaws.com/v1
 - [react에서 infinite scroll 구현하기](https://medium.com/@_diana_lee/react-infinite-scroll-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-fbd51a8a099f)
 - [axios 에서 csrf token 핸들하는 법](https://jangsus1.tistory.com/2)
 - [Dan Abramov가 interval을 다루는 법](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
+
+# 최종 스펙
+- 이번 과제로서 이 프로젝트가 종결되기 때문에, 이 과제에서 모든 스펙이 완벽하게 마무리되어야 합니다.
+- [최종 스펙 문서](./assignment-final-spec.md) 에 맞추어, <b style="color: red">단 하나도 어긋나지 않도록</b> 모든 스펙을 <b style="color: red">반드시</b> 꼼꼼히 체크해 주시기 바랍니다.
