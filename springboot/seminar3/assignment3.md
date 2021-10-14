@@ -42,8 +42,7 @@ default Security Group 등을 사용하지 말고, 앞서 생성한 Security Gro
 - Nginx를 이용해 서버를 80번 포트(http 접속 포트)에 배포하세요.
 - 가장 원시적인 방법 중 하나인, `git`을 이용해 해당 repository를 clone하고 변경 사항을 pull 해와서(`deploy` branch) 수동으로 배포하는 방식을 이용해 봅시다.
 - 배포를 위해 생성하고 수정한 파일들도 확인할 수 있도록 EC2 instance 내에서도 `deploy` branch에서 진행하고, 진행 내용을 commit해 push하세요.
-- Nginx와 uWSGI의 연결은 HTTP가 아닌 [unix socket](https://en.wikipedia.org/wiki/Unix_domain_socket) 방식을 이용하도록 하세요.
-- 당연히 Python 가상환경을 이용해야 합니다. 또한 EC2 instance 내에서 파일 추가, 수정 등을 하기 위해서 [Vim](https://ko.wikipedia.org/wiki/Vim) 을 간단하게라도 이용할 줄 아는 것이 좋습니다.
+- EC2 instance 내에서 파일 추가, 수정 등을 하기 위해서 [Vim](https://ko.wikipedia.org/wiki/Vim) 을 간단하게라도 이용할 줄 아는 것이 좋습니다.
 - Nginx는 `/etc/nginx/nginx.conf`에 location block 등을 작성하여 동작시키지 말고, `/etc/nginx/sites-available/`과 `/etc/nginx/sites-enabled/` directory를 생성하고,
 `/etc/nginx/sites-available/` 내에 conf 파일을 생성하여 symbolic link를 `/etc/nginx/sites-enabled/`에 포함시키는 방식으로 진행하세요.
 이에 대해서는 React 배포에 대한 내용이긴 하지만 [이 글](https://medium.com/@bdv111/aws-ec2에서-nginx로-react-앱-직접-배포하기-c1e09639171e) 의 내용 4.에 더 자세히 설명되어 있습니다.
@@ -61,7 +60,6 @@ default Security Group 등을 사용하지 말고, 앞서 생성한 Security Gro
 ### 5
 - 서버 코드가 변경되면 git pull을 하고(배포를 위해 EC2 instance에서만 추가 및 변경하는 파일과 충돌이 있다면 이것과 잘 merge 시키는 등의 과정이 필요할 수도 있을 것이지만, 우리는 `deploy` branch에 EC2의
 내용도 모두 commit해 push하면서 반영했으니 sync가 맞는 상황일 것입니다. 상황을 단순화하기 위해 EC2 instance의 repository가 항상 `deploy` branch에 있도록 하세요.),
-필요에 따라 uWSGI, Nginx(사실 Nginx는 매번 재시작할 필요는 없겠지만) 등을 수동으로 재시작해야하는 상황이 번거로울 수 있습니다.
 - 현재 배포는 원시적인 방법이지만 shell script를 잘 작성해두면 훨씬 편리하게 배포를 반복할 수 있습니다. 배포 과정을 더 잘 이해할 겸, 변경 사항이 있을 때마다 명령어 한 번만으로 원하는 배포 동작이 이뤄지도록 합시다.
 `deploy.sh`라는 이름의 파일을 EC2 instance의 home(`/home/ec2-user`)에 생성해, shell script를 작성하세요. 크게 아래와 같은 동작들이 이루어져야 합니다.
   - 레포지토리 루트 폴더로 위치를 이동해 `git pull`하여 `deploy` branch에 변경 사항이 있으면 EC2 instance 내에서도 최신 상황 반영
