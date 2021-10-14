@@ -105,7 +105,7 @@ EC2 instance 내에서 certbot을 이용하면 명령어만으로 모든 작업�
 1. 과제 2를 통해 생성한 GitHub 개인 계정의  private repository에서 이어 작업합니다.
 
 2. 과제 진행은 다음 절차를 따라주세요
-  - **waffle-rookies-18.5-backend-2 의 `test`에서 `git checkout -b deploy` 로 이번 과제를 진행할 새로운 브랜치를 만들고 이동합니다.**
+  - **waffle-rookies-19.5-springboot 의 `test`에서 `git checkout -b deploy` 로 이번 과제를 진행할 새로운 브랜치를 만들고 이동합니다.**
   - 해당 branch에서 작업을 완료해주세요. (**master, workspace, test branch에 push하면 안됩니다. deploy branch에만 변경사항을 반영해주세요.**)
 
 3. 이번 과제는 과제2, 과제3, 과제4가 정상적으로 수행됐는지 확인하는 통합 테스트입니다. 배포한 서버 url을 통해 제가 작성한 test코드를 돌려볼 예정이니 배포를 항상 최신화해주세요
