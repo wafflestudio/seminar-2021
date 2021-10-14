@@ -76,12 +76,26 @@ https://g5imzjo8qf.execute-api.ap-northeast-2.amazonaws.com/v1
 주기적으로 뭔가 실행하도록 세팅하는 메소드입니다. 저걸 이용해서, 주기적으로 데이터 `fetch`하는 함수 실행하면 되겠죠? 폴링 자체는 5줄 정도밖에 안 나올거예요
 
 ### 참고할 만한 링크
-- [virtual scroll vs infinite scroll](https://mvcp.tistory.com/entry/Javascript-FrameworkVirtual-scrolling-Infinite-scrolling)
-- [react에서 infinite scroll 구현하기](https://medium.com/@_diana_lee/react-infinite-scroll-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-fbd51a8a099f)
-- [axios 에서 csrf token 핸들하는 법](https://jangsus1.tistory.com/2)
-- [Dan Abramov가 interval을 다루는 법](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
-- [벨로퍼트 타입스크립트 강좌](https://react.vlpt.us/using-typescript/)
-- [벨로퍼트 `CSS Modules` / `scss` / `styled-components` 강좌](https://react.vlpt.us/styling/)
+- url Query
+   - [벨로퍼트 url query](https://react.vlpt.us/react-router/02-params-and-query.html)
+      - 너무 기초적이고 이미 다 배운 내용이라 도움이 되지 않을 수도 있습니다.
+      - 벨로퍼트는 `qs` 라이브러리를 사용하라고 했는데, 전 `URLSearchParams` 사용을 권장드립니다. 웹 표준입니다
+- 페이지네이션
+   - [페이지네이션이란?](https://velog.io/@yjkeem0918/Pagination-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98)
+      - 사실 여러분 다 이미 아시는 내용입니다. 인스타 들어가면 스크롤 내리면서 점점 하나씩 (또는 n개씩) 로드되는 뭐 그런거
+   - [백엔드: 오프셋 기반 페이지네이션 vs 커서 기반 페이지네이션](https://daeuungcode.tistory.com/128)
+      - 우리의 구현과 큰 관계는 없으나 제가 오프셋 기반으로 구현했다고 말씀드렸기 때문에 개념 이해하시면 좋을 것 같아서
+      - 어차피 나중에는 알아야 하기도 하구요
+   - [프론트: virtual scroll vs infinite scroll](https://mvcp.tistory.com/entry/Javascript-FrameworkVirtual-scrolling-Infinite-scrolling)
+      - UI/UX적 이야기입니다
+   - [프론트: react에서 infinite scroll 구현하기](https://medium.com/@_diana_lee/react-infinite-scroll-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-fbd51a8a099f)
+- 폴링
+   - [setInterval이란?](https://offbyone.tistory.com/241)
+   - [Dan Abramov가 interval을 다루는 법](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
+      - `setInterval`의 단점을 지적하며 댄 아브라모브께서 직접 만든 커스텀 훅입니다. 관심있으시다면 읽어볼만합니다.
+- 타입스크립트 & CSS 기술
+   - [벨로퍼트 타입스크립트 강좌](https://react.vlpt.us/using-typescript/)
+   - [벨로퍼트 `CSS Modules` / `scss` / `styled-components` 강좌](https://react.vlpt.us/styling/)
 
 # 최종 스펙
 - 이번 과제로서 이 프로젝트가 종결되기 때문에, 이 과제에서 모든 스펙이 완벽하게 마무리되어야 합니다.
