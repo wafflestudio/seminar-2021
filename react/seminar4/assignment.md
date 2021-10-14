@@ -89,6 +89,9 @@ https://g5imzjo8qf.execute-api.ap-northeast-2.amazonaws.com/v1
    - [프론트: virtual scroll vs infinite scroll](https://mvcp.tistory.com/entry/Javascript-FrameworkVirtual-scrolling-Infinite-scrolling)
       - UI/UX적 이야기입니다
    - [프론트: react에서 infinite scroll 구현하기](https://medium.com/@_diana_lee/react-infinite-scroll-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-fbd51a8a099f)
+      - 좋은 예제입니다! 근데 안타깝게도 우리와 스펙이 조금 다른데, 윈도우 전체에 대한 인피니트 스크롤로 구현되어 있습니다.
+      - 우리 과제 스펙은 코멘트 창 안에서 이뤄지는 인피니트 스크롤이기 때문에 이 블로그와 조금 차이가 있어야 합니다.
+      - 이 블로그는 문서 전체의 높이를 측정하기 위해 `document.documentElement.*`를 이용했지만, 우리는 코멘트 박스의 높이를 측정해야 하니 코멘트 박스에 `ref`를 걸어놓고 `ref.current.*`를 이용해야 하겠죠?
 - 폴링
    - [setInterval이란?](https://offbyone.tistory.com/241)
    - [Dan Abramov가 interval을 다루는 법](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
