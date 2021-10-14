@@ -81,6 +81,7 @@ https://g5imzjo8qf.execute-api.ap-northeast-2.amazonaws.com/v1
 - [axios 에서 csrf token 핸들하는 법](https://jangsus1.tistory.com/2)
 - [Dan Abramov가 interval을 다루는 법](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
 - [벨로퍼트 타입스크립트 강좌](https://react.vlpt.us/using-typescript/)
+- [벨로퍼트 `CSS Modules` / `scss` / `styled-components` 강좌](https://react.vlpt.us/styling/)
 
 # 최종 스펙
 - 이번 과제로서 이 프로젝트가 종결되기 때문에, 이 과제에서 모든 스펙이 완벽하게 마무리되어야 합니다.
