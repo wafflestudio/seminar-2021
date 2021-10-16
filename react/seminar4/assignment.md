@@ -8,7 +8,7 @@
    - 과제 스펙을 위해 디자인이 소폭 수정되었다.
      - 학생 추가 버튼이 리스트 하단으로 이동되었다.
      - 이름 필터는 원래 입력하면 리스트에 바로 반영되었었는데, 이제 "검색" 버튼을 눌러야 반영된다.
-   - 따로 피그마가 업데이트되지는 않았고, [정답 사이트](https://waffle-rookies-19-5-react-assignment-1-git-v2-woohm402.vercel.app/login) 를 참고한다.
+   - 따로 피그마가 업데이트되지는 않았고, [정답 사이트](https://waffle-rookies-19-5-react-assignment-1.vercel.app/) 를 참고한다.
 2. 이름 필터 기획 수정
    - 기존에 이름 필터만 있었는데 학년 필터도 생긴다.
    - 필터 정보가 url query에 표현되어야 한다. 이름은 `name`, 학년은 `grade`로 한다.
