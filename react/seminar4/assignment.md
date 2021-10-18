@@ -95,9 +95,7 @@ https://g5imzjo8qf.execute-api.ap-northeast-2.amazonaws.com/v1
         - 우리 과제 스펙은 코멘트 창 안에서 이뤄지는 인피니트 스크롤이기 때문에 이 블로그와 조금 차이가 있어야 합니다.
         - 이 블로그는 문서 전체의 높이를 측정하기 위해 `document.documentElement.*`를 이용했지만, 우리는 코멘트 박스의 높이를 측정해야 하니 코멘트 박스에 `ref`를 걸어놓고 `ref.current.*`를 이용해야 하겠죠?
 - 폴링
-   - [setInterval이란?](https://offbyone.tistory.com/241)
-   - [Dan Abramov가 interval을 다루는 법](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
-      - `setInterval`의 단점을 지적하며 댄 아브라모브께서 직접 만든 커스텀 훅입니다. 관심있으시다면 읽어볼만합니다.
+   - [제가 써놓은 힌트 글](https://github.com/wafflestudio/19.5-rookies/discussions/602)
 - 타입스크립트 & CSS 기술
    - [벨로퍼트 타입스크립트 강좌](https://react.vlpt.us/using-typescript/)
    - [벨로퍼트 `CSS Modules` / `scss` / `styled-components` 강좌](https://react.vlpt.us/styling/)
