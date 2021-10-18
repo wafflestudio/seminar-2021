@@ -81,17 +81,19 @@ https://g5imzjo8qf.execute-api.ap-northeast-2.amazonaws.com/v1
       - 너무 기초적이고 이미 다 배운 내용이라 도움이 되지 않을 수도 있습니다.
       - 벨로퍼트는 `qs` 라이브러리를 사용하라고 했는데, 전 `URLSearchParams` 사용을 권장드립니다. 웹 표준입니다
 - 페이지네이션
-   - [페이지네이션이란?](https://velog.io/@yjkeem0918/Pagination-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98)
-      - 사실 여러분 다 이미 아시는 내용입니다. 인스타 들어가면 스크롤 내리면서 점점 하나씩 (또는 n개씩) 로드되는 뭐 그런거
-   - [백엔드: 오프셋 기반 페이지네이션 vs 커서 기반 페이지네이션](https://daeuungcode.tistory.com/128)
-      - 우리의 구현과 큰 관계는 없으나 제가 오프셋 기반으로 구현했다고 말씀드렸기 때문에 개념 이해하시면 좋을 것 같아서
-      - 어차피 나중에는 알아야 하기도 하구요
-   - [프론트: virtual scroll vs infinite scroll](https://mvcp.tistory.com/entry/Javascript-FrameworkVirtual-scrolling-Infinite-scrolling)
-      - UI/UX적 이야기입니다
-   - [프론트: react에서 infinite scroll 구현하기](https://medium.com/@_diana_lee/react-infinite-scroll-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-fbd51a8a099f)
-      - 좋은 예제입니다! 근데 안타깝게도 우리와 스펙이 조금 다른데, 윈도우 전체에 대한 인피니트 스크롤로 구현되어 있습니다.
-      - 우리 과제 스펙은 코멘트 창 안에서 이뤄지는 인피니트 스크롤이기 때문에 이 블로그와 조금 차이가 있어야 합니다.
-      - 이 블로그는 문서 전체의 높이를 측정하기 위해 `document.documentElement.*`를 이용했지만, 우리는 코멘트 박스의 높이를 측정해야 하니 코멘트 박스에 `ref`를 걸어놓고 `ref.current.*`를 이용해야 하겠죠?
+   - [일단 제가 써놓은 힌트 글](https://github.com/wafflestudio/19.5-rookies/discussions/599)
+   - 이외 참고해볼 만한 친구들
+     - [페이지네이션이란?](https://velog.io/@yjkeem0918/Pagination-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%84%A4%EC%9D%B4%EC%85%98)
+        - 사실 여러분 다 이미 아시는 내용입니다. 인스타 들어가면 스크롤 내리면서 점점 하나씩 (또는 n개씩) 로드되는 뭐 그런거
+     - [백엔드: 오프셋 기반 페이지네이션 vs 커서 기반 페이지네이션](https://daeuungcode.tistory.com/128)
+        - 우리의 구현과 큰 관계는 없으나 제가 오프셋 기반으로 구현했다고 말씀드렸기 때문에 개념 이해하시면 좋을 것 같아서
+        - 어차피 나중에는 알아야 하기도 하구요
+     - [프론트: virtual scroll vs infinite scroll](https://mvcp.tistory.com/entry/Javascript-FrameworkVirtual-scrolling-Infinite-scrolling)
+        - UI/UX적 이야기입니다
+     - [프론트: react에서 infinite scroll 구현하기](https://medium.com/@_diana_lee/react-infinite-scroll-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-fbd51a8a099f)
+        - 좋은 예제입니다! 근데 안타깝게도 우리와 스펙이 조금 다른데, 윈도우 전체에 대한 인피니트 스크롤로 구현되어 있습니다.
+        - 우리 과제 스펙은 코멘트 창 안에서 이뤄지는 인피니트 스크롤이기 때문에 이 블로그와 조금 차이가 있어야 합니다.
+        - 이 블로그는 문서 전체의 높이를 측정하기 위해 `document.documentElement.*`를 이용했지만, 우리는 코멘트 박스의 높이를 측정해야 하니 코멘트 박스에 `ref`를 걸어놓고 `ref.current.*`를 이용해야 하겠죠?
 - 폴링
    - [setInterval이란?](https://offbyone.tistory.com/241)
    - [Dan Abramov가 interval을 다루는 법](https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
