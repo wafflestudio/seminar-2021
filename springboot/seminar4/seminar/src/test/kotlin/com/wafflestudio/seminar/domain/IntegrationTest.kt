@@ -41,7 +41,7 @@ internal class IntegrationTest(private val mockMvc: MockMvc) {
         }
     }
 
-    // Test에서 호출한 api들은 실제로 저장이 되면 안되는 데이트들이다.
+    // Test에서 호출한 api들은 실제로 저장이 되면 안되는 데이터들이다.
     // 따라서 모든 테스트케이스에 Transactional annotation 추가
     // 이 경우 하나의 테스트케이스가 끝날 때마다 해당 테스트에서의 동작들이 모두 rollback 된다.
     @Test
