@@ -1,4 +1,4 @@
-19.5-rookies Seminar 4 Assignment
+19.5-rookies Seminar 1 Assignment
 ================================
 
 ### **due: 2021.11.7(일) 23:59**
@@ -19,13 +19,9 @@
 2) CollectionView는 2열로 구성되어 있으며, API 기준 1페이지에 해당하는 영화의 정보가 화면에 표시됨 (포스터 + 제목 + 평점)
 3) 스크롤을 가장 아래까지 내리면 다음 페이지 데이터를 불러오는 API를 호출하여 데이터를 추가로 로드하고, CollectionView를 갱신함
 4) 영화를 선택하면 Custom Animation이 적용된 NavigationController의 push로 세부 정보 뷰가 뜸 (포스터 + 제목 + 평점 + overview) (Custom Animation 구현 및 적용은 추가 과제 : 필수 아님)
-5) 세부 정보 오른쪽 위에는 별 버튼이 있어 favorite 여부 체크할 수 있도록 (Favorite 체크된 영화들은 로컬에 저장하여 재실행시에도 목록이 저장될 수 있도록 구현)
 
 2. Favorite 탭
-1) 상단엔 타이틀 + 즐겨찾기 등록된 영화의 개수 (HeaderView)
-2) CollectionView의 형태로 1탭과 똑같이 영화 목록이 뜨도록 (이 데이터는 로컬에 저장된 Favorite 영화들의 데이터
-3) 영화 선택 시 세부정보 뷰가 뜨고, 별을 눌러 Favorite 해제 가능
-4) 만약 해제 했을 경우 뒤로 돌아갔을 때 목록에서 그 영화가 사라져야 함
+1) 생성만 해주세요
 
 ## 제출 방식
 1. `seminar-4-assignment` 브랜치에서 과제를 진행해 주세요. 
