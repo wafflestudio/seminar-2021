@@ -86,7 +86,6 @@ EC2 instance 내에서 certbot을 이용하면 명령어만으로 모든 작업�
 - 관련하여 Nginx conf 파일의 수정이 필요합니다. 단순히 HTTPS가 지원되게 할 수도 있고, 더 똑똑하게 HTTP(80 port)로 오는 요청을 HTTPS(443 port)로 redirect 시킬 수 있습니다. 당연히 후자의 방식이 더욱 바람직합니다.
 
 ### 8 (자유 과제: CI)
-- github action을 이용해 CI를 구축해주세요. 브랜치가 잘 나뉘지 않았으므로 master 기준으로만 CI를 구축해주시면 됩니다.
 - deploy 브랜치에 PR 날리는 경우 자동화된 테스트를 수행하면 됩니다.
 
 ### 9 (자유 과제: Docker를 이용한 배포)
