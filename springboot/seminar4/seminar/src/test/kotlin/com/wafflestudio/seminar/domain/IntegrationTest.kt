@@ -41,12 +41,11 @@ internal class IntegrationTest(private val mockMvc: MockMvc) {
         }
     }
 
-    /* 
-      Test에서 호출한 api들은 실제로 저장이 되면 안되는 데이터들이다.
-      따라서 모든 테스트케이스가 Transactional 
-      이 경우 하나의 테스트케이스가 끝날 때마다 해당 테스트에서의 동작들이 모두 rollback 된다.
-    */
+    // Test에서 호출한 api들은 실제로 저장이 되면 안되는 데이터들이다.
+    // 따라서 모든 테스트케이스에 Transactional annotation 추가
+    // 이 경우 하나의 테스트케이스가 끝날 때마다 해당 테스트에서의 동작들이 모두 rollback 된다.
     @Test
+    @Transactional
     fun `회원 가입 정상 동작 검증`() {
         signupAsParticipantUser("hankp2").andExpect {
             status { isNoContent() }
@@ -55,6 +54,7 @@ internal class IntegrationTest(private val mockMvc: MockMvc) {
     }
 
     @Test
+    @Transactional
     fun `중복 이메일 가입 불가능 조건 검증`() {
         signupAsParticipantUser("hankp").andExpect {
             status { isConflict() }
@@ -62,6 +62,7 @@ internal class IntegrationTest(private val mockMvc: MockMvc) {
     }
 
     @Test
+    @Transactional
     fun `회원 가입 요청 body 오류`() {
         signup(
             """
