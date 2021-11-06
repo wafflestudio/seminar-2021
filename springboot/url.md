@@ -9,5 +9,5 @@
 - 한 마디: XD
 - Public IPv4 address: 3.15.189.251
 - Public IPv4 DNS: ec2-3-15-189-251.us-east-2.compute.amazonaws.com
-- HTTP Domain:
-- HTTPS Domain:
+- HTTP Domain: http://goraniwafflespring.shop
+- HTTPS Domain: https://goraniwafflespring.shop
