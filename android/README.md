@@ -15,3 +15,4 @@
 | [seminar2](seminar_2) | `Room DB` `MVVM Architecture` `RecyclerView` | 2021.09.11  11:30 ~ 13:00 | [Zoom](https://snu-ac-kr.zoom.us/j/9990095624) | [Video](https://youtu.be/Qg6Y2dfL7_k) |
 | [seminar3](seminar_3) | `Asynchronous Programming` `Network` `View Holder (View Type)` | 2021.09.25  11:30 ~ 13:00 | [Zoom](https://snu-ac-kr.zoom.us/j/9990095624) | [Video](https://youtu.be/5HCyboc-zKo) |
 | [seminar4](seminar_4) | `Dependency Injection` `Dagger Hilt` `Fragment` | 2021.10.09  11:30 ~ 13:00 | [Zoom](https://snu-ac-kr.zoom.us/j/9990095624) | [Video](https://youtu.be/u9C8Qsgd11k) |
+| [seminar5](seminar_5) | `SharedPreferences` `Custom View` `Simple Backend` | 2021.11.06  11:30 ~ 13:00 | [Zoom](https://snu-ac-kr.zoom.us/j/9990095624) |  |
