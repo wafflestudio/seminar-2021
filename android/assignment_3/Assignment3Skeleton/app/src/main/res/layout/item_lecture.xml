@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Course Title"
+        android:textSize="21sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/text_instructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        tools:text="Course Instructor"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/text_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        tools:text="0 학점"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

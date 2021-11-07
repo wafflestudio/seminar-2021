@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="example.css" />
+</head>
+<body>
+    <h1>이 파일은 html 예시입니다.</h1>
+    <p>이건 p 태그를 이용한 글입니다.</p>
+    <input id="example-input" placeholder="이렇게 인풋을 받을 수도 있어요" />
+    <br /><br />
+    <input placeholder="글씨가 잘려서 인라인 스타일로 키워 봤어요" style="width: 300px; height: 40px" />
+    <br /><br />
+    <input value="이렇게 css를 사용할 수도 있어요" class="css-input" />
+    <br /><br /><br /><hr /><br />
+    <button onclick="sayReact()">외부 js 파일과 연결돼요 - 개발자 도구 켜 봐요</button>
+    <button onclick="alertMe()">윈도우.얼럴트</button>
+    <button onclick="alert('asdf')">HTML에서도 가능</button>
+    <br /><br /><br /><hr /><br />
+    <a href="https://github.com/wafflestudio/19.5-rookies" >이건 링크</a>
+
+    <br />
+    <h5>밑에는 아이콘 추가하고 어디서 열지 추가한 친구</h5>
+    <a href="https://github.com/wafflestudio/19.5-rookies" target="_blank" >
+        <img width="20" src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="github" />
+    </a>
+
+    <div id="example-box" class="position-example-box">스타일 빡세게 먹인 친구</div>
+
+    <br />
+    <button onclick="addRToExampleBox()">innerText 조작하는 예제</button>
+    <br />
+    <button onclick="alertInputValue()">value 가져오는 예제</button>
+    <br />
+    <button onclick="addElem()">child 추가하는 예제</button>
+
+    <ul id="example-ul"></ul>
+
+    <script type="text/javascript" src="example.js"></script>
+</body>
+</html>

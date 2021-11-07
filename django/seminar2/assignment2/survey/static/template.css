@@ -1,0 +1,40 @@
+* {
+    font-family: '맑은 고딕', sans-serif;
+}
+
+.nav_wrapper {
+    display: flex;
+}
+
+h1 {
+    margin-top: 2vw;
+}
+
+.logo {
+    width: 10vw;
+}
+
+.list_wrapper {
+    overflow: scroll;
+    height: 80vh;
+}
+
+ul.survey_list {
+    list-style: none;
+}
+
+li {
+    padding: 2vh;
+    text-align: center;
+}
+
+li:hover {
+    background-color: lightgray;
+    transition: background-color .5s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2vh;
+}

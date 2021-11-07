@@ -1,0 +1,11 @@
+.wrapper {
+  border: 1px solid black;
+
+  &:hover {
+    background-color: cyan;
+  }
+
+  p {
+    color: blue;
+  }
+}

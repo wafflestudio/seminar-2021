@@ -1,0 +1,26 @@
+<head>
+{% load static %}
+    <link rel="stylesheet" href="{% static "template.css" %}">
+    <title>Survey Template</title>
+    <link rel="icon" type="image/png" href="{% static "django.png"%}"/>
+</head>
+
+<div class="nav_wrapper">
+    <img alt="waffle_studio_logo" class="logo" src="{% static "img.png"%}">
+    <h1>설문 결과 Top 50 (최신순)</h1>
+</div>
+<div class = "list_wrapper">
+{% if surveys %}
+        <ul class="survey_list">
+        {% for survey in surveys %}
+            <li>
+                <a href="/api/v1/survey/{{ survey.id }}/">
+                    {{ survey.id }}번 수강생 ( {{ survey.major|default:"전공 미표기" }} ) : {{ survey.os.name }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No Surveys are available.</p>
+    {% endif %}
+</div>

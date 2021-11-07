@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "깃허브",
+    "grade": 1,
+    "profile_img": "https://github.githubassets.com/images/modules/logos_page/Octocat.png",
+    "email": "test@waffle.hs.kr",
+    "phone": "000-0000-0000",
+    "major": "frontend",
+    "locked": true
+  }
+]

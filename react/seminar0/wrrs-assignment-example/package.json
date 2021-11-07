@@ -20,6 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "yarn build && aws s3 sync ./build s3://rookies-seminar-0-assignment-example-website --profile=woohm404@wafflestudio.com",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
