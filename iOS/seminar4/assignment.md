@@ -1,7 +1,7 @@
 19.5-rookies Seminar 4 Assignment
 ================================
 
-### **due: 2021.11.7(일) 23:59**
+### **due: 2021.11.9(화) 23:59**
 
 - 과제 pdf : [PDF](iOS/seminar4/seminar4.pdf)
 
