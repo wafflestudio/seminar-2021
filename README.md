@@ -49,9 +49,9 @@
 | seminar0 | 2021.08.28 (토) ~ 2021.08.29 (일) | Zoom | [React](react/seminar0) <hr> [Django & Spring](django/seminar0) <hr> [iOS][iOS_SEMINAR_0_PDF_LINK] <hr> [android](android/seminar_0) | [React](react/seminar0/assignment.md) <hr> [Django & Spring](django/seminar0/assignment0) <hr> [iOS](iOS/seminar0/assignment.md) <hr>[android](android/assignment_0) | [React][REACT_SEMINAR_0_ZOOM_LINK] <hr> [Django & Spring][DJANGO ZOOM LINK] <hr> [iOS][iOS_SEMINAR_0_ZOOM_LINK] <hr>[android][ANDROID_ZOOM_LINK] | [React][REACT_SEMINAR_0_VIDEO] <hr> [Django & Spring][DJANGO SEMINAR 0 VIDEO] <hr> [iOS][iOS_SEMINAR_0_VIDEO] <hr> [android][ANDROID_SEMINAR_0_VIDEO]|
 | seminar1 | 2021.09.04 (토) ~ 2021.09.05 (일) | Zoom | [React](react/seminar1) <hr> [iOS](iOS/seminar1) <hr> [android](android/seminar_1) <hr> [Django](django/seminar1) <hr> [Spring Boot](springboot/seminar1)    | [React](react/seminar1/assignment.md) <hr> [iOS](iOS/seminar1/assignment.md) <hr> [android](android/assignment_1) <hr> [Django](django/seminar1/assignment1) <hr> [Spring Boot](springboot/seminar1/assignment1)                                               | [React][REACT_SEMINAR_1_ZOOM_LINK] <hr> [iOS][iOS_SEMINAR_1_ZOOM_LINK]  <hr>[android][ANDROID_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK] | [React][REACT_SEMINAR_1_VIDEO] <hr> [iOS](https://youtu.be/dlvXLJJdEn0) <hr> [android](https://youtu.be/ExkERcY1FyM) <hr> [Spring Boot][SPRING_SEMINAR_1_VIDEO]|
 | seminar2 | 2021.09.11 (토) ~ 2021.09.12 (일) | Zoom | [React](react/seminar2) <hr> [android](android/seminar_2) <hr> [Django](django/seminar2) <hr> [iOS][iOS_SEMINAR_2_PDF_LINK] | [React](react/seminar2/assignment.md) <hr> [android](android/assignment_2) <hr> [iOS](iOS/seminar2/assignment/assignment.md) | [React][REACT_SEMINAR_2_ZOOM_LINK] <hr> [android][ANDROID_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK] <hr> [iOS][iOS_SEMINAR_2_ZOOM_LINK] | [React][REACT_SEMINAR_2_VIDEO] <hr> [iOS][iOS_SEMINAR_2_VIDEO] <hr> [android][ANDROID_SEMINAR_2_VIDEO] <hr> [Spring Boot][SPRING_SEMINAR_2_VIDEO]|
-| seminar3 | 2021.09.25 (토) ~ 2021.09.26 (일) | Zoom | [React](react/seminar3)  <hr> [android](android/seminar_3) <hr> [Django](django/seminar3) <hr> [iOS][iOS_SEMINAR_3_PDF_LINK]  | [React](react/seminar3/assignment.md) <hr>[android](android/assignment_3)  <hr> [Django](django/seminar3/assignment3) <hr> [iOS](iOS/seminar3/assignment/assignment.md)| [React][REACT_SEMINAR_3_ZOOM_LINK] <hr> [android][ANDROID_ZOOM_LINK] <hr> [iOS][iOS_SEMINAR_1_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK]  | [android][ANDROID_SEMINAR_3_VIDEO]<hr> [Spring Boot][SPRING_SEMINAR_3_VIDEO] <hr> [iOS][iOS_SEMINAR_3_VIDEO]|
-| seminar4 | 2021.10.09 (토) ~ 2021.10.10 (일) | Zoom | [React](react/seminar4) <hr> [iOS][iOS_SEMINAR_4_PDF_LINK] <hr> [android](android/seminar_4) | [React](react/seminar4/assignment.md) <hr> [iOS](iOS/seminar4/assignment.md) | [React][REACT_SEMINAR_4_ZOOM_LINK] <hr> [iOS][iOS_SEMINAR_1_ZOOM_LINK] <hr> [android][ANDROID_ZOOM_LINK] <hr>  [Django][DJANGO ZOOM LINK]  | [React][REACT_SEMINAR_4_VIDEO] <hr> [android][ANDROID_SEMINAR_4_VIDEO] <hr> [Spring Boot][SPRING_SEMINAR_4_VIDEO]|
-| seminar5 | 2021.11.06 (토) ~ 2021.11.07 (일) | Zoom |   <hr> [android](android/seminar_4)   |      |   [iOS][iOS_SEMINAR_1_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK] <hr> [android][ANDROID_ZOOM_LINK] | |
+| seminar3 | 2021.09.25 (토) ~ 2021.09.26 (일) | Zoom | [React](react/seminar3)  <hr> [android](android/seminar_3) <hr> [Django](django/seminar3) <hr> [iOS][iOS_SEMINAR_3_PDF_LINK]  | [React](react/seminar3/assignment.md) <hr>[android](android/assignment_3)  <hr> [Django](django/seminar3/) <hr> [iOS](iOS/seminar3/assignment/assignment.md)| [React][REACT_SEMINAR_3_ZOOM_LINK] <hr> [android][ANDROID_ZOOM_LINK] <hr> [iOS][iOS_SEMINAR_1_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK]  | [android][ANDROID_SEMINAR_3_VIDEO]<hr> [Spring Boot][SPRING_SEMINAR_3_VIDEO] <hr> [iOS][iOS_SEMINAR_3_VIDEO]|
+| seminar4 | 2021.10.09 (토) ~ 2021.10.10 (일) | Zoom | [React](react/seminar4) <hr> [iOS][iOS_SEMINAR_4_PDF_LINK] <hr> [android](android/seminar_4) | [React](react/seminar4/assignment.md) <hr> [iOS](iOS/seminar4/assignment.md) <hr> [Django](django/seminar4/) | [React][REACT_SEMINAR_4_ZOOM_LINK] <hr> [iOS][iOS_SEMINAR_1_ZOOM_LINK] <hr> [android][ANDROID_ZOOM_LINK] <hr>  [Django][DJANGO ZOOM LINK]  | [React][REACT_SEMINAR_4_VIDEO] <hr> [android][ANDROID_SEMINAR_4_VIDEO] <hr> [Spring Boot][SPRING_SEMINAR_4_VIDEO]|
+| seminar5 | 2021.11.06 (토) ~ 2021.11.07 (일) | Zoom | [React](react/seminar5) <hr> [iOS][iOS_SEMINAR_5_PDF_LINK]  <hr> [android](android/seminar_4)   | [React](react/seminar5/assignment.md) <hr> [Django](django/seminar4/) | [React][REACT_SEMINAR_5_ZOOM_LINK] <hr>  [iOS][iOS_SEMINAR_1_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK] <hr> [android][ANDROID_ZOOM_LINK] | [React][REACT_SEMINAR_5_VIDEO] <hr> [android][ANDROID_SEMINAR_5_VIDEO] |
 
 * 녹화 영상은 필요할 시 각 세미나장께 요청주시기 바랍니다.
 * backend seminar 0 은 8월 28일 오전 10시입니다.
@@ -70,10 +70,12 @@
 [REACT_SEMINAR_2_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/87847515157
 [REACT_SEMINAR_3_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/4853897459
 [REACT_SEMINAR_4_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/87002466759
+[REACT_SEMINAR_5_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/4853897459
 [REACT_SEMINAR_0_VIDEO]: https://youtu.be/DQEd7xfGOsA
 [REACT_SEMINAR_1_VIDEO]: https://youtu.be/68BHZB7tjY4
 [REACT_SEMINAR_2_VIDEO]: https://youtu.be/54MQket6KDc
 [REACT_SEMINAR_4_VIDEO]: https://youtu.be/WB6-MVcsO-g
+[REACT_SEMINAR_5_VIDEO]: https://youtu.be/uu2R5yByR0k
 
 [DJANGO ZOOM LINK]: https://snu-ac-kr.zoom.us/j/86836696847?pwd=eVlSL2VkZXZjalhvOGJjamI5ODFQZz09
 [DJANGO SEMINAR 0 VIDEO]: https://youtu.be/dCen0qvKaac
@@ -89,6 +91,7 @@
 [iOS_SEMINAR_3_PDF_LINK]: ./iOS/seminar3/ios-seminar-3.pdf
 [iOS_SEMINAR_3_VIDEO]: https://youtu.be/tIADAHhsqiU
 [iOS_SEMINAR_4_PDF_LINK]: ./iOS/seminar4/seminar4.pdf
+[iOS_SEMINAR_5_PDF_LINK]: ./iOS/seminar5/seminar5.pdf
 
 [SPRING_SEMINAR_1_VIDEO]: https://youtu.be/CqC8tQOCxPQ
 [SPRING_SEMINAR_2_VIDEO]: https://youtu.be/SuHTS4n8SW4
@@ -101,3 +104,4 @@
 [ANDROID_SEMINAR_2_VIDEO]: https://youtu.be/Qg6Y2dfL7_k
 [ANDROID_SEMINAR_3_VIDEO]: https://youtu.be/5HCyboc-zKo
 [ANDROID_SEMINAR_4_VIDEO]: https://youtu.be/u9C8Qsgd11k
+[ANDROID_SEMINAR_5_VIDEO]: https://youtu.be/UJILGOM278c
