@@ -39,6 +39,8 @@
 
 ## 세미나 자료
 
+[PPT](https://docs.google.com/presentation/d/1f2pKX9_O6tiJn56b4lWfuFo5up7SrrCWfDRVTPxjEJc/edit?usp=sharing)
+
 ------------------
 
 ## 과제
