@@ -5,6 +5,12 @@
 - HTTP Domain: 
 - HTTPS Domain: 
 
+### 박현수([@nemga123](https://github.com/nemga123))
+- 한 마디: 어렵네요..
+- Public IPv4 address:13.125.83.193
+- Public IPv4 DNS: ec2-13-125-83-193.ap-northeast-2.compute.amazonaws.com 
+- HTTP Domain: http://waffle-nemga123.ga
+
 ### 손융([@d3pshot17](https://github.com/d3pshot17/waffle-rookies-19.5-springboot.git))
 - 한 마디: 정말 많은 것을 놓친 듯한 기분입니다... 수고하셨습니다!
 - Public IPv4 address: 52.78.204.179
