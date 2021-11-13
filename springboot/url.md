@@ -5,6 +5,12 @@
 - HTTP Domain: 
 - HTTPS Domain: 
 
+### 윤창민([@WallabyG](https://github.com/WallabyG))
+- 한 마디: 한 마디
+- Public IPv4 address: 52.79.207.82
+- Public IPv4 DNS: ec2-52-79-207-82.ap-northeast-2.compute.amazonaws.com
+- HTTP Domain: waffle-wallabyg.kro.kr
+
 ### 김동현([@numnum97](https://github.com/numnum97))
 - 한 마디: 세미나장님, 감사했습니다! 정말 좋은 세미나였습니다. 다른 분들도 고생많으셨습니다.
 - Public IPv4 address: 52.78.96.163
