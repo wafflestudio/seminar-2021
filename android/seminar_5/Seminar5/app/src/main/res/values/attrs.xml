@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingStarsView">
+        <attr name="starSize" format="enum">
+            <enum name="small" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="large" value="2" />
+        </attr>
+        <attr name="dragEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleCustomView">
+        <attr name="startColor" format="enum">
+            <enum name="white" value="0" />
+            <enum name="black" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
+
