@@ -82,7 +82,7 @@
 ### 과제 3: 세미나장 코드에 코드리뷰
 
 세미나 4 과제 제출 및 채점이 완료된 이후, [제가 짠 이번 과제 레포](https://github.com/woohm402/waffle-rookies-19.5-react-assignment-1) 에 collaborator로 여러분을 초대드릴 예정입니다.
-초대를 받으신 이후 [해당 PR](https://github.com/woohm402/waffle-rookies-19.5-react-assignment-1/pull/5) 로 가셔서 ***1개 이상의 리뷰*** 를 달아주시기 바랍니다.
+초대를 받으신 이후 [해당 PR](https://github.com/woohm402/waffle-rookies-19.5-react-assignment-1/pull/6) 로 가셔서 ***1개 이상의 리뷰*** 를 달아주시기 바랍니다.
 
 리뷰는 의미가 있는 내용이어야 하고, `질문 | 제안 | 지적` 중 하나이면 됩니다. 그동안 제가 과제 리뷰해드렸던 것처럼 비슷한 느낌으로 해 주시면 됩니다.
 
