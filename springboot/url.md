@@ -5,6 +5,12 @@
 - HTTP Domain: 
 - HTTPS Domain: 
 
+### 유가현([@padme0421](https://github.com/padme0421))
+- 한 마디: 세미나 5번 동안 정말 많이 배웠습니다! 감사합니다!
+- Public IPv4 address: 3.35.49.197
+- Public IPv4 DNS: ec2-3-35-49-197.ap-northeast-2.compute.amazonaws.com
+- HTTP Domain: http://wafflespringseminar.shop
+
 ### 윤창민([@WallabyG](https://github.com/WallabyG))
 - 한 마디: 한 마디
 - Public IPv4 address: 52.79.207.82
