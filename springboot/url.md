@@ -90,7 +90,7 @@
 - Public IPv4 DNS: ec2-15-165-159-109.ap-northeast-2.compute.amazonaws.com
 - HTTP Domain: http://skywaffle.ml/
 
-### 이정민[@dgg1dbg](https://github.com/dgg1dbg/waffle-rookies-19.5-springboot))
+### 이정민([@dgg1dbg](https://github.com/dgg1dbg/waffle-rookies-19.5-springboot))
 - 한 마디: 좋은 수업 감사합니다!
 - Public IPv4 address: 3.133.132.234
 - Public IPv4 DNS: ec2-3-133-132-234.us-east-2.compute.amazonaws.com
