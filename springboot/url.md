@@ -94,5 +94,5 @@
 - 한 마디: 좋은 수업 감사합니다!
 - Public IPv4 address: 3.133.132.234
 - Public IPv4 DNS: ec2-3-133-132-234.us-east-2.compute.amazonaws.com
-- HTTP Domain: https://dggb1dbg.tk
+- HTTP Domain: https://dgg1dbg.tk
 
