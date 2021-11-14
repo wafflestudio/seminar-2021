@@ -13,6 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
 from rest_framework.permissions import AllowAny
 from django.conf.urls import url
 from django.contrib import admin
@@ -31,6 +33,21 @@ schema_url_patterns = [
     path('api/v1/', include('survey.urls')),
     path('api/v1/', include('user.urls')),
     path('api/v1/', include('seminar.urls')),
+]
+
+schema_view_v1 = get_schema_view(
+    openapi.Info(
+        title="WaffleStudio Seminar", default_version='v1', description="Wafflestudio Seminar API Server",
+        terms_of_service="https://www.google.com/policies/terms/",
+    ),
+    public=True,
+    permission_classes=(AllowAny,),
+    patterns=schema_url_patterns,
+)
+
+urlpatterns += [
+    url(r'^swagger/$', schema_view_v1.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    url(r'^redoc/$', schema_view_v1.with_ui('redoc', cache_timeout=0), name='schema-redoc-ui'),
 ]
 
 if settings.DEBUG_TOOLBAR:

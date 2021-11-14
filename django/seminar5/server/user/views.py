@@ -17,6 +17,15 @@ User = get_user_model()
 class UserSignUpView(APIView):
     permission_classes = (permissions.AllowAny, )
 
+    @swagger_auto_schema(request_body=openapi.Schema(
+        type=openapi.TYPE_OBJECT,
+        properties={
+            'email': openapi.Schema(type=openapi.TYPE_STRING, description='이메일'),
+            'password': openapi.Schema(type=openapi.TYPE_STRING, description='비밀번호'),
+            'username': openapi.Schema(type=openapi.TYPE_STRING, description='유저 이름'),
+            'role': openapi.Schema(type=openapi.TYPE_STRING, description='instructor / participant'),
+        }
+    ))
     def post(self, request, *args, **kwargs):
 
         serializer = UserCreateSerializer(data=request.data)
@@ -34,6 +43,13 @@ class UserSignUpView(APIView):
 class UserLoginView(APIView):
     permission_classes = (permissions.AllowAny, )
 
+    @swagger_auto_schema(request_body=openapi.Schema(
+        type=openapi.TYPE_OBJECT,
+        properties={
+            'email': openapi.Schema(type=openapi.TYPE_STRING, description='이메일'),
+            'password': openapi.Schema(type=openapi.TYPE_STRING, description='비밀번호'),
+        }
+    ))
     def post(self, request):
 
         serializer = UserLoginSerializer(data=request.data)
