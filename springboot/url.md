@@ -90,3 +90,8 @@
 - Public IPv4 DNS: ec2-15-165-159-109.ap-northeast-2.compute.amazonaws.com
 - HTTP Domain: http://skywaffle.ml/
 
+### 전진용([@junjinyong](https://github.com/junjinyong))
+- 한 마디: 제출합니다! 세부 구현 사항은 수정중입니다. 
+- Public IPv4 address: 3.35.240.203
+- Public IPv4 DNS: ec2-3-35-240-203.ap-northeast-2.compute.amazonaws.com
+- HTTP Domain: http://3.35.240.203:8080/ 수정 중입니다. 
