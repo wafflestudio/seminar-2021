@@ -95,4 +95,6 @@
 - Public IPv4 address: 3.35.141.186
 - Public IPv4 DNS: ip-172-31-5-196.ap-northeast-2.compute.internal
 - HTTP Domain: http://darwinj07.shop
+- HTTPS Domain: https://darwinj07.shop
+
 
