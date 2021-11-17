@@ -90,8 +90,28 @@
 - Public IPv4 DNS: ec2-15-165-159-109.ap-northeast-2.compute.amazonaws.com
 - HTTP Domain: http://skywaffle.ml/
 
+
 ### 문용균([@yg-moon](https://github.com/yg-moon))
 - 한 마디: 많이 배워갑니다. 감사합니다.
 - Public IPv4 address: 3.15.143.205
 - Public IPv4 DNS: ec2-3-15-143-205.us-east-2.compute.amazonaws.com
 - HTTP Domain: http://p1down.shop/
+
+### 박은천([@pullup-dip-burpee](https://github.com/pullup-dip-burpee))
+- 한 마디: 작년에 가비아로 도메인을 500원으로 샀는데 다시 들어가보니 만료되어서 50000원을 내라고 해서 도메인은 미처 구하질 못했습니다 ㅠㅠ. 
+- Public IPv4 address: 3.138.102.8  
+- Public IPv4 DNS: ec2-3-138-102-8.us-east-2.compute.amazonaws.com
+
+### 전진용([@junjinyong](https://github.com/junjinyong))
+- 한 마디: 제출합니다! 세부 구현 사항은 수정중입니다. 
+- Public IPv4 address: 3.35.240.203
+- Public IPv4 DNS: ec2-3-35-240-203.ap-northeast-2.compute.amazonaws.com
+- HTTP Domain: http://www.wafflestudio.shop:8080/
+
+### 정윤재([@darwinj07](https://github.com/darwinj07))
+- 한 마디: 학기 끝나고 최대한 빨리 육군이나 가야겠다는 생각에 잠식되어 모든 걸 때려 쳤었는데, 가기 전에 스프링 공부라도 최대한 해놔야 겠다고 다시 마음 먹었습니다. 늘려주신 과제 기간에서 3일이나 지난 시점에서 정말 염치 없지만 통과는 고사하고 잘 구동되는지 채점만 해주실 수 있다면 정말 감사할 것 같습니다.
+- Public IPv4 address: 3.35.141.186
+- Public IPv4 DNS: ip-172-31-5-196.ap-northeast-2.compute.internal
+- HTTP Domain: http://darwinj07.shop
+- HTTPS Domain: https://darwinj07.shop
+
