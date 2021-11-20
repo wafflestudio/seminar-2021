@@ -52,7 +52,7 @@
 | seminar3 | 2021.09.25 (토) ~ 2021.09.26 (일) | Zoom | [React](react/seminar3)  <hr> [android](android/seminar_3) <hr> [Django](django/seminar3) <hr> [iOS][iOS_SEMINAR_3_PDF_LINK]  | [React](react/seminar3/assignment.md) <hr>[android](android/assignment_3)  <hr> [Django](django/seminar3/) <hr> [iOS](iOS/seminar3/assignment/assignment.md)| [React][REACT_SEMINAR_3_ZOOM_LINK] <hr> [android][ANDROID_ZOOM_LINK] <hr> [iOS][iOS_SEMINAR_1_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK]  | [android][ANDROID_SEMINAR_3_VIDEO]<hr> [Spring Boot][SPRING_SEMINAR_3_VIDEO] <hr> [iOS][iOS_SEMINAR_3_VIDEO]|
 | seminar4 | 2021.10.09 (토) ~ 2021.10.10 (일) | Zoom | [React](react/seminar4) <hr> [iOS][iOS_SEMINAR_4_PDF_LINK] <hr> [android](android/seminar_4) | [React](react/seminar4/assignment.md) <hr> [iOS](iOS/seminar4/assignment.md) <hr> [Django](django/seminar4/) | [React][REACT_SEMINAR_4_ZOOM_LINK] <hr> [iOS][iOS_SEMINAR_1_ZOOM_LINK] <hr> [android][ANDROID_ZOOM_LINK] <hr>  [Django][DJANGO ZOOM LINK]  | [React][REACT_SEMINAR_4_VIDEO] <hr> [android][ANDROID_SEMINAR_4_VIDEO] <hr> [Spring Boot][SPRING_SEMINAR_4_VIDEO]|
 | seminar5 | 2021.11.06 (토) ~ 2021.11.07 (일) | Zoom | [React](react/seminar5) <hr> [iOS][iOS_SEMINAR_5_PDF_LINK]  <hr> [android](android/seminar_4)   | [React](react/seminar5/assignment.md) <hr> [Django](django/seminar4/) | [React][REACT_SEMINAR_5_ZOOM_LINK] <hr>  [iOS][iOS_SEMINAR_1_ZOOM_LINK] <hr> [Django][DJANGO ZOOM LINK] <hr> [android][ANDROID_ZOOM_LINK] | [React][REACT_SEMINAR_5_VIDEO] <hr> [android][ANDROID_SEMINAR_5_VIDEO] |
-| 협업 세미나 | 2021.11.20 (토) 14:00            | Zoom | [ppt][OT2_PPT_LINK] |  | [OT][OT2_ZOOM_LINK] |  |
+| 협업 세미나 | 2021.11.20 (토) 14:00            | Zoom | [ppt][OT2_PPT_LINK] |  | [OT][OT2_ZOOM_LINK] | [OT][OT2_VIDEO_LINK] |
 
 * 녹화 영상은 필요할 시 각 세미나장께 요청주시기 바랍니다.
 * backend seminar 0 은 8월 28일 오전 10시입니다.
@@ -67,6 +67,7 @@
 [OT_VIDEO_LINK]: https://youtu.be/mDjuOgC-HSM
 [OT2_PPT_LINK]: https://docs.google.com/presentation/d/14Vvw74CGuffpPAWPncpcPeXqTPDg_qZSQSHRYlE92F0/edit?usp=sharing
 [OT2_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/4853897459
+[OT2_VIDEO_LINK]: https://youtu.be/RjliYofoico
 
 [REACT_SEMINAR_0_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/4853897459
 [REACT_SEMINAR_1_ZOOM_LINK]: https://snu-ac-kr.zoom.us/j/86478334742
