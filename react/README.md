@@ -15,7 +15,7 @@
 | [seminar2](seminar2) | `State Management` <br> `Component Lifecycle` <br> `Hooks basic` <br> `Routing` <br> `deployment`<br>  | 2021.09.11, 16:30 ~ 17:45 |
 | [seminar3](seminar3) |  `HTTP` <br> `Promise` <br> `async` | 2021.09.25, 16:30 ~ 17:45 |
 | [seminar4](seminar4) | `Advanced React` <br> `Typescript` <br> `Advanced CSS` <br> `Browser render` | 2021.10.09, 16:30 ~ 17:45 |
-| [seminar5](seminar5) | `History of WEB` <br> `SPA vs MPA, CSR vs SSR vs SSG` <br> `Recap: what is react?` <br> `Mobile` <br> `Web Standards` | 2021.11.06, 16:30 ~ 17:45 |
+| [seminar5](seminar5) | `History of Web` <br> `SPA vs MPA, CSR vs SSR vs SSG` <br> `Recap: what is react?` <br> `Mobile` <br> `Web Standards` | 2021.11.06, 16:30 ~ 17:45 |
 
 ## 필요 준비사항
 
